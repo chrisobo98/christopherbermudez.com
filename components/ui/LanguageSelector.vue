@@ -1,0 +1,58 @@
+<template>
+    <div class="relative">
+      <button @click="toggleLanguageDropdown" class="text-white flex items-center">
+        <svg class="w-5 h-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900">
+          <path fill="#b22234" d="M0 0h7410v3900H0z"/>
+          <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/>
+          <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
+          <g fill="#fff">
+            <g id="d">
+              <g id="c">
+                <g id="e">
+                  <g id="b">
+                    <path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/>
+                    <use xlink:href="#a" y="420"/>
+                    <use xlink:href="#a" y="840"/>
+                    <use xlink:href="#a" y="1260"/>
+                  </g>
+                  <use xlink:href="#a" y="1680"/>
+                </g>
+                <use xlink:href="#b" x="247" y="210"/>
+              </g>
+              <use xlink:href="#c" x="494"/>
+            </g>
+            <use xlink:href="#d" x="988"/>
+            <use xlink:href="#c" x="1976"/>
+            <use xlink:href="#e" x="2470"/>
+          </g>
+        </svg>
+        EN
+      </button>
+      <div v-if="languageDropdownOpen" id="language-dropdown-menu" class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-md shadow-lg z-50">
+        <ul>
+          <li><a href="#" @click="setLanguage('English (US)')" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400">English (US)</a></li>
+          <li><a href="#" @click="setLanguage('Spanish')" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400">Spanish</a></li>
+        </ul>
+      </div>
+    </div>
+  </template>
+  
+  <script setup lang="ts">
+  import { ref } from 'vue';
+  
+  const languageDropdownOpen = ref(false);
+  
+  const toggleLanguageDropdown = () => {
+    languageDropdownOpen.value = !languageDropdownOpen.value;
+  };
+  
+  const setLanguage = (language: string) => {
+    console.log(`Language changed to: ${language}`);
+    languageDropdownOpen.value = false;
+  };
+  </script>
+  
+  <style scoped>
+  /* Additional styles if needed */
+  </style>
+  
