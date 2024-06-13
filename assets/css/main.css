@@ -8,11 +8,16 @@
 
 /* Set global styles */
 body {
-  background-color: #1d1d1d;
-  color: #ffffff;
+  background-color: #ffffff; /* Default light mode background color */
+  color: #1d1d1d; /* Default light mode text color */
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.dark body {
+  background-color: #1d1d1d; /* Dark mode background color */
+  color: #ffffff; /* Dark mode text color */
 }
 
 /* Custom font styles */

@@ -13,7 +13,6 @@
   <style scoped>
   .base-button {
     background-color: transparent;
-    color: white;
     font-weight: light;
     padding: 1rem 3rem;
     border-radius: 9999px; /* Fully rounded */
@@ -25,6 +24,7 @@
   
   .base-button:hover {
     background-color: #8e44ad; /* Purple background on hover */
+    color: white;
     box-shadow: 0 0 20px 8px rgba(129, 90, 213, 0.455);
   }
   </style>

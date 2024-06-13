@@ -1,6 +1,6 @@
 <template>
     <div class="relative">
-      <button @click="toggleLanguageDropdown" class="text-white flex items-center">
+      <button @click="toggleLanguageDropdown" class="dark:text-white flex items-center">
         
         <!-- USA SVG -->
         <svg v-if="currentLocale === 'en'" class="w-5 h-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900">

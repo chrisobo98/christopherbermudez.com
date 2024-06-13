@@ -1,8 +1,8 @@
 <template>
-  <section class="py-20 bg-[#1d1d1d] text-white">
+  <section class="py-20 bg-white dark:bg-[#1d1d1d]">
     <div class="container max-w-7xl mx-auto px-4">
       <p class="text-purple-500 text-center md:text-left font-semibold mb-4">{{ $t('home.services.subheader') }}</p>
-      <h3 class="text-6xl text-center md:text-left font-bold mb-10">{{ $t('home.services.header') }}</h3>
+      <h3 class="text-6xl text-center md:text-left text-black dark:text-white font-bold mb-10">{{ $t('home.services.header') }}</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <ServiceCard
           iconSrc="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/fa5d35d7-55c0-4dbf-3eba-1090a3515200/public"

@@ -18,4 +18,26 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  // For some reason on loadup there is flash of unstyled content, this prevents it
+  app: {
+    head: {
+      script: [
+        {
+          innerHTML: `
+            (function() {
+              const savedTheme = localStorage.getItem('color-theme');
+              if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+              } else {
+                document.documentElement.classList.remove('dark');
+              }
+            })();
+          `,
+          type: 'text/javascript',
+          charset: 'utf-8'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
+    }
+  }
 });

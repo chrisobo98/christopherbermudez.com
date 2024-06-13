@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-screen flex items-center justify-center text-white hero-section">
+  <section class="relative h-screen flex items-center justify-center bg-white dark:bg-[#1d1d1d]">
     <div class="relative z-10 text-center">
       <h1 class="text-6xl font-bold drop-shadow-xl">{{ $t('home.hero.title') }}</h1>
       <h3 class="text-4xl font-semibold text-purple-600 typing-container">
@@ -27,11 +27,6 @@ const navigateToDiscover = () => {
 </script>
 
 <style scoped>
-.hero-section {
-  background-color: #1d1d1d; /* Keep the background consistent */
-  overflow: hidden;
-}
-
 .blobs {
   position: absolute;
   top: 0;

@@ -9,7 +9,11 @@ export default {
     "./error.vue",
     "./node_modules/flowbite/**/*.{js,ts}"
   ],
+  darkMode: 'class', // or 'media' for automatic based on user preference
   theme: {
+    extend: {},
+  },
+  variants: {
     extend: {},
   },
   plugins: [

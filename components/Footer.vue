@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-transparent dark:bg-gray-900">
+    <footer class="bg-white dark:bg-[#1d1d1d]">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
@@ -25,7 +25,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span v-html="$t('home.footer.textarea')" class="text-sm text-gray-100 sm:text-center dark:text-gray-400" />
+          <span v-html="$t('home.footer.textarea')" class="text-sm text-gray-800 sm:text-center dark:text-gray-400" />
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             <FooterIconLink
               href="#"
