@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="handleSubmit" class="max-w-7xl mx-auto p-8 rounded-lg">
-    <h2 class="text-6xl font-bold text-white mb-8 text-center">Get a Free Estimate</h2>
+    <h2 class="text-6xl font-bold text-white mb-8 text-center">{{ $t('home.contact.header') }}</h2>
 
     <div v-for="field in fields" :key="field.id" class="mb-5">
       <label :for="field.id" class="block mb-2 font-medium text-gray-300">{{ field.label }}</label>
@@ -39,6 +39,9 @@
 import { ref } from 'vue'
 import { UserIcon, EnvelopeIcon, BuildingOfficeIcon, LinkIcon } from '@heroicons/vue/24/solid'
 import BaseButton from '@/components/ui/BaseButton.vue'
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 interface Field {
   id: string;
@@ -61,15 +64,15 @@ interface FormData {
 }
 
 const fields: Field[] = [
-  { id: 'name', label: 'Name', type: 'text', placeholder: 'Your Name', icon: UserIcon },
-  { id: 'email', label: 'Email Address', type: 'email', placeholder: 'name@example.com', icon: EnvelopeIcon },
-  { id: 'company', label: 'Company', type: 'text', placeholder: 'Your Company', icon: BuildingOfficeIcon },
-  { id: 'website', label: 'Website URL', type: 'url', placeholder: 'https://example.com', icon: LinkIcon },
-  { id: 'content', label: 'What primary content do you need on your website?', type: 'textarea', placeholder: 'Describe the primary content you need...', icon: null },
-  { id: 'functionality', label: 'What must-have functionality do you need?', type: 'textarea', placeholder: 'Describe the must-have functionality...', icon: null },
-  { id: 'current-state', label: 'What is the current state of your website?', type: 'textarea', placeholder: 'Describe the current state of your website...', icon: null },
-  { id: 'experience', label: 'What is your experience with managing your own website?', type: 'textarea', placeholder: 'Describe your experience...', icon: null },
-  { id: 'details', label: 'Please provide any other details or questions you have about your website', type: 'textarea', placeholder: 'Leave additional details or questions...', icon: null }
+  { id: 'name', label: t('home.contact.name_header'), type: 'text', placeholder: t('home.contact.name'), icon: UserIcon },
+  { id: 'email', label:  t('home.contact.email_header'), type: 'email', placeholder: t('home.contact.email'), icon: EnvelopeIcon },
+  { id: 'company', label:  t('home.contact.company_header'), type: 'text', placeholder: t('home.contact.company'), icon: BuildingOfficeIcon },
+  { id: 'website', label:  t('home.contact.website_header'), type: 'url', placeholder: t('home.contact.website'), icon: LinkIcon },
+  { id: 'content', label:  t('home.contact.content_header'), type: 'textarea', placeholder: t('home.contact.content'), icon: null },
+  { id: 'functionality', label:  t('home.contact.functionality_header'), type: 'textarea', placeholder: t('home.contact.functionality'), icon: null },
+  { id: 'current-state', label:  t('home.contact.state_of_site_header'), type: 'textarea', placeholder: t('home.contact.state_of_site'), icon: null },
+  { id: 'experience', label:  t('home.contact.site_experience_header'), type: 'textarea', placeholder: t('home.contact.site_experience'), icon: null },
+  { id: 'details', label:  t('home.contact.other_details_header'), type: 'textarea', placeholder: t('home.contact.other_details'), icon: null }
 ]
 
 const form = ref<FormData>({

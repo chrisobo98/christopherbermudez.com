@@ -9,15 +9,15 @@
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <FooterSection title="Resources">
-              <FooterLink href="https://flowbite.com/" text="Nuxt" />
+            <FooterSection :title="$t('home.footer.resources')">
+              <FooterLink href="https://nuxt.com/" text="Nuxt" />
               <FooterLink href="https://tailwindcss.com/" text="Tailwind CSS" />
             </FooterSection>
-            <FooterSection title="Follow Me">
-              <FooterLink href="https://github.com/themesberg/flowbite" text="Github" />
-              <FooterLink href="https://discord.gg/4eeurUVvTy" text="LinkedIn" />
+            <FooterSection :title="$t('home.footer.follow')">
+              <FooterLink href="https://github.com/chrisobo98" text="Github" />
+              <FooterLink href="https://www.linkedin.com/in/christopher-bermudez-ortiz/" text="LinkedIn" />
             </FooterSection>
-            <FooterSection title="Legal">
+            <FooterSection :title="$t('home.footer.legal')">
               <FooterLink href="#" text="Privacy Policy" />
               <FooterLink href="#" text="Terms &amp; Conditions" />
             </FooterSection>
@@ -25,9 +25,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-100 sm:text-center dark:text-gray-400">
-            2024 @ Christopher Bermudez™. Made with ❤️ in Orlando, Florida
-          </span>
+          <span v-html="$t('home.footer.textarea')" class="text-sm text-gray-100 sm:text-center dark:text-gray-400" />
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             <FooterIconLink
               href="#"

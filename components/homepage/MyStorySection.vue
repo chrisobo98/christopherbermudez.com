@@ -7,17 +7,14 @@
             style="transform: scale(0.7)"
             src="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/260a4bff-3c8c-4393-ec24-3a2dad8fe700/public"
             alt="Christopher Bermudez"
-            class="rounded-lg shadow-lg max-w-full h-auto"
+            class="rounded-lg max-w-full h-auto"
           />
         </div>
         <div class="w-full md:w-1/2 text-center md:text-left">
-          <p class="text-purple-500 font-semibold mb-2">A LONG JOURNEY</p>
-          <h2 class="text-6xl font-bold mb-4">MY STORY</h2>
+          <p class="text-purple-500 font-semibold mb-2">{{ $t('home.mystory.journey') }}</p>
+          <h2 class="text-6xl font-bold mb-4">{{ $t('home.mystory.storyheader') }}</h2>
           <p class="text-lg font-light">
-            A seasoned front-end software developer with a proven track record
-            in both the corporate sphere and the startup ecosystem. With a
-            passion for crafting user-centric solutions, I ensure that every
-            project not only meets but exceeds expectations.
+            {{ $t('home.mystory.storytext') }}
           </p>
         </div>
       </div>

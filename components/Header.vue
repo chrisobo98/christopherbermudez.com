@@ -10,7 +10,7 @@
           <div class="flex items-center space-x-3 md:space-x-3">
             <LanguageSelector class="nav-item-bounce delay-100" />
             <button class="nav-item-bounce delay-200 text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
-              Set up Appointment
+                {{ $t('home.navbar.appointment') }}            
             </button>
             <button @click="toggleMenu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
               <span class="sr-only">Open main menu</span>
@@ -22,18 +22,17 @@
           <!-- Nav Links -->
           <div :class="{ hidden: !menuOpen }" id="mega-menu-full" class="w-full lg:flex lg:w-auto lg:order-1">
             <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-              <NavLink class="nav-item-bounce delay-300" href="#" text="Home" />
+              <NavLink class="nav-item-bounce delay-300" href="#" :text="$t('home.navbar.software')" />
               <li class="nav-item-bounce delay-400">
                 <button id="mega-menu-full-dropdown-button" @click="toggleMegaMenu" class="flex items-center justify-between w-full py-2 px-3 text-white rounded lg:w-auto hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-600 lg:p-0 dark:text-white lg:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-purple-500 lg:dark:hover:bg-transparent dark:border-gray-700">
-                  Web Development
-                  <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    {{ $t('home.navbar.web') }}                    
+                    <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4" />
                   </svg>
                 </button>
               </li>
-              <NavLink class="nav-item-bounce delay-500" href="#" text="Marketplace" />
-              <NavLink class="nav-item-bounce delay-500" href="#" text="Resources" />
-              <NavLink class="nav-item-bounce delay-500" href="#" text="Contact" />
+              <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.marketing')" />
+              <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.journal')" />
             </ul>
           </div>
         </div>

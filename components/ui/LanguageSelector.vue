@@ -1,7 +1,9 @@
 <template>
     <div class="relative">
       <button @click="toggleLanguageDropdown" class="text-white flex items-center">
-        <svg class="w-5 h-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900">
+        
+        <!-- USA SVG -->
+        <svg v-if="currentLocale === 'en'" class="w-5 h-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900">
           <path fill="#b22234" d="M0 0h7410v3900H0z"/>
           <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/>
           <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
@@ -26,31 +28,46 @@
             <use xlink:href="#e" x="2470"/>
           </g>
         </svg>
-        EN
+
+        <!-- Spain custom svg -->
+        <svg v-else-if="currentLocale === 'es'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="w-5 h-5 rounded-full mr-2">
+          <circle cx="32" cy="32" r="32" fill="#aa151b" />
+          <rect x="0" y="19" width="64" height="27" fill="#f1bf00" />
+        </svg>
+        {{ currentLocale.toUpperCase() }}
       </button>
+      <!-- Language Dropdown -->
       <div v-if="languageDropdownOpen" id="language-dropdown-menu" class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-md shadow-lg z-50">
         <ul>
-          <li><a href="#" @click="setLanguage('English (US)')" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400">English (US)</a></li>
-          <li><a href="#" @click="setLanguage('Spanish')" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400">Spanish</a></li>
+          <li><NuxtLink :to="switchLocalePath('en')" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400">English (US)</NuxtLink></li>
+          <li><NuxtLink :to="switchLocalePath('es')" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400">Spanish (ES)</NuxtLink></li>
         </ul>
       </div>
     </div>
   </template>
   
   <script setup lang="ts">
-  import { ref } from 'vue';
+  import { ref, watch } from 'vue';
+  import { useI18n } from 'vue-i18n';
   
   const languageDropdownOpen = ref(false);
+  const { locale } = useI18n();
+  const currentLocale = ref(locale.value);
+
+  const switchLocalePath = useSwitchLocalePath()
+  
+  watch(locale, (newLocale) => {
+    console.log('Locale changed:', newLocale);
+    currentLocale.value = newLocale;
+  });
   
   const toggleLanguageDropdown = () => {
     languageDropdownOpen.value = !languageDropdownOpen.value;
-  };
-  
-  const setLanguage = (language: string) => {
-    console.log(`Language changed to: ${language}`);
-    languageDropdownOpen.value = false;
+    console.log('Dropdown toggled:', languageDropdownOpen.value);
   };
   </script>
+  
+   
   
   <style scoped>
   /* Additional styles if needed */
