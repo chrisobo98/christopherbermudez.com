@@ -4,8 +4,8 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="#" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8">
-              <span>@Christopher</span>
-              <span class="text-purple-700">Bermudez</span>
+              <span>@C<span class="inline md:hidden lg:inline">hristopher</span></span>
+              <span class="text-purple-700">B<span class="inline md:hidden lg:inline">ermudez</span></span>
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
