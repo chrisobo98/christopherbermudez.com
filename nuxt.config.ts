@@ -34,10 +34,8 @@ export default defineNuxtConfig({
             })();
           `,
           type: 'text/javascript',
-          charset: 'utf-8'
         }
-      ],
-      __dangerouslyDisableSanitizers: ['script']
+      ]
     }
   }
 });

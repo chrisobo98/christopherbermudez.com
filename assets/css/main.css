@@ -3,8 +3,8 @@
 @import "tailwindcss/utilities";
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Set global styles */
 body {
@@ -12,7 +12,52 @@ body {
   color: #1d1d1d; /* Default light mode text color */
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf6 transparent; /* Thumb color and track color for Firefox */
+}
+
+/* Webkit browsers */
+::-webkit-scrollbar {
+  width: 16px; /* Width of the scrollbar */
+  height: 16px; /* Height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b5cf6; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 3px solid transparent; /* Border around the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7a3bb2; /* Darker shade on hover */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Webkit browsers */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b5cf6; /* Scrollbar thumb color */
+  border-radius: 20px; /* Rounded corners for the scrollbar thumb */
+  border: 3px solid transparent; /* Border around the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7a3bb2; /* Darker shade on hover */
 }
 
 .dark body {
@@ -22,60 +67,62 @@ body {
 
 /* Custom font styles */
 .bayon-regular {
-  font-family: 'Bayon', sans-serif;
+  font-family: "Bayon", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .ubuntu-light {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .ubuntu-regular {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .ubuntu-medium {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .ubuntu-bold {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .ubuntu-light-italic {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .ubuntu-regular-italic {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .ubuntu-medium-italic {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
 .ubuntu-bold-italic {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
 /* Apply Bayon font to headers */
-h1, h2, h3 {
-  font-family: 'Bayon', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Bayon", sans-serif;
 }

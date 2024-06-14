@@ -54,7 +54,7 @@ export default defineI18nConfig(() => ({
             button_text: 'View Site'
         },
         contact: {
-            header: 'Contact Us',
+            header: 'Contact Me',
             name: 'Your Name',
             name_header: 'Name',
             email: 'name.example.com',
@@ -133,7 +133,7 @@ export default defineI18nConfig(() => ({
             button_text: "Ver Sitio"
         },
         contact: {
-            header: 'Contáctanos',
+            header: 'Contáctame',
             name: 'Tu Nombre',
             name_header: 'Nombre',
             email: 'nombre.ejemplo.com',
