@@ -24,6 +24,17 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
+      link: [
+        // Preconnect to Google Fonts
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        // Preload critical fonts
+        { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Bayon&display=swap', as: 'style' },
+        { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap', as: 'style' },
+        // Link to the fonts' stylesheets
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Bayon&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap' }
+      ],
       script: [
         {
           innerHTML: `
