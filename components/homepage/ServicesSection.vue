@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 bg-white dark:bg-[#1d1d1d]">
     <div class="container w-11/12 lg:w-full max-w-7xl mx-auto px-4">
-      <p class="text-purple-500 text-center md:text-left font-semibold mb-4">{{ $t('home.services.subheader') }}</p>
+      <p class="text-purple-500 dark:text-[#b695ff] text-center md:text-left font-semibold mb-4">{{ $t('home.services.subheader') }}</p>
       <h3 class="text-6xl text-center md:text-left text-black dark:text-white font-bold mb-10">{{ $t('home.services.header') }}</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <ServiceCard

@@ -11,7 +11,7 @@
           />
         </div>
         <div class="w-full md:w-1/2 text-center md:text-left">
-          <p class="text-purple-500 font-semibold mb-2">{{ $t('home.mystory.journey') }}</p>
+          <p class="text-purple-500 dark:text-[#b695ff] font-semibold mb-2">{{ $t('home.mystory.journey') }}</p>
           <h2 class="text-6xl font-bold mb-4">{{ $t('home.mystory.storyheader') }}</h2>
           <p class="text-lg font-light">
             {{ $t('home.mystory.storytext') }}

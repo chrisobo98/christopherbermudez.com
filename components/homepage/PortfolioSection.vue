@@ -1,7 +1,7 @@
 <template>
   <section class="py-12 bg-white dark:bg-[#1d1d1d]">
     <div class="container w-11/12 lg:w-full max-w-7xl mx-auto px-6 lg:px-8">
-      <p class="text-purple-500 text-center md:text-right font-semibold mb-4">{{ $t('home.portfolio.subheader') }}</p>
+      <p class="text-purple-500 dark:text-[#b695ff] text-center md:text-right font-semibold mb-4">{{ $t('home.portfolio.subheader') }}</p>
       <h2 class="text-center md:text-right text-6xl font-bold mb-8">{{ $t('home.portfolio.header') }}</h2>
       <div class="space-y-12">
         <PortfolioItem

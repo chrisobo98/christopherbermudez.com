@@ -21,6 +21,9 @@ export default defineNuxtConfig({
   // For some reason on loadup there is flash of unstyled content, this prevents it
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       script: [
         {
           innerHTML: `

@@ -2,9 +2,9 @@
   <section class="relative h-screen flex items-center justify-center bg-white dark:bg-[#1d1d1d]">
     <div class="relative z-10 text-center w-10/12 lg:w-full">
       <h1 class="text-6xl font-bold drop-shadow-xl">{{ $t('home.hero.title') }}</h1>
-      <h3 class="text-4xl font-semibold text-purple-600 typing-container">
+      <h2 class="text-4xl font-semibold text-purple-600 typing-container">
         <TypingEffect :texts="[$t('home.hero.subtitle1'), $t('home.hero.subtitle2'), $t('home.hero.subtitle3'), $t('home.hero.subtitle4')]" :speed="50" :delay="1500" />
-      </h3>
+      </h2>
       <p class="text-2xl font-extralight">{{ $t('home.hero.description') }}</p>
       <BaseButton @click="navigateToDiscover">{{ $t('home.hero.button') }}</BaseButton>
     </div>
