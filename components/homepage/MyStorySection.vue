@@ -1,6 +1,6 @@
 <template>
   <section class="my-story-section bg-white dark:bg-[#1d1d1d]">
-    <div class="container max-w-7xl mx-auto px-4">
+    <div class="container w-10/12 lg:w-full max-w-7xl mx-auto px-4">
       <div class="flex flex-col md:flex-row items-center">
         <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
           <img

@@ -1,6 +1,6 @@
 <template>
-    <footer class="bg-white dark:bg-[#1d1d1d]">
-      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer id="footer-section" class="bg-white dark:bg-[#1d1d1d] pt-4 lg:pt-32 pb-2 lg:pb-8">
+      <div class="mx-auto w-10/12 lg:w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="#" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8">

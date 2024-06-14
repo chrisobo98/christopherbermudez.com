@@ -1,6 +1,6 @@
 <template>
   <section class="py-12 bg-white dark:bg-[#1d1d1d]">
-    <form @submit.prevent="handleSubmit" class="max-w-7xl mx-auto p-8 rounded-lg">
+    <form @submit.prevent="handleSubmit" class="w-11/12 lg:w-full max-w-7xl mx-auto p-8 rounded-lg">
       <h2 class="text-6xl font-bold mb-8 text-center">
         {{ $t("home.contact.header") }}
       </h2>
