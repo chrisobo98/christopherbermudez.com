@@ -1,28 +1,17 @@
 <template>
   <section class="py-12 bg-white dark:bg-[#1d1d1d]">
-    <form
-      @submit.prevent="handleSubmit"
-      class="max-w-7xl mx-auto p-8 rounded-lg"
-    >
+    <form @submit.prevent="handleSubmit" class="max-w-7xl mx-auto p-8 rounded-lg">
       <h2 class="text-6xl font-bold mb-8 text-center">
         {{ $t("home.contact.header") }}
       </h2>
 
       <div v-for="field in fields" :key="field.id" class="mb-5">
-        <label :for="field.id" class="block mb-2 font-medium">{{
-          field.label
-        }}</label>
+        <label :for="field.id" class="block mb-2 font-medium">{{ field.label }}</label>
         <div
-          v-if="
-            field.type === 'text' ||
-            field.type === 'email' ||
-            field.type === 'url'
-          "
+          v-if="field.type === 'text' || field.type === 'email' || field.type === 'url'"
           class="relative"
         >
-          <div
-            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-          >
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
             <component :is="field.icon" class="w-5 h-5" />
           </div>
           <input
@@ -40,7 +29,7 @@
             v-model="form[field.id as keyof FormData]"
             :placeholder="field.placeholder"
             rows="4"
-            class="block p-2.5 w-full bg-gray-200 dark:bg-gray-700 text-black rounded-lg border border-gray-100 dark:border-gray-600 focus:ring-violet-500 focus:border-violet-500"
+            class="block p-2.5 w-full bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded-lg border border-gray-100 dark:border-gray-600 focus:ring-violet-500 focus:border-violet-500"
             required
           ></textarea>
         </div>
@@ -55,12 +44,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import {
-  UserIcon,
-  EnvelopeIcon,
-  BuildingOfficeIcon,
-  LinkIcon,
-} from "@heroicons/vue/24/solid";
+import emailjs from "emailjs-com";
+import { UserIcon, EnvelopeIcon, BuildingOfficeIcon, LinkIcon } from "@heroicons/vue/24/solid";
 import BaseButton from "@/components/ui/BaseButton.vue";
 import { useI18n } from "vue-i18n";
 
@@ -165,8 +150,35 @@ const form = ref<FormData>({
 });
 
 const handleSubmit = () => {
-  console.log(form.value);
-  // Handle form submission
+  const templateParams = {
+    name: form.value.name,
+    email: form.value.email,
+    company: form.value.company,
+    website: form.value.website,
+    content: form.value.content,
+    functionality: form.value.functionality,
+    currentState: form.value["current-state"],
+    experience: form.value.experience,
+    details: form.value.details,
+  };
+
+  emailjs
+    .send(
+      "service_imdxal6", // Replace with your EmailJS Service ID
+      "template_ycrptpl", // Replace with your EmailJS Template ID
+      templateParams,
+      "URSQb8MOeSJGnLiuH" // Replace with your EmailJS User ID
+    )
+    .then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Message sent successfully!");
+      },
+      (error) => {
+        console.log("FAILED...", error);
+        alert("Message sending failed!");
+      }
+    );
 };
 </script>
 
