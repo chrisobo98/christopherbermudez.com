@@ -2,10 +2,10 @@
     <footer id="footer-section" class="bg-white dark:bg-[#1d1d1d] pt-4 lg:pt-32 pb-2 lg:pb-8">
       <div class="mx-auto w-10/12 lg:w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-            <a href="#" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8">
-              <span>@C<span class="inline md:hidden lg:inline">hristopher</span></span>
-              <span class="text-purple-700">B<span class="inline md:hidden lg:inline">ermudez</span></span>
+          <div class="mb-6 md:mb-0 mr-6">
+            <a href="#" class="text-4xl block lg:flex font-semibold whitespace-nowrap bayon-regular h8">
+              <p>@Christopher</p>
+              <p class="text-purple-700">Bermudez</p>
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

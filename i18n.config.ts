@@ -89,7 +89,7 @@ export default defineI18nConfig(() => ({
           subtitle1: "Desarrollo de Sitios Web",
           subtitle2: "Desarrollo de Programas",
           subtitle3: "Publicidad y Mercadeo",
-          subtitle4: "Servicios de Posicionamiento en Buscadores",
+          subtitle4: "Servicios de SEO",
           description:
             "Uniendo Diseño y Funcionalidad para el Éxito de su Negocio",
           button: "Descubra Cómo",

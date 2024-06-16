@@ -1,7 +1,7 @@
 <template>
   <section class="relative h-screen flex items-center justify-center bg-white dark:bg-[#1d1d1d]">
     <div class="relative z-10 text-center w-10/12 lg:w-full">
-      <h1 class="text-6xl font-bold drop-shadow-xl">{{ $t('home.hero.title') }}</h1>
+      <h1 class="text-6xl font-bold drop-shadow-xl -mt-32">{{ $t('home.hero.title') }}</h1>
       <h2 class="text-4xl font-semibold text-purple-600 typing-container">
         <TypingEffect :texts="[$t('home.hero.subtitle1'), $t('home.hero.subtitle2'), $t('home.hero.subtitle3'), $t('home.hero.subtitle4')]" :speed="50" :delay="1500" />
       </h2>
@@ -14,12 +14,14 @@
       <div class="blob"></div>
       <div class="blob"></div>
     </div>
+    <ArrowWithText />
   </section>
 </template>
 
 <script setup lang="ts">
 import TypingEffect from '@/components/effects/TypingEffect.vue';
 import BaseButton from '@/components/ui/BaseButton.vue';
+import ArrowWithText from '@/components/effects/ArrowWithText.vue'
 
 const navigateToDiscover = () => {
   // Navigate to the discover section or page
@@ -92,10 +94,7 @@ const navigateToDiscover = () => {
 }
 
 .typing-container {
-  display: inline-block;
   min-width: 300px;
-  height: 50px;
-  overflow: hidden;
-  white-space: nowrap;
+  min-height: 50px;
 }
 </style>

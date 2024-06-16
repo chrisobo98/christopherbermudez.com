@@ -6,7 +6,7 @@
           :href="`#${section.id}`"
           :name="`${section.id}`"
           :aria-label="`${section.id}`"
-          :class="['block w-4 h-4 rounded-full', currentSection === section.id ? 'bg-violet-500' : 'bg-gray-600']"
+          :class="['block w-3 h-3 md:w-4 md:h-4 rounded-full', currentSection === section.id ? 'bg-violet-500' : 'bg-gray-600']"
           @click.prevent="scrollToSection(section.id)"
         ></a>
       </li>
