@@ -3,8 +3,11 @@
     <div class="container w-10/12 lg:w-full max-w-7xl mx-auto px-4">
       <div class="flex flex-col md:flex-row items-center">
         <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-          <img
-            style="transform: scale(0.7)"
+          <NuxtImg
+            style="transform: scale(1)"
+            width="100%" 
+            height="100%" 
+            loading="lazy"
             src="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/260a4bff-3c8c-4393-ec24-3a2dad8fe700/public"
             alt="Christopher Bermudez"
             class="rounded-lg max-w-full h-auto"

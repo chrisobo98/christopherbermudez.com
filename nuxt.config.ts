@@ -1,7 +1,5 @@
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/i18n'
-  ],
+  modules: ['@nuxtjs/i18n', "@nuxt/image"],
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', name: 'English' },
