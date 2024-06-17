@@ -5,12 +5,13 @@
         <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
           <NuxtImg
             style="transform: scale(1)"
+            provider="cloudflare"
             width="100%" 
             height="100%" 
             loading="lazy"
-            src="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/260a4bff-3c8c-4393-ec24-3a2dad8fe700/public"
+            src="/260a4bff-3c8c-4393-ec24-3a2dad8fe700/public"
             alt="Christopher Bermudez"
-            class="rounded-lg max-w-full h-auto"
+            class="rounded-lg max-w-full h-auto mb-8"
           />
         </div>
         <div class="w-full md:w-1/2 text-center md:text-left">

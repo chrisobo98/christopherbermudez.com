@@ -1,4 +1,5 @@
 <template>
+  <CookieControl locale="en" />
   <NuxtLayout />
 </template>
 

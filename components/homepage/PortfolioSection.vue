@@ -7,13 +7,13 @@
         <PortfolioItem
           :title="$t('home.portfolio.portfolio_elite_header')"
           :description="$t('home.portfolio.portfolio_elite_text')"
-          imageSrc="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/3969ce26-aa51-4698-0934-380a625c2900/public"
+          imageSrc="/3969ce26-aa51-4698-0934-380a625c2900/public"
           url="https://eliteeuromotors.com/"
         />
         <PortfolioItem
           :title="$t('home.portfolio.portfolio_4star_header')"
           :description="$t('home.portfolio.portfolio_4star_text')"
-          imageSrc="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/ea08472d-7cad-4884-7921-35a6c4722800/public"
+          imageSrc="/ea08472d-7cad-4884-7921-35a6c4722800/public"
           url="https://4starcustoms.com/"
           :reverse="true"
         />

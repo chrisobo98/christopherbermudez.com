@@ -5,25 +5,25 @@
       <h3 class="text-6xl text-center md:text-left text-black dark:text-white font-bold mb-10">{{ $t('home.services.header') }}</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <ServiceCard
-          iconSrc="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/fa5d35d7-55c0-4dbf-3eba-1090a3515200/public"
+          iconSrc="/fa5d35d7-55c0-4dbf-3eba-1090a3515200/public"
           altText="Consultation Icon"
           :title="$t('home.services.consultation')"
           :description="$t('home.services.consultation_text')"
         />
         <ServiceCard
-          iconSrc="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/30432376-0d5e-44ac-c4fe-a27f6f56bd00/public"
+          iconSrc="/30432376-0d5e-44ac-c4fe-a27f6f56bd00/public"
           altText="Design and Development Icon"
           :title="$t('home.services.softwaredev')"
           :description="$t('home.services.softwaredev_text')"
         />
         <ServiceCard
-          iconSrc="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/4cb06081-6a05-4508-3433-9de4e0360900/public"
+          iconSrc="/4cb06081-6a05-4508-3433-9de4e0360900/public"
           altText="Support Icon"
           :title="$t('home.services.maintenance_and_support')"
           :description="$t('home.services.maintenance_and_support_text')"
         />
         <ServiceCard
-          iconSrc="https://imagedelivery.net/Fe3MnThb4g2VRIhXmqnFdw/a1e72b84-138e-4e3b-1f43-41858bda6b00/public"
+          iconSrc="/a1e72b84-138e-4e3b-1f43-41858bda6b00/public"
           altText="SEO Icon"
           :title="$t('home.services.seo_marketing_ads')"
           :description="$t('home.services.seo_marketing_ads_text')"
