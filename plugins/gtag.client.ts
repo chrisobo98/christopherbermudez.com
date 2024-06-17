@@ -17,9 +17,7 @@ export default defineNuxtPlugin(() => {
     function gtag(...args: any[]) { window.dataLayer.push(args); }
     gtag('js', new Date());
     gtag('config', gtagId);
-    
-    console.log('Google Analytics initialized with ID:', gtagId); // Add console log for verification
-    
+        
     useHead({
       script: [
         {
@@ -28,7 +26,5 @@ export default defineNuxtPlugin(() => {
         },
       ],
     });
-  } else {
-    console.log('Google Analytics is not enabled by user consent.')
   }
 });
