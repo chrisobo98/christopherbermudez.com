@@ -1,10 +1,15 @@
+// nuxt.config.ts
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     "@nuxt/image",
-    'nuxt-gtag',
     '@dargmuesli/nuxt-cookie-control',
   ],
+  runtimeConfig: {
+    public: {
+      gtagId: 'G-3CC4904P02', // Replace with your Google Analytics ID
+    }
+  },
   image: {
     provider: 'cloudflare',
     cloudflare: {
@@ -56,17 +61,11 @@ export default defineNuxtConfig({
             })();
           `,
           type: 'text/javascript',
+          // Safely inject inline script
+          'data-script-type': 'init-theme',
         }
       ]
     }
-  },
-  gtag: {
-    id: 'G-3CC4904P02', // Replace with your Google Analytics 4 Tracking ID
-    config: {
-      anonymize_ip: true, // Anonymize IP addresses
-      send_page_view: true, // Track page views automatically
-    },
-    enabled: false // Disable automatic loading
   },
   cookieControl: {
     barPosition: 'bottom-full',
@@ -158,4 +157,4 @@ export default defineNuxtConfig({
       }
     }
   }
-})
+});
