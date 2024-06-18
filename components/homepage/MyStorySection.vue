@@ -11,7 +11,7 @@
             loading="lazy"
             src="/260a4bff-3c8c-4393-ec24-3a2dad8fe700/public"
             alt="Christopher Bermudez"
-            class="rounded-lg max-w-full h-auto mb-8"
+            class="rounded-lg max-w-full h-auto mb-8 nuxt-img-animation"
           />
         </div>
         <div class="w-full md:w-1/2 text-center md:text-left">

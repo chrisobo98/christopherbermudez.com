@@ -1,6 +1,6 @@
 <template>
   <a :href="url" target="_blank" :class="itemClass">
-    <NuxtImg provider="cloudflare" :src="imageSrc" :alt="title" width="100%" height="100%" loading="lazy" class="w-full lg:w-1/2" />
+    <NuxtImg provider="cloudflare" :src="imageSrc" :alt="title" width="100%" height="100%" loading="lazy" class="w-full lg:w-1/2 nuxt-img-animation" />
       <div class="lg:w-1/2 text-center lg:text-left">
         <h3 class="text-4xl font-semibold mb-4">{{ title }}</h3>
         <p class="mb-4">{{ description }}</p>
