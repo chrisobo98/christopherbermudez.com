@@ -1,27 +1,48 @@
 <template>
   <section class="relative h-screen flex items-center justify-center bg-white dark:bg-[#1d1d1d]">
     <div class="relative z-10 text-center w-10/12 lg:w-full">
-      <h1 class="text-6xl font-bold drop-shadow-xl -mt-32">{{ $t('home.hero.title') }}</h1>
+      <h1 class="text-6xl font-bold drop-shadow-xl -mt-32">
+        <GSAPHeroEffect>
+          {{ $t('home.hero.title') }}
+        </GSAPHeroEffect>
+      </h1>
+
+      <!-- Typing Container and Effect -->
       <h2 class="text-4xl font-semibold text-purple-600 typing-container">
-        <TypingEffect :texts="[$t('home.hero.subtitle1'), $t('home.hero.subtitle2'), $t('home.hero.subtitle3'), $t('home.hero.subtitle4')]" :speed="50" :delay="1500" />
+        <TypingEffect
+          :texts="[$t('home.hero.subtitle1'), $t('home.hero.subtitle2'), $t('home.hero.subtitle3'), $t('home.hero.subtitle4')]"
+          :speed="50" :delay="1500" />
       </h2>
-      <p class="text-2xl font-extralight">{{ $t('home.hero.description') }}</p>
-      <BaseButton @click="navigateToDiscover">{{ $t('home.hero.button') }}</BaseButton>
+
+      <!-- Hero Description -->
+      <GSAPHeroEffect :delay="1" :duration="2">
+        <p class="text-2xl font-extralight">{{ $t('home.hero.description') }}</p>
+      </GSAPHeroEffect>
+
+      <!-- Button -->
+      <GSAPHeroEffect :delay="1.5" :duration="2">
+        <BaseButton @click="navigateToDiscover">{{ $t('home.hero.button') }}</BaseButton>
+      </GSAPHeroEffect>
     </div>
+
+    <!-- Background Blobs effect -->
     <div class="blobs">
       <div class="blob"></div>
       <div class="blob"></div>
       <div class="blob"></div>
       <div class="blob"></div>
     </div>
+
+    <!-- Bounce to next section arrow -->
     <ArrowWithText />
   </section>
 </template>
 
 <script setup lang="ts">
+import GSAPHeroEffect from '@/components/effects/GSAPAnimatedRevealEffect.vue';
 import TypingEffect from '@/components/effects/TypingEffect.vue';
 import BaseButton from '@/components/ui/BaseButton.vue';
-import ArrowWithText from '@/components/effects/ArrowWithText.vue'
+import ArrowWithText from '@/components/effects/ArrowWithText.vue';
 
 const navigateToDiscover = () => {
   // Navigate to the discover section or page
@@ -36,7 +57,8 @@ const navigateToDiscover = () => {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  pointer-events: none; /* Allow interactions through the blobs */
+  pointer-events: none;
+  /* Allow interactions through the blobs */
 }
 
 .blob {
@@ -79,15 +101,19 @@ const navigateToDiscover = () => {
   0% {
     transform: translate(0, 0) scale(1);
   }
+
   25% {
     transform: translate(50px, -30px) scale(1.2);
   }
+
   50% {
     transform: translate(-30px, 50px) scale(0.8);
   }
+
   75% {
     transform: translate(-50px, -50px) scale(1.1);
   }
+
   100% {
     transform: translate(30px, 30px) scale(0.9);
   }
