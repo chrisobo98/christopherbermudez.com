@@ -2,10 +2,10 @@
   <header :class="{ 'header-scrolled': scrolled }" class="main-header bg-[#ffffff] dark:bg-[#1d1d1d]">
     <nav class="border-gray-200 transition-all duration-500">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <a href="#" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8 logo-bounce">
+        <NuxtLink to="/" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8 logo-bounce">
           <span>C</span><span class="hidden lg:inline">hristopher</span>
           <span class="text-purple-700">B</span><span class="hidden lg:inline text-purple-700">ermudez</span>
-        </a>
+        </NuxtLink>
         <div class="flex items-center space-x-3 md:space-x-3">
           <!-- Language Selector -->
           <LanguageSelector class="nav-item-bounce delay-100" />

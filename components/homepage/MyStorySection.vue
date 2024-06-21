@@ -18,6 +18,7 @@
             <p class="text-lg font-light">
               {{ $t('home.mystory.storytext') }}
             </p>
+            <BaseButton class="mt-4" @click="navigateToResume">{{ $t('home.mystory.storyButton') }}</BaseButton>
           </GSAPStaggeredEffect>
         </div>
       </div>
@@ -27,7 +28,15 @@
 
 <script setup lang="ts">
 import GSAPStaggeredEffect from '@/components/effects/GSAPStaggeredReveal.vue';
-// No additional JavaScript needed for this section
+import BaseButton from '@/components/ui/BaseButton.vue';
+
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const navigateToResume = () => {
+  router.push('/resume');
+}
 </script>
 
 <style scoped>
