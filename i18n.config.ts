@@ -14,7 +14,7 @@ export default defineI18nConfig(() => ({
           subtitle4: "SEO Services",
           description:
             "Bridging Design and Functionality for Your Business Success",
-          button: "Discover How",
+          button: "Contact Me",
         },
         navbar: {
           appointment: "Set up Appointment",
@@ -22,6 +22,8 @@ export default defineI18nConfig(() => ({
           web: "Web Development",
           marketing: "Ads & Marketing",
           journal: "Journal",
+          resume: "Resume",
+          downloadresume: "Download Resume"
         },
         mystory: {
           journey: "A LONG JOURNEY",
@@ -178,7 +180,7 @@ export default defineI18nConfig(() => ({
           subtitle4: "Servicios de SEO",
           description:
             "Uniendo Diseño y Funcionalidad para el Éxito de su Negocio",
-          button: "Descubra Cómo",
+          button: "Contáctame",
         },
         navbar: {
           appointment: "Establecer Cita",
@@ -186,6 +188,8 @@ export default defineI18nConfig(() => ({
           web: "Desarrollo de Web",
           marketing: "Publicidad y Mercadeo",
           journal: "Diario",
+          resume: "Currículum",
+          downloadresume: "Descargar Currículum"
         },
         mystory: {
           journey: "UN VIAJE LARGO",

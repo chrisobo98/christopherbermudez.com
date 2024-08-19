@@ -21,7 +21,7 @@
 
       <!-- Button -->
       <GSAPHeroEffect :delay="1.5" :duration="2">
-        <BaseButton @click="navigateToDiscover">{{ $t('home.hero.button') }}</BaseButton>
+        <BaseButton @click="scrollToContact">{{ $t('home.hero.button') }}</BaseButton>
       </GSAPHeroEffect>
     </div>
 
@@ -39,9 +39,21 @@ import BaseButton from '@/components/ui/BaseButton.vue';
 import ArrowWithText from '@/components/effects/ArrowWithText.vue';
 import BlobEffect from "@/components/effects/BlobEffect.vue";
 
-const navigateToDiscover = () => {
-  // Navigate to the discover section or page
-}
+import { useScrollNavigation } from '@/composables/useScrollNavigation';
+
+const sections = [
+  'hero-section',
+  'my-story-section',
+  'services-section',
+  'portfolio-section',
+  'contact-section',
+];
+
+const { scrollToSection } = useScrollNavigation(sections);
+
+const scrollToContact = () => {
+  scrollToSection('contact-section');
+};
 </script>
 
 <style scoped>
@@ -50,3 +62,4 @@ const navigateToDiscover = () => {
   min-height: 50px;
 }
 </style>
+~/composables/useScrollNavigation

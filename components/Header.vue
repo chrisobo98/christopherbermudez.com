@@ -10,11 +10,11 @@
           <!-- Language Selector -->
           <LanguageSelector class="nav-item-bounce delay-100" />
 
-          <!-- Appointment Button -->
-          <button
+          <!-- Appointment Button Desktop -->
+          <NuxtLink to="/appointments"
             class="nav-item-bounce hidden md:inline delay-200 text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
             {{ $t('home.navbar.appointment') }}
-          </button>
+          </NuxtLink>
 
           <!-- Dark Mode Switch -->
           <DarkModeSwitcher />
@@ -34,7 +34,7 @@
         <div :class="{ hidden: !menuOpen }" id="mega-menu-full" class="w-full lg:flex lg:w-auto lg:order-1">
           <ul
             class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0">
-            <NavLink class="nav-item-bounce delay-300" href="#" :text="$t('home.navbar.software')" />
+            <!-- <NavLink class="nav-item-bounce delay-300" href="#" :text="$t('home.navbar.software')" />
             <li class="nav-item-bounce delay-400">
               <button id="mega-menu-full-dropdown-button" @click="toggleMegaMenu"
                 class="flex items-center justify-between w-full py-2 px-3 rounded lg:w-auto hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-600 lg:p-0 lg:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-purple-500 lg:dark:hover:bg-transparent dark:border-gray-700">
@@ -46,19 +46,28 @@
                 </svg>
               </button>
             </li>
-            <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.marketing')" />
-            <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.journal')" />
-            <!-- Appointment Button -->
-            <button
+            <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.marketing')" /> -->
+            <NavLink class="nav-item-bounce delay-500 my-4 md:my-1" href="/resume" :text="$t('home.navbar.resume')" />
+            <!-- <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.journal')" /> -->
+
+            <!-- Download Resume button -->
+
+            <a href="/christopher-bermudez-front-end-developer.pdf"
+              download="christopher-bermudez-front-end-developer.pdf"
+              class="nav-item-bounce delay-300 text-white bg-black border border-purple-800 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              {{ $t('home.navbar.downloadresume') }}
+            </a>
+            <!-- Appointment Button Mobile -->
+            <NuxtLink to="/appointments"
               class="nav-item-bounce mt-4 delay-200 md:hidden text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
               {{ $t('home.navbar.appointment') }}
-            </button>
+            </NuxtLink>
 
           </ul>
         </div>
       </div>
 
-      <!-- Megamenu -->
+      <!-- Megamenu
       <div v-if="megaMenuOpen" id="mega-menu-full-dropdown"
         class="mt-1 bg-white shadow-sm bg-gray-50 border-y dark:bg-violet-600 dark:border-purple-500 transition-transform transform">
         <div class="grid max-w-screen-xl px-4 py-5 mx-auto sm:grid-cols-2 md:px-6">
@@ -69,7 +78,7 @@
               description="Get a website tailored to your business needs." />
           </ul>
         </div>
-      </div>
+      </div> -->
     </nav>
   </header>
 </template>
@@ -84,6 +93,8 @@ import DarkModeSwitcher from '~/components/effects/DarkModeSwitcher.vue';
 const scrolled = ref(false);
 const menuOpen = ref(false);
 const megaMenuOpen = ref(false);
+
+const resumeLink = ref('/christopher-bermudez-front-end-developer.pdf');
 
 const handleScroll = () => {
   scrolled.value = window.scrollY > 50;

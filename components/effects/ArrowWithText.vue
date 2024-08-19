@@ -17,55 +17,19 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue';
+  import { useScrollNavigation } from '@/composables/useScrollNavigation';
   
   const sections = [
     'hero-section',
     'my-story-section',
     'services-section',
     'portfolio-section',
-    'contact-section'
+    'contact-section',
   ];
   
-  const currentSection = ref('');
-  
-  const scrollToNextSection = () => {
-    const currentIndex = sections.indexOf(currentSection.value);
-    const nextIndex = (currentIndex + 1) % sections.length;
-    const nextSection = document.getElementById(sections[nextIndex]);
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-  
-  const onScroll = () => {
-    let foundSection = false;
-    for (let i = 0; i < sections.length; i++) {
-      const section = document.getElementById(sections[i]);
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-          currentSection.value = sections[i];
-          foundSection = true;
-          break;
-        }
-      }
-    }
-    if (!foundSection) {
-      currentSection.value = sections[0]; // Default to hero section if no other section is found
-    }
-  };
-  
-  onMounted(() => {
-    window.addEventListener('scroll', onScroll);
-    onScroll();
-  });
-  
-  onUnmounted(() => {
-    window.removeEventListener('scroll', onScroll);
-  });
+  const { scrollToNextSection } = useScrollNavigation(sections);
   </script>
-  
+
   <style scoped>
   .arrow-container {
     position: absolute;
@@ -112,4 +76,4 @@
     }
   }
   </style>
-  
+  ~/composables/useScrollNavigation
