@@ -13,7 +13,7 @@ export default defineI18nConfig(() => ({
           subtitle3: "Ads & Marketing",
           subtitle4: "SEO Services",
           description:
-            "Bridging Design and Functionality for Your Business Success",
+            "Helping businesses in the Greater Orlando area establish an online footprint since 2016. Bridging Design and Functionality for Your Business Success",
           button: "Contact Me",
         },
         navbar: {
@@ -22,7 +22,7 @@ export default defineI18nConfig(() => ({
           web: "Web Development",
           marketing: "Ads & Marketing",
           journal: "Journal",
-          resume: "Resume",
+          about: "About",
           downloadresume: "Download Resume"
         },
         mystory: {
@@ -188,7 +188,7 @@ export default defineI18nConfig(() => ({
           web: "Desarrollo de Web",
           marketing: "Publicidad y Mercadeo",
           journal: "Diario",
-          resume: "Currículum",
+          about: "Sobre Mi",
           downloadresume: "Descargar Currículum"
         },
         mystory: {

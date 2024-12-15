@@ -38,36 +38,6 @@
           </BaseDiv>
         </div>
 
-        <!-- Contact Icons and Section -->
-        <BaseDiv customClass="text-center mt-8">
-          <div class="flex justify-between flex-wrap items-center">
-            <div class="flex items-center py-4">
-              <img
-                src="/assets/css/svg/message.svg"
-                alt="Email"
-                class="w-12 h-12 mr-2"
-              />
-              <p>{{ t("resume.contactInfo.email") }}</p>
-            </div>
-            <div class="flex items-center py-4">
-              <img
-                src="/assets/css/svg/chat.svg"
-                alt="Phone"
-                class="w-12 h-12 mr-2"
-              />
-              <p>{{ t("resume.contactInfo.phone") }}</p>
-            </div>
-            <div class="flex items-center py-4">
-              <img
-                src="/assets/css/svg/map.svg"
-                alt="Address"
-                class="w-12 h-12 mr-2"
-              />
-              <p>{{ t("resume.contactInfo.address") }}</p>
-            </div>
-          </div>
-        </BaseDiv>
-
         <!-- Experience Section -->
         <div class="grid grid-cols-1 md:grid-cols-7 gap-0 md:gap-4">
           <BaseDiv customClass="experience-section md:col-span-5 mt-6">

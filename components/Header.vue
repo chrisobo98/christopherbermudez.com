@@ -47,16 +47,9 @@
               </button>
             </li>
             <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.marketing')" /> -->
-            <NavLink class="nav-item-bounce delay-500 my-4 md:my-1" href="/resume" :text="$t('home.navbar.resume')" />
+            <NavLink class="nav-item-bounce delay-500 my-4 md:my-1" href="/about-me" :text="$t('home.navbar.about')" />
             <!-- <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.journal')" /> -->
 
-            <!-- Download Resume button -->
-
-            <a href="/christopher-bermudez-front-end-developer.pdf"
-              download="christopher-bermudez-front-end-developer.pdf"
-              class="nav-item-bounce delay-300 text-white bg-black border border-purple-800 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
-              {{ $t('home.navbar.downloadresume') }}
-            </a>
             <!-- Appointment Button Mobile -->
             <NuxtLink to="/appointments"
               class="nav-item-bounce mt-4 delay-200 md:hidden text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
