@@ -4,7 +4,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     "@nuxt/image",
     '@dargmuesli/nuxt-cookie-control',
+    "nuxt-gtag",
   ],
+  gtag: {
+    id: "G-3CC4904P02",
+  },
   runtimeConfig: {
     public: {
       gtagId: 'G-3CC4904P02', // Replace with your Google Analytics ID

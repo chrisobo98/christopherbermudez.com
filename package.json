@@ -20,6 +20,7 @@
     "flowbite": "^2.3.0",
     "gsap": "^3.12.5",
     "nuxt": "^3.11.2",
+    "nuxt-gtag": "^3.0.2",
     "typescript": "^5.4.5",
     "vue": "^3.4.27",
     "vue-gtag-next": "^1.14.0",
