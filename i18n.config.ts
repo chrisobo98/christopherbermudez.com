@@ -13,24 +13,51 @@ export default defineI18nConfig(() => ({
           subtitle3: "Ads & Marketing",
           subtitle4: "SEO Services",
           description:
-            "Helping businesses in the Greater Orlando area establish an online footprint since 2016. Bridging Design and Functionality for Your Business Success",
+            "Helping businesses in the Greater Orlando area establish an online footprint since 2016.",
+          callToAction: "How does your website ",
+          coloredCTA: "score?",
           button: "Contact Me",
+          websiteUrl: "Website URL",
+          firstName: "Name",
+          phone: "Phone",
+          email: "Email",
+          audit: "Free Site Audit",
+        },
+        whyUs: {
+          creativeSolutions: "Creative Solutions",
+          resultsTitle: "Building Sites That Drive Results 🚀",
+          whyUsDescription: "Supercharge your online presence with",
+          customWebDevBold: "custom web development",
+          advancedSeoBold: "advanced SEO strategies",
+          creativeSolutionsSummary:
+            "Increase visibility, attract leads, and convert visitors into loyal customers.",
+          optimizedDesignsBold: "80% faster load times",
+          optimizedDesigns: "with optimized designs",
+          leadsBold: "65% more leads",
+          leads: "with targeted SEO campaigns",
+          conversionsBold: "50% higher conversions",
+          conversions: "with user-centric designs",
+          mobileBold: "Complete mobile optimization",
+          mobile: "for better engagement",
+          uptimeBold: "100% uptime guarantee",
+          uptime: "for your business",
+          learnMoreButton: "Learn More About SEO",
         },
         navbar: {
-          appointment: "Set up Appointment",
+          appointment: "30 Min Consultation",
           software: "Software Development",
           web: "Web Development",
           marketing: "Ads & Marketing",
           journal: "Journal",
           about: "About",
-          downloadresume: "Download Resume"
+          downloadresume: "Download Resume",
         },
         mystory: {
-          journey: "A LONG JOURNEY",
+          journey: "ABOUT ME",
           storyheader: "MY STORY",
           storytext:
             "A seasoned front-end software developer with a proven track record in both the corporate sphere and the startup ecosystem. With a passion for crafting user-centric solutions, I ensure that every project not only meets but exceeds expectations.",
-          storyButton: "See Resume",
+          storyButton: "Read More",
         },
         services: {
           subheader: "MY SERVICES",
@@ -95,14 +122,20 @@ export default defineI18nConfig(() => ({
       resume: {
         github: {
           title: "My Github",
-          viewRepo: "View Repo"
+          viewRepo: "View Repo",
         },
         hobbies: {
           title: "Hobbies",
-          list: ["Soccer", "Tennis", "Jogging", "Hiking", "Playing video games"],
+          list: [
+            "Soccer",
+            "Tennis",
+            "Jogging",
+            "Hiking",
+            "Playing video games",
+          ],
         },
         built: {
-          title: "This site was built with"
+          title: "This site was built with",
         },
         profile: {
           name: "Christopher Bermudez",
@@ -169,6 +202,40 @@ export default defineI18nConfig(() => ({
           ],
         },
       },
+      appointments: {
+        info: {
+          contact: "Contact",
+          scheduleConsultation: "Schedule a free 30-minute consultation",
+          intro:
+            "Whether you have a project, an idea, or simply want to say hello.",
+          email: "Email Address",
+          phone: "Phone Number",
+          faq: "Frequently Asked Questions",
+          faqIntro: "These are some common questions about our services.",
+        },
+        faq: {
+          howLongQuestion: "How long will it take to build my website?",
+          howLong:
+            "Since I’m a one-man team dedicated to building websites, I can have a simple site with about 5-8 pages designed, polished, and ready in about a week. On the very first day you will have a tailored “Coming Soon” page with a newsletter lead capture. This lets you share something tangible with friends, start building anticipation, and gauge interest while I work on the final product.",
+          whatDoYouNeedQuestion: "What do you need from me to get started?",
+          whatDoYouNeed:
+            "We’ll start with a free 30-minute consultation where I’ll learn about your needs and vision. Afterwards, we’ll schedule an in-depth, in-person meeting. During this session, we’ll discuss logos, color palettes, and overall branding, define your project goals and expectations & build a clear vision of your site so we can avoid hiccups later. This is where we collaborate deeply to align your ideas with the final product. We will also discuss if there is content readily available or if copywriting will be neccesary and any images you would like on the site.",
+          changesQuestion:
+            "Can I make changes to the website after it’s completed?",
+          changes:
+            "Yeabsolutely. Most of the time, I use Divi, a WordPress theme and page builder that doesn’t require coding skills. I provide training with every website so you can manage updates confidently. For more complex sites involving custom-coded components, I’ll ensure you understand the basics or provide ongoing support if needed. If you ever get stuck or overwhelmed, I’ll be in your corner",
+          mobileQuestions: "Will my website work on mobile devices?",
+          mobile:
+            "100%. I specialize in mobile-first development, meaning your website will be optimized for mobile devices first, with adjustments made for desktop. This approach is efficient and ensures your site works seamlessly on the devices most people use—over 70% of web traffic is mobile.",
+          somethingWrongQuestions:
+            "What happens if something goes wrong with my website?",
+          somethingWrong:
+            "I’m on call 24/7 for emergencies. Whether it’s the 4th of July or Christmas, if your website is in danger, I’ll handle it as a personal priority until the issue is resolved. I keep everything updated and avoid obscure or outdated plugins that could introduce vulnerabilities. Any tools or packages I use are carefully vetted to ensure your site remains secure and stable.",
+          costQuestion:
+            "How much does a website cost, and are there ongoing expenses?",
+          cost: "For a basic website (home page, contact page, lead capture, and 2-3 services pages), prices range from $500–$1,500. This includes training, SEO setup, analytics, and essential plugins like mail or scheduling tools. Ongoing expenses include hosting (GoDaddy, BlueHost, etc.) which can range from $15-50 a month. For more complex websites (10+ services pages, custom solutions, or enterprise-level projects), costs range from $5,000–$10,000, depending on scope and features. For specialized needs, like SaaS platforms or government contracts, contact me directly for a custom quote.",
+        },
+      },
     },
     es: {
       home: {
@@ -179,8 +246,15 @@ export default defineI18nConfig(() => ({
           subtitle3: "Publicidad y Mercadeo",
           subtitle4: "Servicios de SEO",
           description:
-            "Uniendo Diseño y Funcionalidad para el Éxito de su Negocio",
+            "Ayudando a negocios en el área metropolitana de Orlando a establecer su presencia en línea desde 2016.",
+          callToAction: "¿Cómo está su sitio web ",
+          coloredCTA: "posicionado?",
           button: "Contáctame",
+          websiteUrl: "Dirección del sitio web",
+          firstName: "Nombre",
+          phone: "Teléfono",
+          email: "Correo Electrónico",
+          audit: "Auditoría Gratis",
         },
         navbar: {
           appointment: "Establecer Cita",
@@ -189,14 +263,34 @@ export default defineI18nConfig(() => ({
           marketing: "Publicidad y Mercadeo",
           journal: "Diario",
           about: "Sobre Mi",
-          downloadresume: "Descargar Currículum"
+          downloadresume: "Descargar Currículum",
+        },
+        whyUs: {
+          creativeSolutions: "Soluciones Creativas",
+          resultsTitle: "Creando Sitios que Generan Resultados 🚀",
+          whyUsDescription: "Impulsa tu presencia en línea con",
+          customWebDevBold: "desarrollo web personalizado",
+          advancedSeoBold: "estrategias avanzadas de SEO",
+          creativeSolutionsSummary:
+            "Aumenta tu visibilidad, atrae prospectos y convierte visitantes en clientes leales.",
+          optimizedDesignsBold: "80% tiempos de carga más rápidos",
+          optimizedDesigns: "con diseños optimizados",
+          leadsBold: "65% más prospectos",
+          leads: "con campañas de SEO dirigidas",
+          conversionsBold: "50% más conversiones",
+          conversions: "con diseños centrados en el usuario",
+          mobileBold: "Optimización móvil completa",
+          mobile: "para mejor interacción",
+          uptimeBold: "100% de garantía de tiempo activo",
+          uptime: "para tu negocio",
+          learnMoreButton: "Aprende Más Sobre SEO",
         },
         mystory: {
-          journey: "UN VIAJE LARGO",
+          journey: "SOBRE MI",
           storyheader: "MI HISTORIA",
           storytext:
             "Un desarrollador de software front-end experimentado con un historial comprobado tanto en el ámbito corporativo como en el ecosistema de empresas recientemente creadas. Con una pasión por crear soluciones centradas en el usuario, me aseguro de que cada proyecto no solo cumpla, sino que supere las expectativas.",
-          storyButton: "Ver Resume",
+          storyButton: "Leer Más",
         },
         services: {
           subheader: "MIS SERVICIOS",
@@ -261,10 +355,10 @@ export default defineI18nConfig(() => ({
       resume: {
         github: {
           title: "Mi Github",
-          viewRepo: "Ver Repo"
+          viewRepo: "Ver Repo",
         },
         built: {
-          title: "Este Sitio fue Construido Con"
+          title: "Este Sitio fue Construido Con",
         },
         profile: {
           name: "Christopher Bermudez",
@@ -308,7 +402,13 @@ export default defineI18nConfig(() => ({
         },
         hobbies: {
           title: "Pasatiempos",
-          list: ["Fútbol", "Tenis", "Trotar", "Excursionismo", "Jugar video juegos"],
+          list: [
+            "Fútbol",
+            "Tenis",
+            "Trotar",
+            "Excursionismo",
+            "Jugar video juegos",
+          ],
         },
         experience: {
           title: "Experiencia",
@@ -334,6 +434,40 @@ export default defineI18nConfig(() => ({
                 "Desarrollé y mantuve una aplicación para que los mercadólogos pudieran crear, gestionar y optimizar campañas publicitarias en una variedad de plataformas.",
             },
           ],
+        },
+      },
+      appointments: {
+        info: {
+          contact: "Contacto",
+          scheduleConsultation: "Programa una consulta gratuita de 30 minutos",
+          intro:
+            "Ya sea que tengas un proyecto, una idea o simplemente quieras saludar.",
+          email: "Correo Electrónico",
+          phone: "Número de Teléfono",
+          faq: "Preguntas Frecuentes",
+          faqIntro:
+            "Estas son algunas preguntas comunes sobre nuestros servicios.",
+        },
+        faq: {
+          howLongQuestion: "¿Cuánto tiempo tomará construir mi sitio web?",
+          howLong:
+            "Como soy un equipo de una sola persona dedicado a crear sitios web, puedo tener un sitio simple de aproximadamente 5-8 páginas diseñado, pulido y listo en aproximadamente una semana. En el primer día tendrás una página de 'Próximamente' personalizada con una captura de correos para boletines. Esto te permitirá compartir algo tangible con tus amigos, empezar a generar anticipación y medir el interés mientras trabajo en el producto final.",
+          whatDoYouNeedQuestion: "¿Qué necesito proporcionar para empezar?",
+          whatDoYouNeed:
+            "Comenzaremos con una consulta gratuita de 30 minutos donde conoceré tus necesidades y visión. Luego, programaremos una reunión presencial más profunda. Durante esta sesión, discutiremos logotipos, paletas de colores y el branding general, definiremos los objetivos y expectativas de tu proyecto, y construiremos una visión clara de tu sitio para evitar contratiempos más adelante. También hablaremos sobre si tienes contenido disponible o si será necesario redactarlo, así como de las imágenes que deseas incluir en el sitio.",
+          changesQuestion:
+            "¿Puedo hacer cambios en el sitio web después de que esté terminado?",
+          changes:
+            "¡Claro que sí! La mayoría de las veces utilizo Divi, un tema y creador de páginas de WordPress que no requiere conocimientos de programación. Proporciono capacitación con cada sitio web para que puedas gestionar actualizaciones con confianza. Para sitios más complejos que requieran componentes personalizados, me aseguraré de que entiendas lo básico o te brindaré soporte continuo si es necesario. Si en algún momento te sientes abrumado, siempre estaré disponible para ayudarte.",
+          mobileQuestions: "¿Mi sitio web funcionará en dispositivos móviles?",
+          mobile:
+            "100%. Me especializo en desarrollo enfocado primero en dispositivos móviles, lo que significa que tu sitio estará optimizado para móviles desde el principio, con ajustes realizados para escritorio. Este enfoque es eficiente y asegura que tu sitio funcione perfectamente en los dispositivos que la mayoría de las personas usan: más del 70% del tráfico web proviene de móviles.",
+          somethingWrongQuestions:
+            "¿Qué pasa si algo sale mal con mi sitio web?",
+          somethingWrong:
+            "Estoy disponible 24/7 para emergencias. Ya sea el 4 de julio o Navidad, si tu sitio web está en peligro, lo tomaré como una prioridad personal hasta que el problema esté resuelto. Mantengo todo actualizado y evito usar plugins obsoletos o poco confiables que puedan introducir vulnerabilidades. Las herramientas o paquetes que utilizo están cuidadosamente seleccionados para garantizar que tu sitio sea seguro y estable.",
+          costQuestion: "¿Cuánto cuesta un sitio web y hay gastos continuos?",
+          cost: "Para un sitio básico (página de inicio, página de contacto, captura de correos y 2-3 páginas de servicios), los precios varían entre $500 y $1,500. Esto incluye capacitación, configuración de SEO, analíticas y plugins esenciales como herramientas de correos o de programación. Para sitios más complejos (más de 10 páginas de servicios, soluciones personalizadas o proyectos empresariales), los costos varían entre $5,000 y $10,000, dependiendo del alcance y las características. Para necesidades especializadas, como plataformas SaaS o contratos gubernamentales, contáctame directamente para una cotización personalizada.",
         },
       },
     },

@@ -21,6 +21,7 @@
   
   const sections = [
     'hero-section',
+    'why-us-section',
     'my-story-section',
     'services-section',
     'portfolio-section',
@@ -33,7 +34,6 @@
   <style scoped>
   .arrow-container {
     position: absolute;
-    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -76,4 +76,3 @@
     }
   }
   </style>
-  ~/composables/useScrollNavigation

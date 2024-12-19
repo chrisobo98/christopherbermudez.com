@@ -2,7 +2,7 @@
   <div
     class="bg-[#D4D4D4] dark:bg-[#232323] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
   >
-    <div class="mb-4 w-full max-w-xs flex justify-center">
+    <div class="mb-4 w-full flex justify-center">
       <NuxtImg
         provider="cloudflare"
         :src="iconSrc"
@@ -10,7 +10,7 @@
         loading="lazy"
         width="100%"
         height="100%"
-        style="transform: scale(1)"
+        style="transform: scale(0.8)"
         class="rounded-lg max-w-full h-auto"
       />
     </div>

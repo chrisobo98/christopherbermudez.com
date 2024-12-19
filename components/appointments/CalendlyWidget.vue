@@ -1,5 +1,5 @@
 <template>
-    <div class="calendly-inline-widget mt-2 h-screen" :data-url="calendlyUrl"></div>
+    <div class="calendly-inline-widget mt-2 h-screen rounded-lg" :data-url="calendlyUrl"></div>
   </template>
   
   <script setup>
@@ -17,7 +17,7 @@
   
   <style scoped>
   .calendly-inline-widget {
-    min-width: 320px;
+    width: auto;
   }
   </style>
   

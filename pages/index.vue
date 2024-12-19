@@ -2,6 +2,7 @@
     <div>
       <Sidenav />
       <HeroSection id="hero-section" />
+      <WhyUsSection id="why-us-section" />
       <MyStorySection id="my-story-section" />
       <ServicesSection id="services-section" />
       <PortfolioSection id="portfolio-section" />
@@ -12,6 +13,7 @@
   <script setup lang="ts">
   import HeroSection from '../components/homepage/HeroSection.vue'
   import MyStorySection from '../components/homepage/MyStorySection.vue'
+  import WhyUsSection from '../components/homepage/WhyUsSection.vue'
   import ServicesSection from '../components/homepage/ServicesSection.vue'
   import PortfolioSection from '../components/homepage/PortfolioSection.vue'
   import ContactSection from '../components/homepage/ContactSection.vue'

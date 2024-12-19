@@ -2,17 +2,20 @@
   <header :class="{ 'header-scrolled': scrolled }" class="main-header bg-[#ffffff] dark:bg-[#1d1d1d]">
     <nav class="border-gray-200 transition-all duration-500">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <NuxtLink to="/" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8 logo-bounce">
-          <span>C</span><span class="hidden lg:inline">hristopher</span>
-          <span class="text-purple-700">B</span><span class="hidden lg:inline text-purple-700">ermudez</span>
+        <img src="assets/css/images/mobile-logo.png" alt="altText" loading="lazy"
+          class="md:hidden rounded-lg w-2/12" />
+        <NuxtLink :to="localePath('/')" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8 logo-bounce">
+
+          <span class="hidden md:inline">Christopher</span>
+          <span class="hidden md:inline text-purple-700">Bermudez</span>
         </NuxtLink>
         <div class="flex items-center space-x-3 md:space-x-3">
           <!-- Language Selector -->
           <LanguageSelector class="nav-item-bounce delay-100" />
 
           <!-- Appointment Button Desktop -->
-          <NuxtLink to="/appointments"
-            class="nav-item-bounce hidden md:inline delay-200 text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+          <NuxtLink :to="localePath('/appointments')"
+            class="nav-item-bounce hidden md:inline delay-200 text-white bg-purple-600 dark:bg-black border border-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
             {{ $t('home.navbar.appointment') }}
           </NuxtLink>
 
@@ -47,11 +50,11 @@
               </button>
             </li>
             <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.marketing')" /> -->
-            <NavLink class="nav-item-bounce delay-500 my-4 md:my-1" href="/about-me" :text="$t('home.navbar.about')" />
+            <NavLink class="nav-item-bounce delay-500 my-4 md:my-1" :href="localePath('/about-me')" :text="$t('home.navbar.about')" />
             <!-- <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.journal')" /> -->
 
             <!-- Appointment Button Mobile -->
-            <NuxtLink to="/appointments"
+            <NuxtLink :to="localePath('/appointments')"
               class="nav-item-bounce mt-4 delay-200 md:hidden text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
               {{ $t('home.navbar.appointment') }}
             </NuxtLink>
@@ -86,6 +89,8 @@ import DarkModeSwitcher from '~/components/effects/DarkModeSwitcher.vue';
 const scrolled = ref(false);
 const menuOpen = ref(false);
 const megaMenuOpen = ref(false);
+
+const localePath = useLocalePath();
 
 const resumeLink = ref('/christopher-bermudez-front-end-developer.pdf');
 

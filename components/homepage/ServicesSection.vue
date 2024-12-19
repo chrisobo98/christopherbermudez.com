@@ -12,15 +12,59 @@
       <!-- Service Cards with service-card class for proper stagger -->
       <GSAPStaggeredReveal>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <ServiceCard class="service-card" iconSrc="/fa5d35d7-55c0-4dbf-3eba-1090a3515200/public" altText="Consultation Icon"
-            :title="$t('home.services.consultation')" :description="$t('home.services.consultation_text')" />
-          <ServiceCard class="service-card" iconSrc="/30432376-0d5e-44ac-c4fe-a27f6f56bd00/public" altText="Design and Development Icon"
-            :title="$t('home.services.softwaredev')" :description="$t('home.services.softwaredev_text')" />
-          <ServiceCard class="service-card" iconSrc="/4cb06081-6a05-4508-3433-9de4e0360900/public" altText="Support Icon"
-            :title="$t('home.services.maintenance_and_support')"
-            :description="$t('home.services.maintenance_and_support_text')" />
-          <ServiceCard class="service-card" iconSrc="/a1e72b84-138e-4e3b-1f43-41858bda6b00/public" altText="SEO Icon"
-            :title="$t('home.services.seo_marketing_ads')" :description="$t('home.services.seo_marketing_ads_text')" />
+          <div class="bg-white border hover:border-purple-500 dark:bg-[#232323] p-6 rounded-lg shadow-lg text-center flex flex-col items-center transitiona-all duration-1000 border-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+            <div class="mb-4 w-full flex justify-center">
+              <img provider="cloudflare" src="assets/css/images/consulting.png" alt="altText" loading="lazy"
+                width="80%" height="100%" class="rounded-lg max-w-full h-auto" />
+            </div>
+            <div class="my-3">
+
+              <h3 class="text-3xl text-black dark:text-white font-semibold mb-2">
+                {{ $t('home.services.consultation') }}
+              </h3>
+              <p class="text-gray-800 dark:text-gray-200">{{ $t('home.services.consultation_text') }}</p>
+            </div>
+          </div>
+
+          <div class="bg-white border hover:border-purple-500 dark:bg-[#232323] p-6 rounded-lg shadow-lg text-center flex flex-col items-center transitiona-all duration-1000 border-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+            <div class="mb-4 w-full flex justify-center">
+              <img provider="cloudflare" src="assets/css/images/web_development.png" alt="altText" loading="lazy"
+              width="80%" height="100%" class="rounded-lg max-w-full h-auto" />
+            </div>
+            <div class="my-3">
+
+              <h3 class="text-3xl text-black dark:text-white font-semibold mb-2">
+                {{ $t('home.services.softwaredev') }}
+              </h3>
+              <p class="text-gray-800 dark:text-gray-200">{{ $t('home.services.softwaredev_text') }}</p>
+            </div>
+          </div>
+
+          <div class="bg-white border hover:border-purple-500 dark:bg-[#232323] p-6 rounded-lg shadow-lg text-center flex flex-col items-center transitiona-all duration-1000 border-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+            <div class="mb-4 w-full flex justify-center">
+              <img provider="cloudflare" src="assets/css/images/maintenance.png" alt="altText" loading="lazy"
+              width="80%" height="100%" class="rounded-lg max-w-full h-auto" />
+            </div>
+            <div class="my-3">
+              <h3 class="text-3xl text-black dark:text-white font-semibold">
+                {{ $t('home.services.maintenance_and_support') }}
+              </h3>
+              <p class="text-gray-800 dark:text-gray-200">{{ $t('home.services.maintenance_and_support_text') }}</p>
+            </div>
+          </div>
+          <div class="bg-white border hover:border-purple-500 dark:bg-[#232323] p-6 rounded-lg shadow-lg text-center flex flex-col items-center transitiona-all duration-1000 border-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+            <div class="mb-4 w-full flex justify-center">
+              <img provider="cloudflare" src="assets/css/images/services.png" alt="altText" loading="lazy" width="80%"
+                height="80%" class="rounded-lg max-w-full h-auto" />
+            </div>
+            <div class="my-3">
+
+              <h3 class="text-3xl text-black dark:text-white font-semibold mb-2">
+                {{ $t('home.services.seo_marketing_ads') }}
+              </h3>
+              <p class="text-gray-800 dark:text-gray-200">{{ $t('home.services.seo_marketing_ads_text') }}</p>
+            </div>
+          </div>
         </div>
       </GSAPStaggeredReveal>
     </div>

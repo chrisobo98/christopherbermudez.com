@@ -19,6 +19,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 const sections = ref([
   { id: 'hero-section' },
+  { id: 'why-us-section' },
   { id: 'my-story-section' },
   { id: 'services-section' },
   { id: 'portfolio-section' },
@@ -31,7 +32,14 @@ const currentSection = ref('');
 const scrollToSection = (id) => {
   const section = document.getElementById(id);
   if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
+    const offset = 80; // Adjust this value based on your header height or desired padding
+    const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: 'smooth'
+    });
+
     setTimeout(() => {
       currentSection.value = id; // Ensure the current section is updated
     }, 600); // Delay to match the smooth scroll

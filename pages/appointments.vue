@@ -1,17 +1,33 @@
 <template>
-    <div class="py-12 bg-gray-50 bg-white dark:bg-[#1d1d1d] text-gray-900 dark:text-white">
-      <div class="max-w-7xl mx-auto w-10/12">
-        <h1 class="text-6xl font-bold text-center">Schedule an Interview</h1>
-        <hr class="max-w-xs md:max-w-md mx-auto my-8 md:my-4 border border-purple-800"/>
+  <div class="py-12 bg-white dark:bg-[#1d1d1d]">
+    <div class="mx-auto w-5/6">
+      <h1 class="text-6xl font-bold text-center mb-12">
+        {{ $t("appointments.info.contact") }}
+      </h1>
+
+      <!-- Consultation Info -->
+      <BaseDiv customClass="text-center md:text-left">
+        <ConsultationInfo class="mt-12" />
+      </BaseDiv>
+
+      <!-- FAQ Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-20 my-20">
+        <FAQ />
         <CalendlyWidget />
       </div>
+
+      <!-- Competitive Advantage Section -->
     </div>
-  </template>
-  
-  <script setup>
-  import CalendlyWidget from '@/components/appointments/CalendlyWidget.vue';
-  </script>
-  
-  <style scoped>
-  /* Add additional styles if necessary */
-  </style>
+  </div>
+</template>
+
+<script setup>
+import ConsultationInfo from "@/components/appointments/ConsultationInfo.vue";
+import FAQ from "@/components/appointments/FAQ.vue";
+import CalendlyWidget from "@/components/appointments/CalendlyWidget.vue";
+import BaseDiv from "@/components/ui/BaseDiv.vue";
+</script>
+
+<style scoped>
+/* Additional styles if needed */
+</style>
