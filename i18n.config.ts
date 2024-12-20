@@ -144,9 +144,14 @@ export default defineI18nConfig(() => ({
         },
         about: {
           title: "About Me",
-          description:
-            "Driven by a passion for crafting intuitive and user-centric experiences, I bring a wealth of experience in frontend and full-stack development to the table. My journey in the tech industry has been defined by a commitment to excellence, continuous learning, and collaboration. With a track record of delivering impactful solutions in both startup and big corporation settings, I am eager to explore new opportunities and contribute to innovative projects.",
-        },
+          description: `
+            Clermont, Florida has been home for over 15 years now. I’ve planted deep roots here and have a strong connection to this beautiful state. If Florida ever floods, you’ll probably find me paddling a canoe around town—gotta adapt, right?\n\n
+        
+            My journey into the world of tech started back in high school. I was the go-to "tech guy," with a room perpetually strewn with graphics cards, motherboards, and all sorts of gadgetry. Building websites became a way to make some extra cash, and it quickly evolved into a passion.
+        
+            These days, I’m a proud husband and father. When I’m not coding, you’ll find me gaming, hiking or trail running—yes, even in the blazing midday Florida sun (with plenty of sunscreen, of course!).
+                          `,
+        },        
         contactInfo: {
           title: "Contact Info",
           email: "christopherbermudez98(a)gmail.com",
@@ -368,7 +373,7 @@ export default defineI18nConfig(() => ({
         about: {
           title: "Sobre Mí",
           description:
-            "Impulsado por una pasión por crear experiencias intuitivas y centradas en el usuario, aporto una gran experiencia en el desarrollo de frontend y full-stack. Mi trayectoria en la industria tecnológica se ha definido por un compromiso con la excelencia, el aprendizaje continuo y la colaboración. Con un historial de entrega de soluciones impactantes tanto en startups como en grandes corporaciones, estoy ansioso por explorar nuevas oportunidades y contribuir a proyectos innovadores.",
+            "Clermont, Florida ha sido mi hogar durante más de 15 años. Aquí he echado raíces profundas y tengo una conexión especial con este hermoso estado. Si Florida alguna vez se inunda, probablemente me encuentres remando en una canoa por la ciudad—hay que adaptarse, ¿verdad? Mi viaje al mundo de la tecnología comenzó en la secundaria. Yo era el IT guy al que todos acudían, con un cuarto siempre lleno de tarjetas gráficas, placas base y todo tipo de aparatos. Construir sitios web se convirtió en una forma de ganar algo de dinero extra y rápidamente se transformó en una pasión. Hoy en día, soy un orgulloso esposo y padre. Cuando no estoy programando, me encontrarás jugando videojuegos, corriendo por los parques de Florida, incluso bajo el abrasador sol del mediodía (con mucho protector solar, por supuesto).",
         },
         contactInfo: {
           title: "Información de Contacto",

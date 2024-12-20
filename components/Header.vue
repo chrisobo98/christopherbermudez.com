@@ -2,8 +2,8 @@
   <header :class="{ 'header-scrolled': scrolled }" class="main-header bg-[#ffffff] dark:bg-[#1d1d1d]">
     <nav class="border-gray-200 transition-all duration-500">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <img src="assets/css/images/mobile-logo.png" alt="altText" loading="lazy"
-          class="md:hidden rounded-lg w-2/12" />
+        <img src="assets/css/images/mobile-logo.png" @click="navigateHome" alt="altText" loading="lazy"
+          class="md:hidden rounded-lg w-2/12 cursor-pointer" />
         <NuxtLink :to="localePath('/')" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8 logo-bounce">
 
           <span class="hidden md:inline">Christopher</span>
@@ -85,6 +85,14 @@ import LanguageSelector from '~/components/ui/LanguageSelector.vue';  // Import 
 import NavLink from '~/components/ui/NavLink.vue';
 import DropdownItem from '~/components/ui/DropdownItem.vue';
 import DarkModeSwitcher from '~/components/effects/DarkModeSwitcher.vue';
+
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const navigateHome = () => {
+  router.push(localePath('/'));
+}
 
 const scrolled = ref(false);
 const menuOpen = ref(false);

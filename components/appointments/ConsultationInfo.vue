@@ -1,8 +1,8 @@
 <template>
   <div
-    class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 px-6 md:px-16 lg:px-36 mb-16 text-center md:text-left"
+    class="mx-auto grid grid-cols-1 md:grid-cols-2 md:px-16 lg:px-36 mb-16 text-center md:text-left"
   >
-    <div class="flex flex-col justify-center items-center md:items-start">
+    <div class="flex flex-col justify-center items-center md:items-start md:mr-12">
       <h2 class="text-4xl font-semibold leading-10 mb-5">
         {{ $t("appointments.info.scheduleConsultation") }}
       </h2>
@@ -10,10 +10,10 @@
         {{ $t("appointments.info.intro") }}
       </p>
     </div>
-    <div class="border-l-2 border-purple-600 px-8 py-6">
+    <div class="md:border-l-2 text-center border-purple-600 md:px-8 md:py-6">
       <div class="mb-8">
         <h6 class="text-sm font-medium leading-5 pb-3">
-          {{ $t("appointments.info.email") }}
+          {{ $t("appointments.info.email") }}       
         </h6>
         <h3 class="text-xl font-semibold leading-8">
           hello@christopherbermudez.com

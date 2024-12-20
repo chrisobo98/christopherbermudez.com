@@ -9,7 +9,7 @@
           <BaseDiv
             customClass="text-center md:text-left md:col-span-3 lg:col-span-2"
           >
-            <h1 class="text-6xl font-bold">
+            <h1 class="text-5xl md:text-6xl font-bold">
               {{ t("resume.profile.name") }}
             </h1>
             <p class="text-lg text-gray-600 dark:text-gray-400">
