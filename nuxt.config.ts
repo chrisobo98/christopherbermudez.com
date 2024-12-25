@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     '@dargmuesli/nuxt-cookie-control',
     "nuxt-gtag",
+    "@nuxtjs/seo"
   ],
   gtag: {
     id: "G-3CC4904P02",
