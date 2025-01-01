@@ -15,7 +15,7 @@
         <h6 class="text-sm font-medium leading-5 pb-3">
           {{ $t("appointments.info.email") }}       
         </h6>
-        <h3 class="text-xl font-semibold leading-8">
+        <h3 class="text-xl md:text-2xl font-semibold leading-8">
           hello@christopherbermudez.com
         </h3>
       </div>
@@ -23,7 +23,7 @@
         <h6 class="text-sm font-medium leading-5 pb-3">
           {{ $t("appointments.info.phone") }}
         </h6>
-        <h3 class="text-xl font-semibold leading-8">(352) 978-4435</h3>
+        <h3 class="text-xl md:text-2xl font-semibold leading-8">(352) 978-4435</h3>
       </div>
     </div>
   </div>

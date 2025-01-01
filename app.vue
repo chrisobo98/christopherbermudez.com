@@ -5,18 +5,18 @@
 
 <script setup lang="ts">
 useHead({
-  title: "Christopher Bermudez - Web & Software Dev",
+  title: "Christopher Bermudez - Web & Software Developer in Orlando, FL",
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     {
       hid: "description",
       name: "description",
-      content: "Christopher Bermudez - Frontend Developer and SEO Expert",
+      content: "Christopher Bermudez here—an Orlando web developer and SEO expert crafting custom websites and boosting local businesses’ online presence. Let’s work together!",
     },
     {
       name: "keywords",
-      content: "Frontend Developer, SEO, Web Development, Christopher Bermudez",
+      content: "Web Development Orlando, SEO Expert Orlando, Custom Websites Florida, Central Florida Web Developer, Local SEO Services Orlando, Small Business Website Design, Digital Marketing Central Florida, Tailored Web Solutions Orlando, E-commerce Development Orlando, Responsive Website Design Florida, Affordable web development for Orlando small businesses, Improve website rankings with local SEO services, Custom software solutions for Central Florida companies",
     },
     { name: "author", content: "Christopher Bermudez" },
   ],

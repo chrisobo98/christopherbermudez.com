@@ -13,7 +13,7 @@ export default defineI18nConfig(() => ({
           subtitle3: "Ads & Marketing",
           subtitle4: "SEO Services",
           description:
-            "Helping businesses in the Greater Orlando area establish an online footprint since 2016.",
+            "Helping businesses in Central Florida establish an online footprint since 2016.",
           callToAction: "How does your website ",
           coloredCTA: "score?",
           button: "Contact Me",
@@ -251,7 +251,7 @@ export default defineI18nConfig(() => ({
           subtitle3: "Publicidad y Mercadeo",
           subtitle4: "Servicios de SEO",
           description:
-            "Ayudando a negocios en el área metropolitana de Orlando a establecer su presencia en línea desde 2016.",
+            "Ayudando a negocios en la Florida Central a establecer su presencia en el web desde 2016.",
           callToAction: "¿Cómo está su sitio web ",
           coloredCTA: "posicionado?",
           button: "Contáctame",
