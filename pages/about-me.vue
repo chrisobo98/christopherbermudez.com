@@ -25,14 +25,12 @@
           <BaseDiv
             class="animated-div md:col-span-3 lg:col-span-1 mt-4 md:mt-0"
           >
-            <img
-              style="transform: scale(1)"
-              width="100%"
-              height="100%"
+            <NuxtImg
+              provider="cloudinary"
               loading="lazy"
-              src="assets/css/images/mountainman.png"
+              src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/mountainman_tgrxvp.png"
               alt="Christopher Bermudez"
-              class="rounded-lg max-w-full h-auto nuxt-img-animation"
+              class="rounded-lg w-auto h-auto nuxt-img-animation"
             />
           </BaseDiv>
         </div>
