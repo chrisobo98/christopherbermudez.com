@@ -19,7 +19,10 @@ export default defineNuxtConfig({
     provider: 'cloudflare',
     cloudflare: {
       baseURL: process.env.CLOUDFLARE_IMAGES_URL
-    }
+    },
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dkaakonrp/image/fetch/',
+    },
   },
   i18n: {
     locales: [

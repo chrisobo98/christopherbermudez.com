@@ -151,11 +151,11 @@ import BuiltWithContainer from "@/components/resume/BuiltWithContainer.vue";
 import GithubProfile from "@/components/resume/GithubProfile.vue";
 
 // Assets
-import MegaportLogo from "/assets/css/images/megaportlogo.jpeg";
-import SweetieBoyLogo from "/assets/css/images/autosdlvrd_logo.jpeg";
-import GrowthChannelLogo from "/assets/css/images/growthchannel_logo.jpeg";
-import UCFLogo from "/assets/css/images/university_of_central_florida_division_of_continuing_education_logo.jpeg";
-import ValenciaLogo from "/assets/css/images/valencia_college_logo.jpeg";
+import MegaportLogo from "/assets/css/images/companies/megaportlogo.jpeg";
+import SweetieBoyLogo from "/assets/css/images/companies/autosdlvrd_logo.jpeg";
+import GrowthChannelLogo from "/assets/css/images/companies/growthchannel_logo.jpeg";
+import UCFLogo from "/assets/css/images/companies/university_of_central_florida_division_of_continuing_education_logo.jpeg";
+import ValenciaLogo from "/assets/css/images/companies/valencia_college_logo.jpeg";
 
 const { t } = useI18n();
 

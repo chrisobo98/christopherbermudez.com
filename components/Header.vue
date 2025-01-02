@@ -2,7 +2,7 @@
   <header :class="{ 'header-scrolled': scrolled }" class="main-header bg-[#ffffff] dark:bg-[#1d1d1d]">
     <nav class="border-gray-200 transition-all duration-500">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <img src="assets/css/images/mobile-logo.png" @click="navigateHome" alt="altText" loading="lazy"
+        <NuxtImg provider="cloudinary" src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772391/mobile-logo_dklwzn.png" @click="navigateHome" alt="Bermudez 'B' Logo" loading="lazy"
           class="md:hidden rounded-lg w-2/12 cursor-pointer" />
         <NuxtLink :to="localePath('/')" class="text-4xl font-semibold whitespace-nowrap bayon-regular h8 logo-bounce">
 

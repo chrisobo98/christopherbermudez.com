@@ -47,10 +47,7 @@
         </GSAPHeroEffect>
 
         <div class="z-10 md:hidden w-5/6 mx-auto">
-          <img
-            class="nuxt-img-animation"
-            src="assets/css/images/hero-image.png"
-          />
+          <NuxtImg provider="cloudinary" class="nuxt-img-animation" loading="lazy" alt="Orlando Websites, SEO & Marketing" src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png" />
         </div>
 
         <!-- Button -->
@@ -67,10 +64,7 @@
         class="hidden lg:mt-16 z-10 md:w-3/6 lg:w-full mx-auto lg:col-span-5 md:flex"
       >
         <GSAPHeroEffect :delay="1" :duration="2">
-          <img
-            class="nuxt-img-animation mb-8"
-            src="assets/css/images/hero-image.png"
-          />
+          <NuxtImg provider="cloudinary" class="nuxt-img-animation" loading="lazy" alt="Orlando Websites, SEO & Marketing" src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png" />
         </GSAPHeroEffect>
       </div>
     </div>

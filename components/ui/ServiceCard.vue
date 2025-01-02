@@ -1,16 +1,16 @@
 <template>
   <div
-    class="bg-[#D4D4D4] dark:bg-[#232323] p-6 rounded-lg shadow-lg text-center flex flex-col items-center"
+    class="bg-white border dark:border-gray-700 hover:border-purple-500 dark:bg-[#232323] p-6 rounded-lg shadow-lg text-center flex flex-col items-center transition-all duration-1000 border-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt';
+"
   >
     <div class="mb-4 w-full flex justify-center">
       <NuxtImg
-        provider="cloudflare"
+        provider="cloudinary"
         :src="iconSrc"
         :alt="altText"
         loading="lazy"
         width="100%"
         height="100%"
-        style="transform: scale(0.8)"
         class="rounded-lg max-w-full h-auto"
       />
     </div>
