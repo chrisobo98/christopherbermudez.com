@@ -30,7 +30,7 @@
               loading="lazy"
               src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/mountainman_tgrxvp.png"
               alt="Christopher Bermudez"
-              class="rounded-lg w-auto h-auto nuxt-img-animation"
+              class="rounded-lg w-full h-auto nuxt-img-animation"
             />
           </BaseDiv>
         </div>
