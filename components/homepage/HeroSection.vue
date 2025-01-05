@@ -4,25 +4,10 @@
       class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
     >
       <div class="mr-auto place-self-center z-10 mt-6 lg:col-span-7">
-        <h1 class="text-6xl text-center lg:text-left font-bold drop-shadow-xl">
+        <h1 class="lg:text-7xl text-6xl text-center lg:text-left lg:max-w-xl font-bold drop-shadow-xl">
           <GSAPHeroEffect>
             {{ $t("home.hero.title") }}
           </GSAPHeroEffect>
-        </h1>
-        <!-- Typing Container and Effect -->
-        <h1
-          class="text-4xl md:text-5xl font-semibold text-center lg:text-left text-purple-600 typing-container"
-        >
-          <TypingEffect
-            :texts="[
-              $t('home.hero.subtitle1'),
-              $t('home.hero.subtitle2'),
-              $t('home.hero.subtitle3'),
-              $t('home.hero.subtitle4'),
-            ]"
-            :speed="50"
-            :delay="1500"
-          />
         </h1>
 
         <!-- Hero Description -->
@@ -73,16 +58,13 @@
 
     <!-- Bounce to next section arrow -->
     <GSAPHeroEffect :delay="2" :duration="2">
-      <ArrowWithText class="md:flex md:-mt-24" />
+      <ArrowWithText class="md:flex md:-mt-4" />
     </GSAPHeroEffect>
   </section>
 </template>
 
 <script setup lang="ts">
 import GSAPHeroEffect from "@/components/effects/GSAPAnimatedRevealEffect.vue";
-import TypingEffect from "@/components/effects/TypingEffect.vue";
-import BaseButton from "@/components/ui/BaseButton.vue";
-import BaseButtonInverted from "@/components/ui/BaseButtonInverted.vue";
 import ArrowWithText from "@/components/effects/ArrowWithText.vue";
 import BlobEffect from "@/components/effects/BlobEffect.vue";
 import SiteScanner from "@/components/homepage/SiteScanner.vue";

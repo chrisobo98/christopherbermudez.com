@@ -7,7 +7,7 @@ export default defineI18nConfig(() => ({
     en: {
       home: {
         hero: {
-          title: "Christopher Bermudez",
+          title: "Web Development & SEO Specialist",
           subtitle1: "Web Development",
           subtitle2: "Software Development",
           subtitle3: "Ads & Marketing",
@@ -245,7 +245,7 @@ export default defineI18nConfig(() => ({
     es: {
       home: {
         hero: {
-          title: "Christopher Bermudez",
+          title: "Desarrollador De Web y Especialista en SEO",
           subtitle1: "Desarrollo de Sitios Web",
           subtitle2: "Desarrollo de Programas",
           subtitle3: "Publicidad y Mercadeo",
