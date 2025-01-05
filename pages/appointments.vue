@@ -26,6 +26,26 @@ import ConsultationInfo from "@/components/appointments/ConsultationInfo.vue";
 import FAQ from "@/components/appointments/FAQ.vue";
 import CalendlyWidget from "@/components/appointments/CalendlyWidget.vue";
 import BaseDiv from "@/components/ui/BaseDiv.vue";
+
+useHead({
+  title: "Schedule a Consultation with Christopher Bermudez | Web Design & SEO",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Book an appointment with Christopher Bermudez to discuss your web design and SEO needs. Let’s create a strategy tailored to your business goals.",
+    },
+    {
+      property: "og:title",
+      content: "Book an Appointment - Christopher Bermudez",
+    },
+    {
+      property: "og:description",
+      content:
+        "Schedule a consultation to explore how Christopher Bermudez can help your business thrive online.",
+    },
+  ],
+});
 </script>
 
 <style scoped>

@@ -117,10 +117,10 @@
             <h2 class="text-4xl font-semibold mb-3">
               {{ t("resume.hobbies.title") }}
             </h2>
-            <p>{{t("resume.hobbies.list[0]") }}</p>
-            <p>{{t("resume.hobbies.list[1]") }}</p>
-            <p>{{t("resume.hobbies.list[2]") }}</p>
-            <p>{{t("resume.hobbies.list[3]") }}</p>
+            <p>{{ t("resume.hobbies.list[0]") }}</p>
+            <p>{{ t("resume.hobbies.list[1]") }}</p>
+            <p>{{ t("resume.hobbies.list[2]") }}</p>
+            <p>{{ t("resume.hobbies.list[3]") }}</p>
             <!-- Add more languages here -->
           </div>
         </BaseDiv>
@@ -132,7 +132,9 @@
 
         <!-- This site was built with -->
         <BaseDiv class="mt-8">
-            <h2 class="text-4xl font-semibold text-center md:text-left mb-4">{{ $t('resume.built.title') }}</h2>
+          <h2 class="text-4xl font-semibold text-center md:text-left mb-4">
+            {{ $t("resume.built.title") }}
+          </h2>
           <BuiltWithContainer />
         </BaseDiv>
       </GSAPStaggeredEffect>
@@ -154,6 +156,26 @@ import SweetieBoyLogo from "/assets/css/images/companies/autosdlvrd_logo.jpeg";
 import GrowthChannelLogo from "/assets/css/images/companies/growthchannel_logo.jpeg";
 import UCFLogo from "/assets/css/images/companies/university_of_central_florida_division_of_continuing_education_logo.jpeg";
 import ValenciaLogo from "/assets/css/images/companies/valencia_college_logo.jpeg";
+
+useHead({
+  title: "About Christopher Bermudez - Building Digital Success in Florida",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Learn more about Christopher Bermudez, a passionate web designer and SEO expert dedicated to helping businesses grow through innovative digital marketing strategies.",
+    },
+    {
+      property: "og:title",
+      content: "About Christopher Bermudez - Digital Marketing Specialist",
+    },
+    {
+      property: "og:description",
+      content:
+        "Get to know Christopher Bermudez, a creative professional committed to delivering outstanding results in web design and SEO.",
+    },
+  ],
+});
 
 const { t } = useI18n();
 
