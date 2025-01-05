@@ -21,7 +21,7 @@ import Sidenav from "../components/effects/Sidenav.vue";
 
 useHead({
   title:
-    "Christopher Bermudez - Web Design, SEO, & Digital Marketing in Florida",
+    "Web Design, SEO, & Digital Marketing in Florida",
   meta: [
     {
       name: "description",
@@ -30,7 +30,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: "Christopher Bermudez - Web Design, SEO, & Digital Marketing",
+      content: "Web Design, SEO, & Digital Marketing",
     },
     {
       property: "og:description",

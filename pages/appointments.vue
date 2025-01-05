@@ -28,7 +28,7 @@ import CalendlyWidget from "@/components/appointments/CalendlyWidget.vue";
 import BaseDiv from "@/components/ui/BaseDiv.vue";
 
 useHead({
-  title: "Schedule a Consultation with Christopher Bermudez | Web Design & SEO",
+  title: "Schedule a Consultation | Web Design & SEO",
   meta: [
     {
       name: "description",
@@ -37,7 +37,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: "Book an Appointment - Christopher Bermudez",
+      content: "Book a Web Design & SEO Appointment",
     },
     {
       property: "og:description",
