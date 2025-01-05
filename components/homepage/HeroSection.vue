@@ -57,9 +57,7 @@
     <BlobEffect />
 
     <!-- Bounce to next section arrow -->
-    <GSAPHeroEffect :delay="2" :duration="2">
       <ArrowWithText class="md:flex md:-mt-4" />
-    </GSAPHeroEffect>
   </section>
 </template>
 

@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     "@nuxt/image",
-    '@dargmuesli/nuxt-cookie-control',
     "nuxt-gtag",
     "@nuxtjs/seo"
   ],
@@ -79,94 +78,4 @@ export default defineNuxtConfig({
       ]
     }
   },
-  cookieControl: {
-    barPosition: 'bottom-full',
-    closeModalOnClickOutside: true,
-    colors: {
-      barBackground: '#000',
-      barButtonBackground: '#fff',
-      barButtonColor: '#000',
-      barButtonHoverBackground: '#333',
-      barButtonHoverColor: '#fff',
-      barTextColor: '#fff',
-      modalBackground: '#fff',
-      modalButtonBackground: '#000',
-      modalButtonColor: '#fff',
-      modalButtonHoverBackground: '#333',
-      modalButtonHoverColor: '#fff',
-      modalOverlay: '#000',
-      modalOverlayOpacity: 0.8,
-      modalTextColor: '#000',
-    },
-    cookies: {
-      necessary: [
-        {
-          description: {
-            en: 'This cookie is essential for the website to function properly.',
-            es: 'Esta cookie es esencial para que el sitio web funcione correctamente.'
-          },
-          id: 'necessary',
-          name: {
-            en: 'Necessary',
-            es: 'Necesaria'
-          },
-        },
-      ],
-      optional: [
-        {
-          description: {
-            en: 'This cookie is used for Google Analytics.',
-            es: 'Esta cookie se utiliza para Google Analytics.'
-          },
-          id: 'google-analytics',
-          name: {
-            en: 'Google Analytics',
-            es: 'Google Analytics'
-          },
-          links: {
-            'https://policies.google.com/privacy': 'Privacy Policy',
-          },
-        },
-      ],
-    },
-    isAcceptNecessaryButtonEnabled: true,
-    isControlButtonEnabled: true,
-    locales: ['en', 'es'],
-    localeTexts: {
-      en: {
-        accept: 'Accept',
-        acceptAll: 'Accept All',
-        bannerDescription: 'We use cookies to ensure you get the best experience on our website.',
-        bannerTitle: 'Cookies Information',
-        close: 'Close',
-        cookiesFunctional: 'Functional Cookies',
-        cookiesNecessary: 'Necessary Cookies',
-        cookiesOptional: 'Optional Cookies',
-        iframeBlocked: 'Iframes are blocked',
-        decline: 'Decline',
-        declineAll: 'Decline All',
-        here: 'here',
-        manageCookies: 'Manage Cookies',
-        save: 'Remember',
-        settingsUnsaved: 'You have unsaved settings',
-      },
-      es: {
-        accept: 'Aceptar',
-        acceptAll: 'Aceptar Todas',
-        bannerDescription: 'Usamos cookies para asegurarnos de que obtenga la mejor experiencia en nuestro sitio web.',
-        bannerTitle: 'Información de Cookies',
-        close: 'Cerrar',
-        cookiesFunctional: 'Cookies Funcionales',
-        cookiesNecessary: 'Cookies Necesarias',
-        cookiesOptional: 'Cookies Opcionales',
-        iframeBlocked: 'Iframes están bloqueados',
-        decline: 'Rechazar',
-        declineAll: 'Rechazar Todas',
-        here: 'aquí',
-        manageCookies: 'Gestionar Cookies',
-        save: 'Guardar',
-        settingsUnsaved: 'Tienes configuraciones sin guardar',
-      }
-    }
-  }
 });
