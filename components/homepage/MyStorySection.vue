@@ -46,7 +46,7 @@ const router = useRouter();
 const localePath = useLocalePath();
 
 const navigateToResume = () => {
-  router.push(localePath('/about-me'));
+  router.push(localePath('/about'));
 }
 </script>
 
