@@ -5,7 +5,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: "Christopher Bermudez - Web Developer & SEO Expert in Orlando & Clermont, FL",
+  title: "Web Developer & SEO Expert in Orlando & Clermont, FL",
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
