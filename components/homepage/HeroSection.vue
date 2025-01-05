@@ -4,7 +4,9 @@
       class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
     >
       <div class="mr-auto place-self-center z-10 mt-6 lg:col-span-7">
-        <h1 class="lg:text-7xl text-6xl text-center lg:text-left lg:max-w-xl font-bold drop-shadow-xl">
+        <h1
+          class="lg:text-7xl text-6xl text-center lg:text-left lg:max-w-xl font-bold drop-shadow-xl"
+        >
           <GSAPHeroEffect>
             {{ $t("home.hero.title") }}
           </GSAPHeroEffect>
@@ -32,7 +34,13 @@
         </GSAPHeroEffect>
 
         <div class="z-10 md:hidden w-5/6 mx-auto">
-          <NuxtImg provider="cloudinary" class="nuxt-img-animation" alt="Orlando Websites, SEO & Marketing" src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png" />
+          <NuxtImg
+            provider="cloudinary"
+            loading="lazy"
+            class="nuxt-img-animation"
+            alt="Orlando Websites, SEO & Marketing"
+            src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png"
+          />
         </div>
 
         <!-- Button -->
@@ -49,7 +57,13 @@
         class="hidden lg:mt-16 z-10 md:w-3/6 lg:w-full mx-auto lg:col-span-5 md:flex"
       >
         <GSAPHeroEffect :delay="1" :duration="2">
-          <NuxtImg provider="cloudinary" class="nuxt-img-animation" alt="Orlando Websites, SEO & Marketing" src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png" />
+          <NuxtImg
+            provider="cloudinary"
+            loading="lazy"
+            class="nuxt-img-animation"
+            alt="Orlando Websites, SEO & Marketing"
+            src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png"
+          />
         </GSAPHeroEffect>
       </div>
     </div>
@@ -57,7 +71,7 @@
     <BlobEffect />
 
     <!-- Bounce to next section arrow -->
-      <ArrowWithText class="md:flex md:-mt-4" />
+    <ArrowWithText class="md:flex md:-mt-4" />
   </section>
 </template>
 

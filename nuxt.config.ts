@@ -1,13 +1,17 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/i18n',
-    "@nuxt/image",
-    "nuxt-gtag",
-    "@nuxtjs/seo"
-  ],
+  modules: ['@nuxtjs/i18n', "@nuxt/image", "nuxt-gtag", "@nuxtjs/seo", '@nuxtjs/google-fonts'],
   gtag: {
     id: "G-3CC4904P02",
+    async: true,  // Make sure this is asynchronously loaded
+  },
+  googleFonts: {
+    families: {
+      Bayon: true, // Load the Bayon font
+      Ubuntu: [300, 400, 500, 700], // Load the specified weights for Ubuntu font
+    },
+    display: 'swap', // Use font-display: swap for better font loading behavior
+    preconnect: true, // Preconnect to Google Fonts for faster resource loading
   },
   runtimeConfig: {
     public: {
@@ -47,17 +51,6 @@ export default defineNuxtConfig({
       titleTemplate: '%s · Christopher Bermudez',
       meta: [
         { name: 'description', content: 'Your go-to expert for web design, SEO, and digital marketing in Florida.' },
-      ],
-      link: [
-        // Preconnect to Google Fonts
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
-        // Preload critical fonts
-        { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Bayon&display=swap', as: 'style' },
-        { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap', as: 'style' },
-        // Link to the fonts' stylesheets
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Bayon&display=swap' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap' }
       ],
       script: [
         {
