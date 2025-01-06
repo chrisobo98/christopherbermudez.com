@@ -2,8 +2,17 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', "@nuxt/image", "nuxt-gtag", "@nuxtjs/seo", '@nuxtjs/google-fonts'],
   gtag: {
-    id: "G-3CC4904P02",
-    async: true,  // Make sure this is asynchronously loaded
+    id: 'G-3CC4904P02', // Replace with your Google Analytics ID
+    enabled: process.env.NODE_ENV === 'production', // Disable in development
+    config: {
+      anonymize_ip: true, // Optional: Enable anonymized IPs for privacy
+    },
+    loadingStrategy: 'defer', // Use defer to avoid blocking rendering
+  },
+  runtimeConfig: {
+    public: {
+      gtagId: 'G-3CC4904P02', // Dynamic ID if needed
+    },
   },
   googleFonts: {
     families: {
@@ -12,11 +21,6 @@ export default defineNuxtConfig({
     },
     display: 'swap', // Use font-display: swap for better font loading behavior
     preconnect: true, // Preconnect to Google Fonts for faster resource loading
-  },
-  runtimeConfig: {
-    public: {
-      gtagId: 'G-3CC4904P02', // Replace with your Google Analytics ID
-    }
   },
   image: {
     provider: 'cloudflare',
