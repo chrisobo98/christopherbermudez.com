@@ -36,7 +36,8 @@
         <div class="z-10 md:hidden w-5/6 mx-auto">
           <NuxtImg
             provider="cloudinary"
-            loading="lazy"
+            loading="eager"
+            format="webp"
             class="nuxt-img-animation"
             alt="Orlando Websites, SEO & Marketing"
             src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png"
