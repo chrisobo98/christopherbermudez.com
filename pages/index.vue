@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-11/12 md:w-full mx-auto">
     <Sidenav />
     <HeroSection id="hero-section" />
     <WhyUsSection id="why-us-section" />

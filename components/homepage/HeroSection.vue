@@ -15,7 +15,7 @@
         <!-- Hero Description -->
         <GSAPHeroEffect :delay="1" :duration="2">
           <h2
-            class="text-xl md:mt-4 md:text-2xl font-extralight text-center lg:text-left ubuntu-light"
+            class="text-xl md:mt-4 md:text-3xl font-extralight text-center lg:text-left ubuntu-light"
           >
             {{ $t("home.hero.description") }}
           </h2>
@@ -23,14 +23,15 @@
 
         <!-- Call to Action -->
         <GSAPHeroEffect :delay="1" :duration="2">
-          <p
+          <!-- text for site scanner -->
+          <!-- <p
             class="text-xl md:mt-4 md:text-2xl font-extralight text-center lg:text-left"
           >
             {{ $t("home.hero.callToAction")
             }}<span class="font-bold text-purple-500">{{
               $t("home.hero.coloredCTA")
             }}</span>
-          </p>
+          </p> -->
         </GSAPHeroEffect>
 
         <div class="z-10 md:hidden w-5/6 mx-auto">
@@ -50,7 +51,8 @@
         >
           <!-- Second Button -->
           <GSAPHeroEffect :delay="1.5" :duration="2">
-            <SiteScanner />
+            <!-- Need subscription -->
+            <!-- <SiteScanner /> -->
           </GSAPHeroEffect>
         </div>
       </div>
