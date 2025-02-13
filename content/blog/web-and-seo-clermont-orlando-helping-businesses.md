@@ -46,7 +46,7 @@ If you don’t have a website or **your current one isn’t bringing in business
 
 Most businesses fail online because their websites **aren’t optimized for search engines**. If you’re not ranking for keywords like **“best plumber in Clermont”** or **“boutique store near me,”** you’re invisible to potential customers.
 
-I use **proven SEO strategies** to::br✅ Find the **right keywords** for your industry\:br✅ Optimize your site’s **headings, content, and metadata**:br ✅ Help you rank higher in **Google searches for local customers**:br ✅ Improve your **Google Business Profile** for more visibility
+I use **proven SEO strategies** to: \:br✅ Find the **right keywords** for your industry \:br✅ Optimize your site’s **headings, content, and metadata**:br ✅ Help you rank higher in **Google searches for local customers**:br ✅ Improve your **Google Business Profile** for more visibility
 
 ### **3. Business Consulting & Online Growth Strategy**
 
