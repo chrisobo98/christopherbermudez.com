@@ -13,6 +13,7 @@ const { data: posts } = await useAsyncData("blog-list", () => {
 </script>
 
 <template>
+  <div class="w-9/12 mx-auto">
   <div class="container mx-auto p-8 ">
     <!-- Hero Header with Background Image -->
     <div 
@@ -49,5 +50,6 @@ const { data: posts } = await useAsyncData("blog-list", () => {
         </ul>
       </aside>
     </div>
+  </div>
   </div>
 </template>
