@@ -51,6 +51,7 @@
             </li>
             <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.marketing')" /> -->
             <NavLink class="nav-item-bounce delay-500 my-4 md:my-1" :href="localePath('/about')" :text="$t('home.navbar.about')" />
+            <NavLink class="nav-item-bounce delay-500 my-4 md:my-1" :href="localePath('/blog')" text="Blog" />
             <!-- <NavLink class="nav-item-bounce delay-500" href="#" :text="$t('home.navbar.journal')" /> -->
 
             <!-- Appointment Button Mobile -->
