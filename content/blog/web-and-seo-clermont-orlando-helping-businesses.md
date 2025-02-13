@@ -46,7 +46,7 @@ If you don’t have a website or **your current one isn’t bringing in business
 
 Most businesses fail online because their websites **aren’t optimized for search engines**. If you’re not ranking for keywords like **“best plumber in Clermont”** or **“boutique store near me,”** you’re invisible to potential customers.
 
-I use **proven SEO strategies** to: \:br✅ Find the **right keywords** for your industry \:br✅ Optimize your site’s **headings, content, and metadata**:br ✅ Help you rank higher in **Google searches for local customers**:br ✅ Improve your **Google Business Profile** for more visibility
+I use **proven SEO strategies** to: :br ✅ Find the **right keywords** for your industry :br ✅ Optimize your site’s **headings, content, and metadata**:br ✅ Help you rank higher in **Google searches for local customers**:br ✅ Improve your **Google Business Profile** for more visibility
 
 ### **3. Business Consulting & Online Growth Strategy**
 
@@ -70,11 +70,11 @@ People in **Clermont & Orlando** don’t just Google “restaurants” or “ele
 
 You’re **losing customers** to businesses that have their SEO in order.
 
-I make sure your site is::br✅ **Optimized for local searches** (so customers in your area find you)\:br✅ **Listed correctly in online directories** (Google, Yelp, and more)\:br✅ **Structured to rank for the right keywords** (not just random terms)
+I make sure your site is: :br ✅ **Optimized for local searches** (so customers in your area find you) :br ✅ **Listed correctly in online directories** (Google, Yelp, and more) :br ✅ **Structured to rank for the right keywords** (not just random terms)
 
 ## **What I’ve Been Working on Lately**
 
-I’m currently helping businesses in **Clermont and Orlando**::br🔥 **Build brand-new websites** that actually bring in business\:br🔥 **Fix slow, outdated websites** and improve their SEO\:br🔥 **Create local SEO strategies** to get them ranking higher\:br🔥 **Develop content & blogs** to attract more visitors\:br🔥 **Offer business consulting** to help owners grow online
+I’m currently helping businesses in **Clermont and Orlando**: :br 🔥 **Build brand-new websites** that actually bring in business :br 🔥 **Fix slow, outdated websites** and improve their SEO :br 🔥 **Create local SEO strategies** to get them ranking higher :br 🔥 **Develop content & blogs** to attract more visitors :br 🔥 **Offer business consulting** to help owners grow online
 
 ## **Next Steps: Let’s Build a Website That Works**
 
