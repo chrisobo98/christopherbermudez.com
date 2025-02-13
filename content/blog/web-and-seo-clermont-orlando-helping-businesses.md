@@ -19,7 +19,7 @@ slug: web-and-seo-clermont-orlando-helping-businesses
 
 A business without a strong online presence is **missing out on customers**. In **Clermont, Orlando, and surrounding areas**, people search online before they visit a business. If your site is slow, outdated, or not optimized for search engines, you’re handing leads to competitors.
 
-I’ve been in **web development since 2016** and started consulting again in **June 2024**, helping local businesses build **SEO-driven websites that load fast, look professional, and convert visitors into customers**.
+I’ve been in the **web development field since 2016** and started consulting again in **June 2024**, helping local businesses build **SEO-driven websites that load fast, look professional, and convert visitors into customers**.
 
 If you're searching for:
 
