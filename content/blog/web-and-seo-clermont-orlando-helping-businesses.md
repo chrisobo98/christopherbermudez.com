@@ -3,7 +3,7 @@ title: "Web Developer in Clermont & Orlando: Build a Website That Gets Customers
 description: If you're a business owner in Clermont or Orlando, having a fast,
   SEO-friendly website is key to attracting customers. Here’s how I help
   businesses grow online.
-date: 2025-02-12
+date: 2025-02-12T00:00:00.000Z
 image: /images/web-developer-clermont.jpg
 tags:
   - web development
@@ -13,6 +13,11 @@ tags:
   - Orlando
 author: Christopher Bermudez
 slug: web-and-seo-clermont-orlando-helping-businesses
+seo:
+  title: "Web Developer in Clermont & Orlando: Build a Website That Gets Customers"
+  description: If you're a business owner in Clermont or Orlando, having a fast,
+    SEO-friendly website is key to attracting customers. Here’s how I help
+    businesses grow online.
 ---
 
 ## **Why Your Business Needs a Better Website**
