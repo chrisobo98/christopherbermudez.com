@@ -1,15 +1,6 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/i18n', "@nuxt/image", "nuxt-gtag", "@nuxtjs/seo", '@nuxtjs/google-fonts', '@nuxt/content'],
-  content: {
-    markdown: {
-      toc: {
-        depth: 3,
-        searchDepth: 3,
-      },
-    },
-  },
-
+  modules: ['@nuxtjs/i18n', "@nuxt/image", "nuxt-gtag", "@nuxtjs/seo", '@nuxtjs/google-fonts', '@nuxt/content', '@nuxthq/studio'],
   gtag: {
     id: 'G-3CC4904P02', // Replace with your Google Analytics ID
     enabled: process.env.NODE_ENV === 'production', // Disable in development
