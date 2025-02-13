@@ -1,6 +1,16 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/i18n', "@nuxt/image", "nuxt-gtag", "@nuxtjs/seo", '@nuxtjs/google-fonts', '@nuxt/content', '@nuxthq/studio'],
+  modules: ['@nuxtjs/i18n', "@nuxt/image", "nuxt-gtag", "@nuxtjs/seo", '@nuxtjs/google-fonts', '@nuxt/content'],
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio',
+      gitInfo: {
+        name: 'christopherbermudez.com',
+        owner: 'chrisobo98',
+        url: 'https://github.com/chrisobo98/christopherbermudez.com'
+      }
+    }
+  },
   gtag: {
     id: 'G-3CC4904P02', // Replace with your Google Analytics ID
     enabled: process.env.NODE_ENV === 'production', // Disable in development
