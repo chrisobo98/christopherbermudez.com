@@ -13,7 +13,7 @@
 
             <!-- Text Content -->
             <div>
-                <p class="text-purple-500 dark:text-[#b695ff] font-semibold uppercase mb-2">
+                <p class="text-purple-500 dark:text-[#b695ff] mt-0 md:mt-20 lg:mt-0 font-semibold uppercase mb-2">
                     {{ $t('home.whyUs.creativeSolutions') }}
                 </p>
                 <h2 class="mb-6 text-6xl font-bold text-gray-900 dark:text-white">

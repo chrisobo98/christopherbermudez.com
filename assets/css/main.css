@@ -135,9 +135,21 @@ html {
   font-style: italic;
 }
 
-/* Apply Bayon font to headers */
-h1,
-h2,
+h1 {
+  font-size: 2.5rem; /* Adjust as needed */
+  font-weight: 400;
+  font-family: "Bayon", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Bayon", sans-serif;
+
+}
+
 h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
   font-family: "Bayon", sans-serif;
 }
