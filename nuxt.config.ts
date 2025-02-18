@@ -11,7 +11,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ["/blog"], // Add more routes if needed
+      crawlLinks: true, // Auto-discovers links during build
+      routes: ['/blog'], // Starts crawling from here
     }
   },
   runtimeConfig: {
