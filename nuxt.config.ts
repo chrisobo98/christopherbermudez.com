@@ -9,7 +9,11 @@ export default defineNuxtConfig({
     },
     loadingStrategy: 'defer', // Use defer to avoid blocking rendering
   },
-
+  nitro: {
+    prerender: {
+      routes: ["/blog"], // Add more routes if needed
+    }
+  },
   runtimeConfig: {
     public: {
       gtagId: 'G-3CC4904P02', // Dynamic ID if needed
