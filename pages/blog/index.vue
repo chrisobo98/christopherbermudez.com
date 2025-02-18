@@ -1,9 +1,7 @@
 <script setup>
-const { data: posts } = await useAsyncData(async () => {
+const { data: posts } = await useAsyncData("posts", async () => {
   return queryCollection("content").all();
-});
-
-console.log("Fetched Posts:", posts.value); // Debugging
+}, { server: true });
 </script>
 
 <template>
