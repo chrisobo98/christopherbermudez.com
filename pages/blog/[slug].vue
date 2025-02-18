@@ -23,7 +23,7 @@ const { data: posts } = await useAsyncData("blog-list", () => {
     >
       <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
       <div class="relative z-10 max-w-2xl px-4">
-        <h1 class="text-5xl font-bold drop-shadow-lg">{{ post.title }}</h1>
+        <h1 class="text-4xl px-4 py-4 md:text-5xl font-bold drop-shadow-lg">{{ post.title }}</h1>
         <p class="text-lg text-gray-200 mt-2">{{ post.date }}</p>
       </div>
     </div>
