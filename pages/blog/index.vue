@@ -14,7 +14,7 @@ const { data: posts } = await useAsyncData("posts", async () => {
             <NuxtLink :to="post.path" class="text-blue-500 hover:underline">
               {{ post.title }}
             </NuxtLink>
-            <p class="text-gray-600">{{ post.description }}</p>
+            <p>{{ post.description }}</p>
           </li>
         </ul>
         <p v-else>No blog posts found.</p>

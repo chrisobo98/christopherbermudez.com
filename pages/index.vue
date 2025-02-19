@@ -1,4 +1,6 @@
 <template>
+    <div class="bg-white dark:bg-[#1d1d1d]">
+
   <div class="w-10/12 mx-auto">
     <Sidenav />
     <HeroSection id="hero-section" />
@@ -7,6 +9,7 @@
     <ServicesSection id="services-section" />
     <PortfolioSection id="portfolio-section" />
     <ContactSection id="contact-section" />
+  </div>
   </div>
 </template>
 
