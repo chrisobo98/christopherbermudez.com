@@ -24,14 +24,14 @@
         <!-- Call to Action -->
         <GSAPHeroEffect :delay="1" :duration="2">
           <!-- text for site scanner -->
-          <!-- <p
+          <p
             class="text-xl md:mt-4 md:text-2xl font-extralight text-center lg:text-left"
           >
             {{ $t("home.hero.callToAction")
             }}<span class="font-bold text-purple-500">{{
               $t("home.hero.coloredCTA")
             }}</span>
-          </p> -->
+          </p>
         </GSAPHeroEffect>
 
         <div class="z-10 md:hidden w-5/6 mx-auto">
@@ -50,10 +50,10 @@
           class="md:flex flex-col md:flex-row items-center md:justify-center lg:justify-start md:mt-8"
         >
           <!-- Second Button -->
-          <!-- <GSAPHeroEffect :delay="1.5" :duration="2"> -->
+          <GSAPHeroEffect :delay="1.5" :duration="2">
             <!-- Need subscription -->
-            <!-- <SiteScanner /> -->
-          <!-- </GSAPHeroEffect> -->
+            <SiteScanner />
+          </GSAPHeroEffect>
         </div>
       </div>
       <div
