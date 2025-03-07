@@ -22,6 +22,7 @@ export default defineI18nConfig(() => ({
           phone: "Phone",
           email: "Email",
           audit: "Free Site Audit",
+          answer: 'Get the answer in minutes!'
         },
         whyUs: {
           creativeSolutions: "Creative Solutions",
@@ -260,6 +261,7 @@ export default defineI18nConfig(() => ({
           phone: "Teléfono",
           email: "Correo Electrónico",
           audit: "Auditoría Gratis",
+          answer: 'Obtenga la respuesta en minutos!'
         },
         navbar: {
           appointment: "Establecer Cita",
