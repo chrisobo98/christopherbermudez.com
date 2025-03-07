@@ -13,11 +13,7 @@
       <div class="space-y-12">
         <PortfolioItem :title="$t('home.portfolio.portfolio_elite_header')"
           :description="$t('home.portfolio.portfolio_elite_text')"
-          imageSrc="/3969ce26-aa51-4698-0934-380a625c2900/public" url="https://eliteeuromotors.com/" />
-          
-        <PortfolioItem :title="$t('home.portfolio.portfolio_4star_header')"
-          :description="$t('home.portfolio.portfolio_4star_text')"
-          imageSrc="/ea08472d-7cad-4884-7921-35a6c4722800/public" url="https://4starcustoms.com/" :reverse="true" />
+          imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1741372673/eliteeuro2_ylc9im.png" url="https://eliteeuromotors.com/" />
       </div>
     </div>
   </section>

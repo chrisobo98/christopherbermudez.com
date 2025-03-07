@@ -1,5 +1,5 @@
 <template>
-    <div :class="['bg-[#e6e7eb] dark:bg-[#232323] px-8 py-8 shadow-xl dark:shadow-[0_20px_90px_-60px_rgb(46,16,101)] rounded-x', customClass]">
+    <div :class="['bg-[#e6e7eb] dark:bg-[#232323] px-8 py-8 shadow-xl dark:shadow-[0_20px_90px_-60px_rgb(46,16,101)] rounded-2xl', customClass]">
       <slot></slot>
     </div>
   </template>

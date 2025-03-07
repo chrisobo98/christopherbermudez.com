@@ -11,8 +11,8 @@
             <h2 class="text-6xl font-bold mb-4">{{ $t('home.mystory.storyheader') }}</h2>
 
             <div class="md:hidden w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-              <NuxtImg style="transform: scale(1)" provider="cloudflare" width="100%" height="100%" loading="lazy"
-                src="/260a4bff-3c8c-4393-ec24-3a2dad8fe700/public" alt="Christopher Bermudez"
+              <NuxtImg style="transform: scale(1)" provider="cloudinary" width="100%" height="100%" loading="lazy"
+                src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741369614/mxjsxr4ptx8qeqh3ctkw.jpg" alt="Christopher Bermudez"
                 class="rounded-lg max-w-full h-auto mb-8 nuxt-img-animation" />
             </div>
             <!-- Text -->
@@ -26,8 +26,8 @@
 
         <!-- My Story Personal Image -->
         <div class="hidden md:block w-full md:w-1/2 mt-8 md:mt-0 flex justify-center ml-12">
-          <NuxtImg style="transform: scale(1)" provider="cloudflare" width="100%" height="100%" loading="lazy"
-            src="/260a4bff-3c8c-4393-ec24-3a2dad8fe700/public" alt="Christopher Bermudez"
+          <NuxtImg style="transform: scale(1)" provider="cloudinary" width="100%" height="100%" loading="lazy"
+            src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741369614/mxjsxr4ptx8qeqh3ctkw.jpg" alt="Christopher Bermudez"
             class="rounded-lg max-w-full h-auto mb-8 nuxt-img-animation" />
         </div>
       </div>

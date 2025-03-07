@@ -2,13 +2,13 @@
   <a :href="url" target="_blank" :class="itemClass">
     <!-- Image Area -->
     <NuxtImg
-      provider="cloudflare"
+      provider="cloudinary"
       :src="imageSrc"
       :alt="title"
       width="100%"
       height="100%"
       loading="lazy"
-      class="w-full lg:w-1/2 nuxt-img-animation"
+      class="w-full lg:w-1/2 nuxt-img-animation rounded-2xl"
     />
 
     <!-- Rest of the content -->

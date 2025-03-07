@@ -50,10 +50,10 @@
           class="md:flex flex-col md:flex-row items-center md:justify-center lg:justify-start md:mt-8"
         >
           <!-- Second Button -->
-          <GSAPHeroEffect :delay="1.5" :duration="2">
+          <!-- <GSAPHeroEffect :delay="1.5" :duration="2"> -->
             <!-- Need subscription -->
             <!-- <SiteScanner /> -->
-          </GSAPHeroEffect>
+          <!-- </GSAPHeroEffect> -->
         </div>
       </div>
       <div
@@ -62,7 +62,7 @@
         <GSAPHeroEffect :delay="1" :duration="2">
           <NuxtImg
             provider="cloudinary"
-            loading="lazy"
+            loading="eager"
             class="nuxt-img-animation"
             alt="Orlando Websites, SEO & Marketing"
             src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/hero-image_eljdxo.png"
