@@ -213,7 +213,7 @@ export default defineI18nConfig(() => ({
           contact: "Contact",
           scheduleConsultation: "Schedule a free 30-minute consultation",
           intro:
-            "Whether you have a project, an idea, or simply want to say hello.",
+            "Let's see how we can generate more revenue for you",
           email: "Email Address",
           phone: "Phone Number",
           faq: "Frequently Asked Questions",
@@ -448,7 +448,7 @@ export default defineI18nConfig(() => ({
           contact: "Contacto",
           scheduleConsultation: "Programa una consulta gratuita de 30 minutos",
           intro:
-            "Ya sea que tengas un proyecto, una idea o simplemente quieras saludar.",
+            "Veamos cómo podemos generarle más ingresos",
           email: "Correo Electrónico",
           phone: "Número de Teléfono",
           faq: "Preguntas Frecuentes",
