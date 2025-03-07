@@ -59,34 +59,5 @@ export default defineNuxtConfig({
     },
   },
 
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'en'
-      },
-      titleTemplate: '%s · Christopher Bermudez',
-      meta: [
-        { name: 'description', content: 'Your go-to expert for web design, SEO, and digital marketing in Florida.' },
-      ],
-      script: [
-        {
-          innerHTML: `
-            (function() {
-              const savedTheme = localStorage.getItem('color-theme');
-              if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
-              } else {
-                document.documentElement.classList.remove('dark');
-              }
-            })();
-          `,
-          type: 'text/javascript',
-          // Safely inject inline script
-          'data-script-type': 'init-theme',
-        }
-      ]
-    }
-  },
-
   compatibilityDate: '2025-02-12',
 });
