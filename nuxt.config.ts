@@ -32,7 +32,7 @@ export default defineNuxtConfig({
 
   image: {
     cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dkaakonrp/image/fetch/',
+      baseURL: 'https://res.cloudinary.com/dkaakonrp/image/upload/',
     },
   },
 

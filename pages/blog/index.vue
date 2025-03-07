@@ -1,23 +1,54 @@
 <script setup>
-const { data: posts } = await useAsyncData("posts", async () => {
-  return queryCollection("content").all();
-}, { server: true });
+const { data: posts } = await useAsyncData(
+  "posts",
+  async () => {
+    return queryCollection("content").all();
+  },
+  { server: true }
+);
 </script>
 
 <template>
-  <section>
-    <div class="py-12 bg-white dark:bg-[#1d1d1d]">
-      <div class="mx-auto w-4/6">
-        <h1 class="text-4xl font-bold mb-4">Blog</h1>
-        <ul v-if="posts?.length">
-          <li v-for="post in posts" :key="post.path" class="mb-4">
-            <NuxtLink :to="post.path" class="text-blue-500 hover:underline">
-              {{ post.title }}
-            </NuxtLink>
-            <p>{{ post.description }}</p>
-          </li>
-        </ul>
-        <p v-else>No blog posts found.</p>
+  <section class="py-24 bg-white dark:bg-[#1d1d1d]">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
+        <div class="w-full flex flex-col lg:w-2/5">
+          <div class="block lg:text-left text-center">
+            <h2 class="text-4xl font-bold leading-[3.25rem] mb-5">
+              Our latest <span class="text-indigo-600">blogs</span>
+            </h2>
+            <p class="mb-10 max-lg:max-w-xl max-lg:mx-auto">
+              Explore insightful articles, expert tips, and the latest trends.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-3/5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div
+              v-for="post in posts"
+              :key="post.path"
+              class="group bg-white dark:bg-[#2a2a2a] p-5 rounded-xl text-black dark:text-white shadow-md hover:shadow-lg transition"
+            >
+              <NuxtLink :to="post.path" class="block">
+                <NuxtImg
+                  src="/build-a-site-blog.png"
+                  :alt="post.title"
+                  class="rounded-2xl w-full object-cover mb-4"
+                />                
+                <h3 class="text-xl font-medium leading-8 mb-2 group-hover:text-indigo-400">
+                  {{ post.title }}
+                </h3>
+                <p class="leading-6 transition-all duration-500 mb-4">
+                  {{ post.description }}
+                </p>
+                <p class="text-indigo-400 font-bold leading-6 transition-all duration-500 mb-4">
+                  Read more →
+                </p>
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
