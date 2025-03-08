@@ -30,7 +30,7 @@ const { data: posts } = await useAsyncData(
             <div
               v-for="post in posts"
               :key="post.path"
-              class="group bg-white dark:bg-[#2a2a2a] p-5 rounded-xl text-black dark:text-white shadow-md hover:shadow-lg transition"
+              class="group bg-white dark:bg-[#2a2a2a] p-5 rounded-xl border border-indigo-600 text-black dark:text-white shadow-md hover:shadow-lg transition"
             >
               <NuxtLink :to="post.path" class="block">
                 <NuxtImg
