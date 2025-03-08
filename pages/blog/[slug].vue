@@ -19,7 +19,7 @@ const { data: posts } = await useAsyncData("blog-list", () => {
         <NuxtImg
           :src="`${post.meta.image}`"
           alt="Build a Site Blog"
-          class="w-full h-full"
+          class="w-auto max-h-screen mx-auto rounded-3xl"
         />
 
         <h1

@@ -4,7 +4,7 @@ description: If you're a business owner in Clermont or Orlando, having a fast,
   SEO-friendly website is key to attracting customers. Here’s how I help
   businesses grow online.
 date: 2025-02-12
-image: /build-a-site-blog.png
+image: /blog/build-a-site-blog.png
 link: https://res.cloudinary.com/dkaakonrp/image/upload/v1741377936/build-a-site-blog_z77035.png
 tags:
   - web development

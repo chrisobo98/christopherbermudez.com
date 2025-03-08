@@ -11,7 +11,9 @@ const { data: posts } = await useAsyncData(
 <template>
   <section class="py-24 bg-white dark:bg-[#1d1d1d]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-center flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
+      <div
+        class="flex justify-center flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8"
+      >
         <div class="w-full flex flex-col lg:w-2/5">
           <div class="block lg:text-left text-center">
             <h2 class="text-4xl font-bold leading-[3.25rem] mb-5">
@@ -32,17 +34,21 @@ const { data: posts } = await useAsyncData(
             >
               <NuxtLink :to="post.path" class="block">
                 <NuxtImg
-                  src="/build-a-site-blog.png"
+                  :src="post.meta.image"
                   :alt="post.title"
-                  class="rounded-2xl w-full object-cover mb-4"
-                />                
-                <h3 class="text-xl font-medium leading-8 mb-2 group-hover:text-indigo-400">
+                  class="rounded-2xl h-48 w-96 object-cover my-4"
+                />
+                <h3
+                  class="text-xl font-medium leading-8 mb-2 group-hover:text-indigo-400"
+                >
                   {{ post.title }}
                 </h3>
                 <p class="leading-6 transition-all duration-500 mb-4">
                   {{ post.description }}
                 </p>
-                <p class="text-indigo-400 font-bold leading-6 transition-all duration-500 mb-4">
+                <p
+                  class="text-indigo-400 font-bold leading-6 transition-all duration-500 mb-4"
+                >
                   Read more →
                 </p>
               </NuxtLink>
