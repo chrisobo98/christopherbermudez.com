@@ -6,6 +6,7 @@ export default defineI18nConfig(() => ({
   messages: {
     en: {
       home: {
+
         hero: {
           title: "Web Development & SEO Specialist",
           subtitle1: "Web Development",
@@ -119,6 +120,11 @@ export default defineI18nConfig(() => ({
           textarea:
             "2024, Christopher Bermudez™ Made with ❤️ in Orlando, Florida",
         },
+      },
+      blog: {
+        title: "Our Latest Blogs",
+        titleColored: 'blogs',
+        description: 'SEO isn’t just about keywords – it’s about using the right strategies to get your site noticed by Google and your audience. In this blog, I break down real tactics that help businesses show up where customers are searching. Whether you want to rank for searches like "plumber near me" or "best bakery in Orlando," you’ll find practical SEO strategies here that drive real results'
       },
       resume: {
         github: {
@@ -245,6 +251,7 @@ export default defineI18nConfig(() => ({
     },
     es: {
       home: {
+
         hero: {
           title: "Desarrollador De Web y Especialista en SEO",
           subtitle1: "Desarrollo de Sitios Web",
@@ -359,6 +366,11 @@ export default defineI18nConfig(() => ({
             "2024, Christopher Bermudez™. Hecho con ❤️ en Orlando, Florida",
         },
       },
+      blog: {
+        title: "Nuestros ultimos",
+        titleColored: 'blogs',
+        description: 'El SEO no se trata solo de palabras clave, sino de usar las estrategias correctas para que Google y tu audiencia noten tu sitio. En este blog, desgloso tácticas reales que ayudan a los negocios a aparecer donde los clientes están buscando. Ya sea que quieras posicionarte para búsquedas como "plomero cerca de mí" o "mejor panadería en Orlando", aquí encontrarás estrategias de SEO prácticas que generan resultados reales.'
+      },        
       resume: {
         github: {
           title: "Mi Github",

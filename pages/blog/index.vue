@@ -17,10 +17,10 @@ const { data: posts } = await useAsyncData(
         <div class="w-full flex flex-col lg:w-2/5">
           <div class="block lg:text-left text-center">
             <h2 class="text-4xl font-bold leading-[3.25rem] mb-5">
-              Our latest <span class="text-purple-600">blogs</span>
+              {{ $t('blog.title') }} <span class="text-purple-600">{{ $t('blog.titleColored') }}</span>
             </h2>
             <p class="mb-10 max-lg:max-w-xl max-lg:mx-auto">
-              Explore insightful articles, expert tips, and the latest trends.
+              {{ $t('blog.description') }}
             </p>
           </div>
         </div>
