@@ -8,7 +8,7 @@ useHead({
   htmlAttrs: { lang: 'en' },
   titleTemplate: '%s · Christopher Bermudez',
   meta: [
-    { name: 'description', content: 'Your go-to expert for web design, SEO, and digital marketing in Florida.' }
+    { name: 'description', content: 'Your go-to expert for web design, SEO, and digital marketing.' }
   ]
 })
 

@@ -24,12 +24,12 @@ import Sidenav from "../components/effects/Sidenav.vue";
 
 useHead({
   title:
-    "Web Design, SEO, & Digital Marketing in Florida",
+    "Web Design, SEO, & Digital Marketing",
   meta: [
     {
       name: "description",
       content:
-        "Discover expert web design, SEO, and digital marketing services with Christopher Bermudez. Helping businesses in Florida grow their online presence and achieve measurable results.",
+        "Discover expert web design, SEO, and digital marketing services with Christopher Bermudez. Helping businesses in Central Florida grow their online presence and achieve measurable results.",
     },
     {
       property: "og:title",

@@ -158,7 +158,7 @@ import UCFLogo from "/assets/css/images/companies/university_of_central_florida_
 import ValenciaLogo from "/assets/css/images/companies/valencia_college_logo.jpeg";
 
 useHead({
-  title: "About - Building Digital Success in Florida",
+  title: "About - Building Digital Success",
   meta: [
     {
       name: "description",
