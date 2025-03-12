@@ -1,15 +1,14 @@
 <template>
-    <div class="bg-white dark:bg-[#1d1d1d]">
-
-  <div class="w-10/12 mx-auto">
-    <Sidenav />
-    <HeroSection id="hero-section" />
-    <WhyUsSection id="why-us-section" />
-    <MyStorySection id="my-story-section" />
-    <ServicesSection id="services-section" />
-    <PortfolioSection id="portfolio-section" />
-    <ContactSection id="contact-section" />
-  </div>
+  <div class="bg-white dark:bg-[#1d1d1d]">
+    <div class="w-10/12 mx-auto">
+      <Sidenav />
+      <HeroSection id="hero-section" />
+      <WhyUsSection id="why-us-section" />
+      <MyStorySection id="my-story-section" />
+      <ServicesSection id="services-section" />
+      <PortfolioSection id="portfolio-section" />
+      <ContactSection id="contact-section" />
+    </div>
   </div>
 </template>
 
@@ -23,8 +22,7 @@ import ContactSection from "../components/homepage/ContactSection.vue";
 import Sidenav from "../components/effects/Sidenav.vue";
 
 useHead({
-  title:
-    "Web Design, SEO, & Digital Marketing",
+  title: "Web Design, SEO, & Digital Marketing",
   meta: [
     {
       name: "description",
