@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white dark:bg-[#1d1d1d]">
-    <div class="w-10/12 mx-auto">
+    <div class="w-11/12 mx-auto">
       <Sidenav />
       <HeroSection id="hero-section" />
       <WhyUsSection id="why-us-section" />
