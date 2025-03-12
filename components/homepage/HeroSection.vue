@@ -3,7 +3,7 @@
     <div
       class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
     >
-      <div class="mr-auto place-self-center z-10 mt-6 lg:col-span-7">
+      <div class="mr-auto place-self-center z-10 lg:col-span-7">
         <h1
           class="lg:text-6xl text-5xl text-left lg:max-w-xl drop-shadow-xl mb-2"
         >
