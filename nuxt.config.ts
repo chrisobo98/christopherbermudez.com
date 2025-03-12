@@ -5,9 +5,9 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-gtag",
     "@nuxtjs/seo",
-    '@nuxtjs/google-fonts',
     '@nuxt/content',
     '@nuxtjs/device',
+    '@nuxt/fonts',
   ],
   gtag: {
     id: 'G-3CC4904P02', // Replace with your Google Analytics ID
@@ -19,23 +19,39 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      crawlLinks: true, // Auto-discovers links during build
-      routes: ['/blog'], // Starts crawling from here
-    }
+      crawlLinks: true, // Automatically finds and prerenders all pages
+      routes: ['/', '/blog'], // Ensures homepage is always prerendered
+    },
+    routeRules: {
+      "/_nuxt/**": { cache: { maxAge: 31536000 } }, // Cache static assets for 1 year
+      "/static/**": { cache: { maxAge: 31536000 } }, // Cache static files for 1 year
+      "/video/**": { cache: { maxAge: 604800 } }, // Cache videos for 1 week
+    },
   },
   runtimeConfig: {
     public: {
       gtagId: 'G-3CC4904P02', // Dynamic ID if needed
     },
   },
-
-  googleFonts: {
-    families: {
-      Bayon: true, // Load the Bayon font
-      Ubuntu: [300, 400, 500, 700], // Load the specified weights for Ubuntu font
+  fonts: {
+    defaults: {
+      weights: [400, 700], // Default weights for all fonts
+      styles: ['normal', 'italic'], // Default styles
+      subsets: ['latin', 'latin-ext'], // Default subsets
     },
-    display: 'swap', // Use font-display: swap for better font loading behavior
-    preconnect: true, // Preconnect to Google Fonts for faster resource loading
+    families: [
+      {
+        name: 'Bayon',
+        provider: 'google',
+      },
+      {
+        name: 'Ubuntu',
+        provider: 'google',
+        weights: [300, 400, 500, 700],
+        styles: ['normal', 'italic'],
+      },
+    ],
+    priority: ['google'], // Set Google as the primary provider
   },
 
   image: {
