@@ -4,7 +4,7 @@ body {
   color: #1d1d1d; /* Default light mode text color */
   margin: 0;
   padding: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Grotesk", sans-serif, Helvetica, sans-serif;
   font-display: swap; /* Ensure font-display swap */
   scrollbar-width: thin;
   scrollbar-color: #8b5cf6 transparent; /* Thumb color and track color for Firefox */
@@ -77,9 +77,9 @@ html {
 }
 
 h1, h2, h3 {
-  font-family: "Big Shoulders", sans-serif;
+  font-family: "Big Shoulders", sans-serif, 'Times New Roman', Times, serif;;
 }
 
 span {
-  font-family: "Big Shoulders", sans-serif;
+  font-family: "Big Shoulders", sans-serif, 'Times New Roman', Times, serif;;
 }

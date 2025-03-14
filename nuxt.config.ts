@@ -53,14 +53,12 @@ export default defineNuxtConfig({
     },
     families: [
       {
-        name: 'Rubik Mono One',
+        name: 'Big Shoulders',
         provider: 'google',
       },
       {
-        name: 'Ubuntu',
+        name: 'Space Grotesk',
         provider: 'google',
-        weights: [300, 400, 500, 700],
-        styles: ['normal', 'italic'],
       },
     ],
     priority: ['google'], // Set Google as the primary provider

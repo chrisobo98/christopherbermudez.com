@@ -42,7 +42,6 @@
               name="fa6-brands:linkedin"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
 
@@ -54,7 +53,6 @@
               name="fa6-brands:instagram"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
 
@@ -63,7 +61,6 @@
               name="fa6-brands:tiktok"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
 
@@ -75,7 +72,6 @@
               name="fa6-brands:facebook"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
 
@@ -87,7 +83,6 @@
               name="fa6-brands:bluesky"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
 
@@ -99,7 +94,6 @@
               name="fa6-brands:youtube"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
 
@@ -111,7 +105,6 @@
               name="fa6-brands:threads"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
 
@@ -123,7 +116,6 @@
               name="fa6-brands:pinterest"
               size="2em"
               class="mx-3 my-3"
-              style="color: #fff"
             />
           </NuxtLink>
         </div>
