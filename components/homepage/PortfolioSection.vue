@@ -1,27 +1,33 @@
 <template>
-  <section class="py-12 bg-white dark:bg-[#1d1d1d]">
-    <div class="container w-11/12 lg:w-full max-w-7xl mx-auto px-6 lg:px-8">
-      
-      <!-- Header and Subheader -->
-      <GSAPStaggeredEffect>
-        <p class="text-purple-500 dark:text-[#b695ff] text-center md:text-right font-semibold mb-4">{{
-          $t('home.portfolio.subheader') }}</p>
-        <h2 class="text-center md:text-right text-6xl font-bold mb-8">{{ $t('home.portfolio.header') }}</h2>
-      </GSAPStaggeredEffect>
+  <BaseSection>
+    <!-- Header and Subheader -->
+    <GSAPStaggeredEffect>
+      <p
+        class="text-purple-500 dark:text-[#b695ff] text-center md:text-right font-semibold mb-4"
+      >
+        {{ $t("home.portfolio.subheader") }}
+      </p>
+      <h2 class="text-center md:text-right text-6xl font-bold mb-8">
+        {{ $t("home.portfolio.header") }}
+      </h2>
+    </GSAPStaggeredEffect>
 
-      <!-- Portfolio items -->
-      <div class="space-y-12">
-        <PortfolioItem :title="$t('home.portfolio.portfolio_elite_header')"
-          :description="$t('home.portfolio.portfolio_elite_text')"
-          imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1741372673/eliteeuro2_ylc9im.png" url="https://eliteeuromotors.com/" />
-      </div>
+    <!-- Portfolio items -->
+    <div class="space-y-12">
+      <PortfolioItem
+        :title="$t('home.portfolio.portfolio_elite_header')"
+        :description="$t('home.portfolio.portfolio_elite_text')"
+        imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1741372673/eliteeuro2_ylc9im.png"
+        url="https://eliteeuromotors.com/"
+      />
     </div>
-  </section>
+  </BaseSection>
 </template>
 
 <script setup lang="ts">
-import PortfolioItem from '@/components/ui/PortfolioItem.vue';
-import GSAPStaggeredEffect from '@/components/effects/GSAPStaggeredReveal.vue';
+import PortfolioItem from "@/components/ui/PortfolioItem.vue";
+import GSAPStaggeredEffect from "@/components/effects/GSAPStaggeredReveal.vue";
+import BaseSection from "../ui/BaseSection.vue";
 </script>
 
 <style scoped>

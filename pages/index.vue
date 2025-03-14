@@ -1,15 +1,11 @@
 <template>
-  <div class="bg-white dark:bg-[#1d1d1d]">
-    <div class="w-11/12 mx-auto">
-      <Sidenav />
-      <HeroSection id="hero-section" />
-      <WhyUsSection id="why-us-section" />
-      <MyStorySection id="my-story-section" />
-      <ServicesSection id="services-section" />
-      <PortfolioSection id="portfolio-section" />
-      <ContactSection id="contact-section" />
-    </div>
-  </div>
+  <Sidenav />
+  <HeroSection id="hero-section" />
+  <WhyUsSection id="why-us-section" />
+  <MyStorySection id="my-story-section" />
+  <ServicesSection id="services-section" />
+  <PortfolioSection id="portfolio-section" />
+  <ContactSection id="contact-section" />
 </template>
 
 <script setup lang="ts">

@@ -8,7 +8,19 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/device',
     '@nuxt/fonts',
+    '@nuxtjs/tailwindcss',
+    'nuxt-vitalizer',
+    '@nuxt/icon',
   ],
+  vitalizer: {
+    disableStylesheets: 'entry',
+    disablePrefetchLinks: true,
+    delayHydration: {
+      hydrateOnEvents: ['mousemove', 'scroll', 'keydown', 'click', 'touchstart', 'wheel'],
+      idleCallbackTimeout: 8000,
+      postIdleTimeout: 4000
+    }
+  },
   gtag: {
     id: 'G-3CC4904P02', // Replace with your Google Analytics ID
     enabled: process.env.NODE_ENV === 'production', // Disable in development
@@ -41,7 +53,7 @@ export default defineNuxtConfig({
     },
     families: [
       {
-        name: 'Bayon',
+        name: 'Rubik Mono One',
         provider: 'google',
       },
       {
@@ -71,13 +83,6 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
 
   compatibilityDate: '2025-02-12',
 });

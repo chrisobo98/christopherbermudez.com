@@ -31,21 +31,21 @@
 }
 
 .blob:nth-child(1) {
-  width: 200px;
-  height: 200px;
-  top: 20%;
+  width: 100px;
+  height: 300px;
+  top: 30%;
   left: 30%;
 }
 
 .blob:nth-child(2) {
   width: 250px;
   height: 250px;
-  top: 50%;
+  top: 40%;
   left: 50%;
 }
 
 .blob:nth-child(3) {
-  width: 220px;
+  width: 500px;
   height: 220px;
   top: 50%;
   left: 20%;
@@ -53,7 +53,7 @@
 
 .blob:nth-child(4) {
   width: 180px;
-  height: 180px;
+  height: 80px;
   top: 40%;
   left: 70%;
 }

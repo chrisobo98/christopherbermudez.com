@@ -1,4 +1,5 @@
 <template>
+  <div class="mb-20">
     <div class="arrow-container" @click="scrollToNextSection">
       <svg class="rotating-circle" width="100" height="100" viewBox="0 0 100 100">
         <path id="curve" fill="transparent" d="M50,50 m-35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
@@ -14,6 +15,7 @@
         </svg>
       </div>
     </div>
+  </div>
   </template>
   
   <script setup>

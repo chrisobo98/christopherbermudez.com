@@ -1,14 +1,10 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 /* Set global styles */
 body {
   background-color: #ffffff; /* Default light mode background color */
   color: #1d1d1d; /* Default light mode text color */
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-display: swap; /* Ensure font-display swap */
   scrollbar-width: thin;
   scrollbar-color: #8b5cf6 transparent; /* Thumb color and track color for Firefox */
@@ -80,46 +76,10 @@ html {
   color: #ffffff; /* Dark mode text color */
 }
 
-/* Custom font styles */
-.bayon-regular {
-  font-family: "Bayon", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+h1, h2, h3 {
+  font-family: "Big Shoulders", sans-serif;
 }
 
-.ubuntu-light {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-medium {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-h1 {
-  font-size: 2.5rem; /* Adjust as needed */
-  font-weight: 400;
-  font-family: "Bayon", sans-serif;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: "Bayon", sans-serif;
-
-}
-
-h3 {
-  font-size: 1.75rem;
-  font-weight: 400;
-  font-family: "Bayon", sans-serif;
+span {
+  font-family: "Big Shoulders", sans-serif;
 }
