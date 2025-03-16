@@ -7,6 +7,8 @@
         <NuxtImg
           provider="cloudinary"
           loading="lazy"
+          width="500"
+          height="auto"
           src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741914347/signature-dark_lo67oi.png"
           alt="Christopher Bermudez"
           class="nuxt-img-animation dark:hidden"
@@ -15,6 +17,8 @@
         <NuxtImg
           provider="cloudinary"
           loading="lazy"
+          width="500"
+          height="auto"
           src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741914347/signature_cdepg4.png"
           alt="Christopher Bermudez"
           class="nuxt-img-animation hidden dark:block"
