@@ -1,5 +1,4 @@
 <template>
-  <Sidenav />
   <HeroSection id="hero-section" />
   <WhyUsSection id="why-us-section" />
   <MyStorySection id="my-story-section" />
@@ -15,7 +14,6 @@ import WhyUsSection from "../components/homepage/WhyUsSection.vue";
 import ServicesSection from "../components/homepage/ServicesSection.vue";
 import PortfolioSection from "../components/homepage/PortfolioSection.vue";
 import ContactSection from "../components/homepage/ContactSection.vue";
-import Sidenav from "../components/effects/Sidenav.vue";
 
 useHead({
   title: "Web Design, SEO, & Digital Marketing",
