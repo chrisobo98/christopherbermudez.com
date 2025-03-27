@@ -1,29 +1,6 @@
 <template>
   <div class="mx-auto max-w-md md:max-w-screen-lg xl:max-w-screen-xl">
     <footer id="footer-section" class="md:mx-4">
-      <!-- Upper footer area -->
-      <div class="md:flex md:justify-between">
-        <!-- Light Mode Image -->
-        <NuxtImg
-          provider="cloudinary"
-          loading="lazy"
-          width="500"
-          height="auto"
-          src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741914347/signature-dark_lo67oi.png"
-          alt="Christopher Bermudez"
-          class="nuxt-img-animation dark:hidden"
-        />
-        <!-- Dark Mode Image -->
-        <NuxtImg
-          provider="cloudinary"
-          loading="lazy"
-          width="500"
-          height="auto"
-          src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741914347/signature_cdepg4.png"
-          alt="Christopher Bermudez"
-          class="nuxt-img-animation hidden dark:block"
-        />
-      </div>
 
       <!-- Horizontal Ruler -->
       <hr

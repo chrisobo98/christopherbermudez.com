@@ -130,8 +130,6 @@ const megaMenuOpen = ref(false);
 
 const localePath = useLocalePath();
 
-const resumeLink = ref("/christopher-bermudez-front-end-developer.pdf");
-
 const handleScroll = () => {
   scrolled.value = window.scrollY > 50;
 };

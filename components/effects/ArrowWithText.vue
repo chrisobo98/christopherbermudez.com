@@ -5,7 +5,7 @@
         <path id="curve" fill="transparent" d="M50,50 m-35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
         <text width="500" class="curved-text">
           <textPath href="#curve" startOffset="0%">
-            scroll down scroll down scroll down scroll down
+            scroll down scroll down scroll down scroll do
           </textPath>
         </text>
       </svg>

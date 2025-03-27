@@ -17,8 +17,15 @@
       <PortfolioItem
         :title="$t('home.portfolio.portfolio_elite_header')"
         :description="$t('home.portfolio.portfolio_elite_text')"
-        imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1741372673/eliteeuro2_ylc9im.png"
+        imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1743102340/eliteeuromockup_yxiqmh.png"
         url="https://eliteeuromotors.com/"
+      />
+      <PortfolioItem
+        :title="$t('home.portfolio.portfolio_beuptwo_header')"
+        :description="$t('home.portfolio.portfolio_beuptwo_text')"
+        imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1743101411/Uptwo_Mockup_1_xnh5rq.png"
+        url="https://beuptwo.com/"
+        reverse
       />
     </div>
   </BaseSection>

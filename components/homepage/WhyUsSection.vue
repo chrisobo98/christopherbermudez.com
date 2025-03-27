@@ -3,20 +3,14 @@
     class="grid items-center gap-8 lg:gap-16 md:grid-cols-2"
   >
     <!-- Images -->
-    <div class="flex justify-center mt-24 lg:mt-12">
+    <div class="flex justify-center">
       <NuxtImg
+        style="transform: scale(1)"
         provider="cloudinary"
         loading="lazy"
-        class="w-full nuxt-img-animation max-w-xs md:max-w-md dark:hidden"
-        src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772394/why-us-image_fiq4dr.png"
-        alt="Professional Web Development Dashboard"
-      />
-      <NuxtImg
-        provider="cloudinary"
-        loading="lazy"
-        class="w-full nuxt-img-animation max-w-xs md:max-w-md hidden dark:block"
-        src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772394/why-us-image_fiq4dr.png"
-        alt="Professional Web Development Dashboard"
+        src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741369614/mxjsxr4ptx8qeqh3ctkw.jpg"
+        alt="Christopher Bermudez"
+        class="rounded-lg w-3/4 h-3/4 mb-8 nuxt-img-animation"
       />
     </div>
 

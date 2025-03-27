@@ -48,7 +48,7 @@
       </p>
     </div>
 
-    <BlobEffect />
+    <BlobEffect class="h-screen" />
 
   </BaseSection>
 

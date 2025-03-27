@@ -6,7 +6,6 @@ export default defineI18nConfig(() => ({
   messages: {
     en: {
       home: {
-
         hero: {
           title: "Web Development & SEO Specialist",
           subtitle1: "Web Development",
@@ -23,7 +22,7 @@ export default defineI18nConfig(() => ({
           phone: "Phone",
           email: "Email",
           audit: "Free Site Audit",
-          answer: 'Get the answer in minutes!'
+          answer: "Get the answer in minutes!",
         },
         whyUs: {
           creativeSolutions: "Creative Solutions",
@@ -83,6 +82,9 @@ export default defineI18nConfig(() => ({
           portfolio_elite_header: "Elite Euro Motors",
           portfolio_elite_text:
             "Website Design, SEO, Marketing with a big emphasis on Email Marketing, Consulting, and overhaul of online presence.",
+          portfolio_beuptwo_header: "BeUpTwo",
+          portfolio_beuptwo_text:
+            "Website design, SEO, and strategic brand consulting. I transformed its online presence with a sleek, ultra-fast website built without WordPress, leveraging Nuxt for optimal performance. Now, the website mirrors its essence: regal and authoritative, with a black and gold color scheme that enhances its brand identity. With perfect scores on PageSpeed Insights and advanced analytics, the platform is not only visually striking but also powerful and built to last.",
           portfolio_4star_header: "4 Star Customs",
           portfolio_4star_text:
             "Website design and implementation done for 4StarCustoms, a body shop in Ocoee, Florida.",
@@ -123,8 +125,9 @@ export default defineI18nConfig(() => ({
       },
       blog: {
         title: "Our Latest Blogs",
-        titleColored: 'blogs',
-        description: 'SEO isn’t just about keywords – it’s about using the right strategies to get your site noticed by Google and your audience. In this blog, I break down real tactics that help businesses show up where customers are searching. Whether you want to rank for searches like "plumber near me" or "best bakery in Orlando," you’ll find practical SEO strategies here that drive real results'
+        titleColored: "blogs",
+        description:
+          'SEO isn’t just about keywords – it’s about using the right strategies to get your site noticed by Google and your audience. In this blog, I break down real tactics that help businesses show up where customers are searching. Whether you want to rank for searches like "plumber near me" or "best bakery in Orlando," you’ll find practical SEO strategies here that drive real results',
       },
       resume: {
         github: {
@@ -158,7 +161,7 @@ export default defineI18nConfig(() => ({
         
             These days, I’m a proud husband and father. When I’m not coding, you’ll find me gaming, hiking or trail running—yes, even in the blazing midday Florida sun (with plenty of sunscreen, of course!).
                           `,
-        },        
+        },
         contactInfo: {
           title: "Contact Info",
           email: "christopherbermudez98(a)gmail.com",
@@ -218,8 +221,7 @@ export default defineI18nConfig(() => ({
         info: {
           contact: "Contact",
           scheduleConsultation: "Schedule a free 30-minute consultation",
-          intro:
-            "Let's see how we can generate more revenue for you",
+          intro: "Let's see how we can generate more revenue for you",
           email: "Email Address",
           phone: "Phone Number",
           faq: "Frequently Asked Questions",
@@ -251,7 +253,6 @@ export default defineI18nConfig(() => ({
     },
     es: {
       home: {
-
         hero: {
           title: "Desarrollador De Web y Especialista en SEO",
           subtitle1: "Desarrollo de Sitios Web",
@@ -268,7 +269,7 @@ export default defineI18nConfig(() => ({
           phone: "Teléfono",
           email: "Correo Electrónico",
           audit: "Auditoría Gratis",
-          answer: 'Obtenga la respuesta en minutos!'
+          answer: "Obtenga la respuesta en minutos!",
         },
         navbar: {
           appointment: "Establecer Cita",
@@ -328,6 +329,9 @@ export default defineI18nConfig(() => ({
           portfolio_elite_header: "Elite Euro Motors",
           portfolio_elite_text:
             "Diseño de sitios web, SEO, marketing con gran énfasis en marketing por correo electrónico, consultoría y renovación de la presencia en línea.",
+          portfolio_beuptwo_header: "BeUpTwo",
+          portfolio_beuptwo_text:
+            "Diseño de sitio web, SEO y consultoría estratégica de marca. Transformé su presencia en línea con un sitio web ultrarrápido y elegante, construido sin WordPress, utilizando Nuxt para un rendimiento óptimo. Ahora su web refleja su esencia: autoridad y sofisticación, con una combinación de colores negro y dorado que refuerza su imagen de marca. Con puntuaciones perfectas en PageSpeed Insights y análisis avanzados, su plataforma no solo es visualmente impactante, sino también potente y duradera.",
           portfolio_4star_header: "4 Star Customs",
           portfolio_4star_text:
             "Diseño e implementación de sitios web para 4StarCustoms, un taller de carrocería en Ocoee, Florida.",
@@ -368,9 +372,10 @@ export default defineI18nConfig(() => ({
       },
       blog: {
         title: "Nuestros ultimos",
-        titleColored: 'blogs',
-        description: 'El SEO no se trata solo de palabras clave, sino de usar las estrategias correctas para que Google y tu audiencia noten tu sitio. En este blog, desgloso tácticas reales que ayudan a los negocios a aparecer donde los clientes están buscando. Ya sea que quieras posicionarte para búsquedas como "plomero cerca de mí" o "mejor panadería en Orlando", aquí encontrarás estrategias de SEO prácticas que generan resultados reales.'
-      },        
+        titleColored: "blogs",
+        description:
+          'El SEO no se trata solo de palabras clave, sino de usar las estrategias correctas para que Google y tu audiencia noten tu sitio. En este blog, desgloso tácticas reales que ayudan a los negocios a aparecer donde los clientes están buscando. Ya sea que quieras posicionarte para búsquedas como "plomero cerca de mí" o "mejor panadería en Orlando", aquí encontrarás estrategias de SEO prácticas que generan resultados reales.',
+      },
       resume: {
         github: {
           title: "Mi Github",
@@ -459,8 +464,7 @@ export default defineI18nConfig(() => ({
         info: {
           contact: "Contacto",
           scheduleConsultation: "Programa una consulta gratuita de 30 minutos",
-          intro:
-            "Veamos cómo podemos generarle más ingresos",
+          intro: "Veamos cómo podemos generarle más ingresos",
           email: "Correo Electrónico",
           phone: "Número de Teléfono",
           faq: "Preguntas Frecuentes",
