@@ -16,8 +16,8 @@
       <p
         class="text-xl md:text-2xl font-extralight text-left md:text-center mt-12 mb-6 md:my-4"
       >
-        <span class="uppercase">Step 1:</span> {{ $t("home.hero.callToAction")
-        }}<span class="font-bold uppercase text-purple-500">{{
+        Step 1: {{ $t("home.hero.callToAction")
+        }}<span class="font-bold text-purple-500">{{
           $t("home.hero.coloredCTA")
         }}</span>
       </p>
@@ -51,15 +51,10 @@
     <BlobEffect class="h-screen" />
 
   </BaseSection>
-
-  <!-- Bounce to next section arrow -->
-  <ArrowWithText />
-
 </template>
 
 <script setup lang="ts">
 import BaseSection from "../ui/BaseSection.vue";
-import ArrowWithText from "@/components/effects/ArrowWithText.vue";
 import BlobEffect from "@/components/effects/BlobEffect.vue";
 import SiteScanner from "@/components/homepage/SiteScanner.vue";
 
