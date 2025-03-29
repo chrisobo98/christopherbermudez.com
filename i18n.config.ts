@@ -124,7 +124,7 @@ export default defineI18nConfig(() => ({
         },
       },
       blog: {
-        title: "Our Latest Blogs",
+        title: "Our latest",
         titleColored: "blogs",
         description:
           'SEO isn’t just about keywords – it’s about using the right strategies to get your site noticed by Google and your audience. In this blog, I break down real tactics that help businesses show up where customers are searching. Whether you want to rank for searches like "plumber near me" or "best bakery in Orlando," you’ll find practical SEO strategies here that drive real results',
