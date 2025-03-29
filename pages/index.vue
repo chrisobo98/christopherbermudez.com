@@ -1,11 +1,9 @@
 <template>
-  <div class="w-11/12 mx-auto">
-    <HeroSection id="hero-section" />
-    <WhyUsSection id="why-us-section" />
-    <ServicesSection id="services-section" />
-    <PortfolioSection id="portfolio-section" />
-    <ContactSection id="contact-section" />
-  </div>
+  <HeroSection id="hero-section" />
+  <WhyUsSection id="why-us-section" />
+  <ServicesSection id="services-section" />
+  <PortfolioSection id="portfolio-section" />
+  <ContactSection id="contact-section" />
 </template>
 
 <script setup lang="ts">
