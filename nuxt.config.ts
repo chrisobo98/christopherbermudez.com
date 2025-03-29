@@ -12,6 +12,9 @@ export default defineNuxtConfig({
     'nuxt-vitalizer',
     '@nuxt/icon',
   ],
+  features: {
+    inlineStyles: false
+  },
   vitalizer: {
     disableStylesheets: 'entry',
     disablePrefetchLinks: true,
