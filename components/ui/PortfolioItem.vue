@@ -5,10 +5,10 @@
       provider="cloudinary"
       :src="imageSrc"
       :alt="title"
-      width="100%"
-      height="100%"
+      width="auto"
+      height="auto"
       loading="lazy"
-      class="w-full lg:w-1/2 nuxt-img-animation rounded-2xl"
+      class="nuxt-img-animation"
     />
 
     <!-- Rest of the content -->
