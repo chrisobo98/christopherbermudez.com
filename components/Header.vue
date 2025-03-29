@@ -12,6 +12,8 @@
           src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772391/mobile-logo_dklwzn.png"
           @click="navigateHome"
           alt="Bermudez 'B' Logo"
+          width="100"
+          height="100"
           loading="lazy"
           class="md:hidden rounded-lg w-2/12 cursor-pointer"
         />

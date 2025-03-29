@@ -8,9 +8,11 @@
         style="transform: scale(1)"
         provider="cloudinary"
         loading="lazy"
+        height="500"
+        width="500"
         src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741369614/mxjsxr4ptx8qeqh3ctkw.jpg"
         alt="Christopher Bermudez"
-        class="rounded-lg w-3/4 h-3/4 mb-8 nuxt-img-animation"
+        class="rounded-lg mb-8 nuxt-img-animation"
       />
     </div>
 

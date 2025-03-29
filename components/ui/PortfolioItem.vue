@@ -5,8 +5,8 @@
       provider="cloudinary"
       :src="imageSrc"
       :alt="title"
-      width="auto"
-      height="auto"
+      width="500"
+      height="500"
       loading="lazy"
       class="nuxt-img-animation"
     />
