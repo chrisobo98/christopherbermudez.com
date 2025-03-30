@@ -51,6 +51,7 @@ export default defineI18nConfig(() => ({
           marketing: "Ads & Marketing",
           journal: "Journal",
           about: "About",
+          pricing: "Pricing",
           downloadresume: "Download Resume",
         },
         mystory: {
@@ -250,6 +251,103 @@ export default defineI18nConfig(() => ({
           cost: "For a basic website (home page, contact page, lead capture, and 2-3 services pages), prices range from $500–$1,500. This includes training, SEO setup, analytics, and essential plugins like mail or scheduling tools. Ongoing expenses include hosting (GoDaddy, BlueHost, etc.) which can range from $15-50 a month. For more complex websites (10+ services pages, custom solutions, or enterprise-level projects), costs range from $5,000–$10,000, depending on scope and features. For specialized needs, like SaaS platforms or government contracts, contact me directly for a custom quote.",
         },
       },
+      general: {
+        month: "Monthly",
+        year: "Year",
+      },
+      pricing: {
+        info: {
+          badge: "Strategic Growth Solutions",
+          title:
+            "Select a web development and SEO plan that aligns with your business goals",
+          description:
+            "Our tiered pricing structure offers tailored solutions, ensuring maximum value and performance for businesses of all sizes",
+          features: {
+            fivePage: "5-page brochure website",
+            seo: "On-page SEO optimization",
+            onlinePresence: "Full online presence setup",
+            blog: "Blog setup (basic blog structure)",
+            newsletter: "Email newsletter setup",
+            contentStrategy: "Basic content strategy included",
+          },
+          startingPrice: "$1500",
+          perPage: "/ $150 per additional page",
+          contactButton: "Contact",
+        },
+        plans: {
+          retainerTitle: "Retainer Services",
+          retainerDescription:
+            "Explore our flexible pricing options designed for long-term success. Choose a plan that fits your needs and lets your business thrive with expert SEO and web development support.",
+          billing: {
+            monthly: "Billed Monthly",
+            yearly: "Billed Yearly",
+          },
+          tier1: {
+            name: "Tier 1 - Launchpad",
+            description:
+              "Symbolizing the beginning of growth with minimal but essential support",
+            priceMonthly: "$300",
+            priceYearly: "$3,600",
+            features: [
+              "1x Monthly blog post with advanced blog page structure (500 words, SEO-optimized)",
+              "Social Media platform setup & automation",
+              "Monthly keyword tracking & reporting (up to 25 keywords)",
+              "Basic social media engagement (10 posts/month, automated)",
+              "Email newsletter management (monthly)",
+              "Basic site audit & updates",
+              "Basic reporting & analytics",
+            ],
+          },
+          tier2: {
+            name: "Tier 2 - Momentum",
+            description:
+              "For businesses ready to accelerate with more comprehensive support and engagement",
+            priceMonthly: "$600",
+            priceYearly: "$7,200",
+            features: [
+              "2x Monthly blog posts (1,000 words each, SEO-optimized)",
+              "Social Media platform management (including content creation, posts, and engagement)",
+              "Monthly keyword tracking & reporting (up to 50 keywords)",
+              "Email newsletter creation and automation (2-4 emails/month)",
+              "Full-site audit & optimization (monthly)",
+              "Detailed monthly reporting with video updates (analytics, keyword tracking, social media insights)",
+            ],
+          },
+          tier3: {
+            name: "Tier 3 - Legacy",
+            description:
+              "Represents the top-tier level of investment and strategic development for long-term, dominant success",
+            priceMonthly: "$1,000",
+            priceYearly: "$12,000",
+            features: [
+              "4x Monthly blog posts (1,500 words each, SEO-optimized)",
+              "Monthly Brand Strategy Call – Sessions with our in-house brand expert",
+              "Project Management Support",
+              "Advanced keyword tracking & SEO strategies (up to 100 keywords)",
+              "Paid ad campaign strategy setup & management",
+            ],
+          },
+          additionalServices: {
+            title: "Additional Services",
+            pages: {
+              title: "Additional Pages",
+              description: "Want more SEO optimized pages?",
+              price: "$150/page",
+            },
+            articles: {
+              title: "Additional Articles",
+              description: "Quality content from our U.S. content team",
+              price: "$100/article",
+            },
+            custom: {
+              title: "Custom Solutions",
+              description:
+                "Custom site solutions, integrations, consulting & more",
+              button: "Contact Us",
+            },
+          },
+        },
+      },
     },
     es: {
       home: {
@@ -278,6 +376,7 @@ export default defineI18nConfig(() => ({
           marketing: "Publicidad y Mercadeo",
           journal: "Diario",
           about: "Sobre Mi",
+          pricing: "Precios",
           downloadresume: "Descargar Currículum",
         },
         whyUs: {
@@ -491,6 +590,104 @@ export default defineI18nConfig(() => ({
             "Estoy disponible 24/7 para emergencias. Ya sea el 4 de julio o Navidad, si tu sitio web está en peligro, lo tomaré como una prioridad personal hasta que el problema esté resuelto. Mantengo todo actualizado y evito usar plugins obsoletos o poco confiables que puedan introducir vulnerabilidades. Las herramientas o paquetes que utilizo están cuidadosamente seleccionados para garantizar que tu sitio sea seguro y estable.",
           costQuestion: "¿Cuánto cuesta un sitio web y hay gastos continuos?",
           cost: "Para un sitio básico (página de inicio, página de contacto, captura de correos y 2-3 páginas de servicios), los precios varían entre $500 y $1,500. Esto incluye capacitación, configuración de SEO, analíticas y plugins esenciales como herramientas de correos o de programación. Para sitios más complejos (más de 10 páginas de servicios, soluciones personalizadas o proyectos empresariales), los costos varían entre $5,000 y $10,000, dependiendo del alcance y las características. Para necesidades especializadas, como plataformas SaaS o contratos gubernamentales, contáctame directamente para una cotización personalizada.",
+        },
+      },
+      general: {
+        month: "Mensual",
+        year: "Año",
+      },
+      pricing: {
+        info: {
+          badge: "Soluciones de Crecimiento Estratégico",
+          title:
+            "Selecciona un plan de desarrollo web y SEO que se alinee con los objetivos de tu negocio",
+          description:
+            "Nuestra estructura de precios por niveles ofrece soluciones personalizadas, asegurando el máximo valor y rendimiento para negocios de todos los tamaños",
+          features: {
+            fivePage: "Sitio web de 5 páginas (brochure)",
+            seo: "Optimización SEO en la página",
+            onlinePresence: "Configuración completa de presencia en el web",
+            blog: "Configuración de blog (estructura básica de blog)",
+            newsletter: "Configuración de boletín de correo electrónico",
+            contentStrategy: "Estrategia de contenido básica incluida",
+          },
+          startingPrice: "$1500",
+          perPage: "/ $150 por página adicional",
+          contactButton: "Contactar",
+        },
+        plans: {
+          retainerTitle: "Servicios de Retención",
+          retainerDescription:
+            "Explora nuestras opciones de precios flexibles diseñadas para el éxito a largo plazo. Elige un plan que se ajuste a tus necesidades y permita a tu negocio prosperar con el soporte experto de SEO y desarrollo web.",
+          billing: {
+            monthly: "Facturado Mensualmente",
+            yearly: "Facturado Anualmente",
+          },
+          tier1: {
+            name: "Nivel 1 - Lanzamiento",
+            description:
+              "Simboliza el comienzo del crecimiento con soporte mínimo pero esencial",
+            priceMonthly: "$300",
+            priceYearly: "$3,600",
+            features: [
+              "1x Publicación mensual de blog con estructura avanzada de página de blog (500 palabras, optimizado para SEO)",
+              "Configuración y automatización de plataformas de redes sociales",
+              "Seguimiento y reporte mensual de palabras clave (hasta 25 palabras clave)",
+              "Interacción básica en redes sociales (10 publicaciones/mes, automatizadas)",
+              "Gestión de boletín de correo electrónico (mensual)",
+              "Auditoría básica del sitio y actualizaciones",
+              "Informes y análisis básicos",
+            ],
+          },
+          tier2: {
+            name: "Nivel 2 - Momentum",
+            description:
+              "Para negocios listos para acelerar con soporte y compromiso más completo",
+            priceMonthly: "$600",
+            priceYearly: "$7,200",
+            features: [
+              "2x Publicaciones mensuales de blog (1,000 palabras cada una, optimizadas para SEO)",
+              "Gestión de plataformas de redes sociales (incluye creación de contenido, publicaciones y participación)",
+              "Seguimiento y reporte mensual de palabras clave (hasta 50 palabras clave)",
+              "Creación y automatización de boletines de correo electrónico (2-4 correos electrónicos/mes)",
+              "Auditoría completa del sitio y optimización (mensual)",
+              "Informes detallados mensuales con actualizaciones en video (análisis, seguimiento de palabras clave, información de redes sociales)",
+            ],
+          },
+          tier3: {
+            name: "Nivel 3 - Legado",
+            description:
+              "Representa el nivel más alto de inversión y desarrollo estratégico para un éxito dominante a largo plazo",
+            priceMonthly: "$1,000",
+            priceYearly: "$12,000",
+            features: [
+              "4x Publicaciones mensuales de blog (1,500 palabras cada una, optimizadas para SEO)",
+              "Llamada mensual de Estrategia de Marca – Sesiones con nuestro experto en marca interno",
+              "Soporte de Gestión de Proyectos",
+              "Seguimiento avanzado de palabras clave y estrategias SEO (hasta 100 palabras clave)",
+              "Configuración y gestión de campañas de anuncios pagados",
+            ],
+          },
+          additionalServices: {
+            title: "Servicios Adicionales",
+            pages: {
+              title: "Páginas Adicionales",
+              description: "¿Quieres más páginas optimizadas para SEO?",
+              price: "$150/página",
+            },
+            articles: {
+              title: "Artículos Adicionales",
+              description:
+                "Contenido de calidad de nuestro equipo de contenido de EE. UU.",
+              price: "$100/artículo",
+            },
+            custom: {
+              title: "Soluciones Personalizadas",
+              description:
+                "Soluciones personalizadas para el sitio, integraciones, consultoría y más",
+              button: "Contáctanos",
+            },
+          },
         },
       },
     },

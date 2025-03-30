@@ -68,12 +68,6 @@ const questions = ref([
     open: false,
   },
   {
-    id: 3,
-    question: t("appointments.faq.changesQuestion"),
-    answer: t("appointments.faq.changes"),
-    open: false,
-  },
-  {
     id: 4,
     question: t("appointments.faq.mobileQuestions"),
     answer: t("appointments.faq.mobile"),
@@ -83,12 +77,6 @@ const questions = ref([
     id: 5,
     question: t("appointments.faq.somethingWrongQuestions"),
     answer: t("appointments.faq.somethingWrong"),
-    open: false,
-  },
-  {
-    id: 6,
-    question: t("appointments.faq.costQuestion"),
-    answer: t("appointments.faq.cost"),
     open: false,
   },
 ]);
