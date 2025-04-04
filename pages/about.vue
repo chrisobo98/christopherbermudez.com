@@ -57,8 +57,8 @@
         <p class="mt-4 text-lg">
           {{ $t("about.whyChooseUs.content") }}
         </p>
-        <a href="/services" class="mt-4 text-blue-600 underline">
-          {{ $t("about.whyChooseUs.seeHow") }}</a
+        <NuxtLink :to="localePath('/services')" class="mt-4 text-blue-600 underline">
+          {{ $t("about.whyChooseUs.seeHow") }}</NuxtLink
         >
         <ul class="mt-6 space-y-4 text-lg">
           <li>✔ {{ $t("about.whyChooseUs.points.localExpertise") }}</li>
@@ -66,17 +66,17 @@
           <li>✔ {{ $t("about.whyChooseUs.points.fastWebsites") }}</li>
           <li>
             ✔ {{ $t("about.whyChooseUs.points.pricing") }}
-            <a href="/pricing" class="text-blue-600 underline"
-              >{{ $t("about.whyChooseUs.points.SeePricing") }} →</a
+            <NuxtLink :to="localePath('/pricing')" class="text-blue-600 underline"
+              >{{ $t("about.whyChooseUs.points.SeePricing") }} →</NuxtLink
             >
           </li>
         </ul>
         <!-- Trust Signals -->
-        <div class="mt-8 flex justify-center space-x-4">
+        <!-- <div class="mt-8 flex justify-center space-x-4">
           <a href="/case-studies" class="text-blue-600 underline">{{
             $t("about.seeHow")
           }}</a>
-        </div>
+        </div> -->
       </div>
 
       <!-- Stats Section -->
@@ -151,9 +151,9 @@
               />
             </div>
             <p class="text-base font-normal">{{ testimonial.quote }}</p>
-            <a href="#" class="block text-base font-semibold">{{
+            <span class="block text-base font-semibold">{{
               testimonial.author
-            }}</a>
+            }}</span>
           </div>
         </div>
       </div>
