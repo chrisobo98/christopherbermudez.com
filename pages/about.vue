@@ -1,253 +1,344 @@
 <template>
-  <div
-    class="py-12 bg-gray-50 bg-white dark:bg-[#1d1d1d] text-gray-900 dark:text-white"
-  >
-    <div class="max-w-7xl mx-auto px-4 w-10/12">
-      <GSAPStaggeredEffect>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <!-- Profile Section -->
-          <BaseDiv
-            customClass="text-center md:text-left md:col-span-3 lg:col-span-2"
-          >
-            <h1 class="text-5xl md:text-6xl font-bold">
-              {{ t("resume.profile.name") }}
-            </h1>
-            <p class="text-lg text-gray-600 dark:text-gray-400">
-              {{ t("resume.profile.role") }}
-            </p>
-            <h2 class="text-4xl font-semibold mb-3 mt-8">
-              {{ t("resume.about.title") }}
-            </h2>
-            <p>{{ t("resume.about.description") }}</p>
-          </BaseDiv>
+  <section class="md:py-12 relative">
+    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto space-y-20">
+      <!-- Image + Features Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <NuxtImg
+          provider="cloudinary"
+          loading="lazy"
+          height="300"
+          width="500"
+          src="https://res.cloudinary.com/dkaakonrp/image/upload/v1743728212/citrus-tower_aerial_view_isq2g4.png"
+          alt="Clermont Citrus Tower Aerial View"
+          class="rounded-lg my-6 md:my-12 nuxt-img-animation mx-auto"
+        />
 
-          <!-- Image with gradient moving background -->
-          <BaseDiv
-            class="animated-div md:col-span-3 lg:col-span-1 mt-4 md:mt-0"
-          >
-            <NuxtImg
-              provider="cloudinary"
-              loading="lazy"
-              src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772392/mountainman_tgrxvp.png"
-              alt="Christopher Bermudez"
-              class="rounded-lg w-full h-auto nuxt-img-animation"
-            />
-          </BaseDiv>
-        </div>
-
-        <!-- Experience Section -->
-        <div class="grid grid-cols-1 md:grid-cols-7 gap-0 md:gap-4">
-          <BaseDiv customClass="experience-section md:col-span-5 mt-6">
-            <h2 class="text-4xl font-bold mb-4">
-              {{ t("resume.experience.title") }}
+        <div class="space-y-2">
+          <div class="space-y-5">
+            <span class="text-[#7c42e0] text-2xl font-medium">
+              {{ $t("about.subtitle") }}
+            </span>
+            <h2 class="text-5xl font-bold font-manrope">
+              {{ $t("about.title") }}
             </h2>
-            <ol>
-              <TimelineEntry
-                v-for="item in experienceItems"
-                :key="item.id"
-                :date="item.date"
-                :title="item.title"
-                :image="item.image"
-                :description="item.description"
-                :link="item.link"
-              />
-            </ol>
-          </BaseDiv>
+            <p class="text-base font-normal">{{ $t("about.description") }}</p>
+          </div>
 
-          <!-- Education -->
-          <BaseDiv customClass="mt-6 md:col-span-2">
-            <h2 class="text-4xl font-semibold mb-3">
-              {{ t("resume.education.title") }}
-            </h2>
-            <div class="flex">
-              <img
-                :src="UCFLogo"
-                alt="Image"
-                class="w-12 h-12 mt-3 mr-2 rounded-lg"
-              />
-              <p class="py-2">
-                <span class="font-semibold">{{
-                  t("resume.education.degrees[0].level")
-                }}</span>
-                -
-                {{ t("resume.education.degrees[0].school") }}
-              </p>
+          <div class="grid sm:grid-cols-2 gap-8">
+            <div
+              v-for="(feature, i) in features"
+              :key="i"
+              class="group flex-col gap-4"
+            >
+              <div
+                class="p-[13px] bg-purple-600 group-hover:bg-purple-700 transition-all mt-4 rounded-[10px] w-fit"
+              >
+                <Icon :name="feature.icon" style="color: white" size="2em" class="mx-3 my-3" />
+              </div>
+              <div class="space-y-1.5 my-6">
+                <h4 class="text-2xl font-semibold">{{ feature.title }}</h4>
+                <p class="text-base font-normal">{{ feature.description }}</p>
+              </div>
             </div>
-            <div class="flex">
-              <img
-                :src="ValenciaLogo"
-                alt="Image"
-                class="w-12 h-12 mt-3 mr-2 rounded-lg"
-              />
-              <p class="py-2">
-                <span class="font-semibold">{{
-                  t("resume.education.degrees[1].level")
-                }}</span>
-                -
-                {{ t("resume.education.degrees[1].school") }}
-              </p>
-            </div>
-          </BaseDiv>
+          </div>
         </div>
+      </div>
 
-        <!-- Skills and Languages -->
-        <BaseDiv customClass="grid grid-cols-8 gap-8 mt-6">
-          <div class="col-span-8 md:col-span-3">
-            <h2 class="text-4xl font-semibold mb-3">
-              {{ t("resume.skills.title") }}
-            </h2>
-            <p>TypeScript</p>
-            <p>Vue.js</p>
-            <p>Node.js</p>
-            <p>React</p>
-            <p>SQL</p>
-            <p>SASS/CSS</p>
-            <!-- Add more skills here -->
-          </div>
-          <div class="col-span-8 md:col-span-3">
-            <h2 class="text-4xl font-semibold mb-3">
-              {{ t("resume.languages.title") }}
-            </h2>
-            <p>Español - Fluent</p>
-            <p>English - Fluent</p>
-            <p>Portuguese - Beginner</p>
-            <!-- Add more languages here -->
-          </div>
-          <div class="col-span-8 md:col-span-2">
-            <h2 class="text-4xl font-semibold mb-3">
-              {{ t("resume.hobbies.title") }}
-            </h2>
-            <p>{{ t("resume.hobbies.list[0]") }}</p>
-            <p>{{ t("resume.hobbies.list[1]") }}</p>
-            <p>{{ t("resume.hobbies.list[2]") }}</p>
-            <p>{{ t("resume.hobbies.list[3]") }}</p>
-            <!-- Add more languages here -->
-          </div>
-        </BaseDiv>
+      <!-- Why Choose Us? -->
+      <div class="py-16">
+        <h2 class="text-3xl font-semibold text-center md:text-left">
+          {{ $t("about.whyChooseUs.title") }}
+        </h2>
+        <p class="mt-4 text-lg">
+          {{ $t("about.whyChooseUs.content") }}
+        </p>
+        <a href="/services" class="mt-4 text-blue-600 underline">
+          {{ $t("about.whyChooseUs.seeHow") }}</a
+        >
+        <ul class="mt-6 space-y-4 text-lg">
+          <li>✔ {{ $t("about.whyChooseUs.points.localExpertise") }}</li>
+          <li>✔ {{ $t("about.whyChooseUs.points.seoResults") }}</li>
+          <li>✔ {{ $t("about.whyChooseUs.points.fastWebsites") }}</li>
+          <li>
+            ✔ {{ $t("about.whyChooseUs.points.pricing") }}
+            <a href="/pricing" class="text-blue-600 underline"
+              >{{ $t("about.whyChooseUs.points.SeePricing") }} →</a
+            >
+          </li>
+        </ul>
+        <!-- Trust Signals -->
+        <div class="mt-8 flex justify-center space-x-4">
+          <a href="/case-studies" class="text-blue-600 underline">{{
+            $t("about.seeHow")
+          }}</a>
+        </div>
+      </div>
 
-        <!-- GitHub Profile Section -->
-        <BaseDiv class="mt-8">
-          <GithubProfile />
-        </BaseDiv>
+      <!-- Stats Section -->
+      <div class="text-center space-y-8">
+        <h2 class="text-4xl font-bold font-manrope">
+          {{ $t("about.stats.title") }}
+        </h2>
+        <p class="text-base font-normal max-w-2xl mx-auto">
+          {{ $t("about.stats.description") }}
+        </p>
 
-        <!-- This site was built with -->
-        <BaseDiv class="mt-8">
-          <h2 class="text-4xl font-semibold text-center md:text-left mb-4">
-            {{ $t("resume.built.title") }}
+        <div class="flex flex-wrap justify-center gap-10">
+          <div v-for="(stat, i) in stats" :key="i" class="flex-col">
+            <h3 class="text-4xl font-bold font-manrope">{{ stat.value }}</h3>
+            <h6 class="text-base font-normal">{{ stat.label }}</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Steps -->
+      <div class="space-y-12">
+        <div class="text-center space-y-3">
+          <h2 class="text-4xl font-bold font-manrope text-white">
+            {{ $t("about.process.title") }}
           </h2>
-          <BuiltWithContainer />
-        </BaseDiv>
-      </GSAPStaggeredEffect>
+          <p class="text-base font-normal max-w-4xl mx-auto">
+            {{ $t("about.process.description") }}
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div
+            v-for="(step, i) in processSteps"
+            :key="i"
+            class="group p-5 border border-purple-600 transition-all rounded-xl space-y-5"
+          >
+            <div class="flex items-center gap-5">
+              <div
+                class="rounded-full border border-purple-500 group-hover:border-purple-200 transition-all flex-center"
+              >
+                <span class="text-2xl font-semibold mx-3 my-3">{{
+                  step.stepNumber
+                }}</span>
+              </div>
+              <h3 class="text-2xl font-bold font-manrope">
+                {{ step.title }}
+              </h3>
+            </div>
+            <p class="text-base font-normal">{{ step.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="space-y-16">
+        <h2 class="text-4xl font-bold text-center">
+          {{ testimonialsSection.title }}
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            v-for="(testimonial, i) in testimonials"
+            :key="i"
+            class="text-center space-y-5"
+          >
+            <div class="flex-center gap-2 text-amber-500">
+              <Icon
+                v-for="n in testimonial.rating"
+                :key="n"
+                name="tabler:star-filled"
+                size="2em"
+              />
+            </div>
+            <p class="text-base font-normal">{{ testimonial.quote }}</p>
+            <a href="#" class="block text-base font-semibold">{{
+              testimonial.author
+            }}</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meet Christopher Bermudez -->
+      <div class="py-16 text-center">
+        <h2 class="text-3xl font-semibold">
+          {{ $t("about.video.title") }}
+        </h2>
+        <p class="mt-4 text-lg">
+          {{ $t("about.video.subtitle") }}
+
+        </p>
+        <NuxtImg
+          style="transform: scale(1)"
+          provider="cloudinary"
+          loading="lazy"
+          height="500"
+          width="500"
+          src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741369614/mxjsxr4ptx8qeqh3ctkw.jpg"
+          alt="Christopher Bermudez"
+          class="rounded-lg my-8 nuxt-img-animation mt-6 mx-auto rounded-lg shadow-lg w-48 h-48"
+        />
+        <p class="mt-4 text-lg">
+          {{ $t("about.video.description") }}
+
+        </p>
+        <p class="mt-2 text-lg">
+          {{ $t("about.video.languages") }}
+        </p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a
+            href="https://linkedin.com/in/christopherbermudez"
+            class="text-blue-600 underline"
+            >LinkedIn</a
+          >
+          <a
+            href="https://youtube.com/c/ChristopherBermudez"
+            class="text-blue-600 underline"
+            >YouTube</a
+          >
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div
+        class="mx-auto flex flex-col lg:flex-row items-center justify-between gap-6"
+      >
+        <h2 class="text-5xl font-bold font-manrope text-center lg:text-left">
+          {{ ctaContent.title }}
+        </h2>
+        <BaseButton class="mx-auto block md:hidden">
+          {{ ctaContent.buttonText }}
+        </BaseButton>
+        <div class="space-y-8">
+          <ul class="grid gap-5">
+            <li
+              v-for="(bullet, i) in ctaContent.bullets"
+              :key="i"
+              class="flex items-center gap-3 justify-center lg:justify-start"
+            >
+              <Icon name="game-icons:check-mark" size="1.5em" />
+              {{ bullet }}
+            </li>
+          </ul>
+          <BaseButton class="mx-auto hidden md:inline">
+            {{ ctaContent.buttonText }}
+          </BaseButton>
+        </div>
+
+        <FAQ class="py-24" />
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import FAQ from "@/components/appointments/FAQ.vue";
+import BaseButton from "@/components/ui/BaseButton.vue";
 import { useI18n } from "vue-i18n";
-import TimelineEntry from "@/components/resume/TimelineEntry.vue";
-import GSAPStaggeredEffect from "@/components/effects/GSAPStaggeredReveal.vue";
-import BaseDiv from "@/components/ui/BaseDiv.vue";
-import BuiltWithContainer from "@/components/resume/BuiltWithContainer.vue";
-import GithubProfile from "@/components/resume/GithubProfile.vue";
-
-// Assets
-import MegaportLogo from "/assets/css/images/companies/megaportlogo.jpeg";
-import SweetieBoyLogo from "/assets/css/images/companies/autosdlvrd_logo.jpeg";
-import GrowthChannelLogo from "/assets/css/images/companies/growthchannel_logo.jpeg";
-import UCFLogo from "/assets/css/images/companies/university_of_central_florida_division_of_continuing_education_logo.jpeg";
-import ValenciaLogo from "/assets/css/images/companies/valencia_college_logo.jpeg";
-
-useHead({
-  title: "About - Building Digital Success",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Learn more about Christopher Bermudez, a passionate web designer and SEO expert dedicated to helping businesses grow through innovative digital marketing strategies.",
-    },
-    {
-      property: "og:title",
-      content: "About Christopher Bermudez - Digital Marketing Specialist",
-    },
-    {
-      property: "og:description",
-      content:
-        "Get to know Christopher Bermudez, a creative professional committed to delivering outstanding results in web design and SEO.",
-    },
-  ],
-});
 
 const { t } = useI18n();
 
-const experienceItems = [
+// All data properly defined
+interface ContentSection {
+  title: string;
+  description?: string;
+  subtitle?: string;
+}
+
+interface Feature {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface ProcessStep {
+  stepNumber: number;
+  title: string;
+  description: string;
+}
+
+interface Testimonial {
+  quote: string;
+  author: string;
+  rating: number;
+}
+
+const testimonialsSection: ContentSection = {
+  title: t("about.testimonials.title"),
+};
+
+const features: Feature[] = [
   {
-    id: 1,
-    date: t("resume.experience.positions[0].date"),
-    title: t("resume.experience.positions[0].title"),
-    image: MegaportLogo,
-    description: t("resume.experience.positions[0].description"),
-    link: "#",
+    icon: "game-icons:arrow-scope",
+    title: t("about.mission.title"),
+    description: t("about.mission.description"),
   },
   {
-    id: 2,
-    date: t("resume.experience.positions[1].date"),
-    title: t("resume.experience.positions[1].title"),
-    image: SweetieBoyLogo,
-    description: t("resume.experience.positions[1].description"),
-    link: "#",
-  },
-  {
-    id: 3,
-    date: t("resume.experience.positions[2].date"),
-    title: t("resume.experience.positions[2].title"),
-    image: GrowthChannelLogo,
-    description: t("resume.experience.positions[2].description"),
-    link: "#",
+    icon: "game-icons:3d-glasses",
+    title: t("about.vision.title"),
+    description: t("about.vision.description"),
   },
 ];
+
+const stats = [
+  { value: "20+", label: t("about.stats.label1") },
+  { value: "15+", label: t("about.stats.label2") },
+];
+
+const processSteps: ProcessStep[] = [
+  {
+    stepNumber: 1,
+    title: t("about.process.steps.step1.title"),
+    description: t("about.process.steps.step1.description"),
+  },
+  {
+    stepNumber: 2,
+    title: t("about.process.steps.step2.title"),
+    description: t("about.process.steps.step2.description"),
+  },
+  {
+    stepNumber: 3,
+    title: t("about.process.steps.step3.description"),
+    description: t("about.process.steps.step3.description"),
+  },
+  {
+    stepNumber: 4,
+    title: t("about.process.steps.step4.description"),
+    description: t("about.process.steps.step4.description"),
+  },
+];
+
+const testimonials: Testimonial[] = [
+  {
+    quote: t("about.testimonials.eliteEuro.quote"),
+    author: "Elite Euro Motors",
+    rating: 5,
+  },
+  {
+    quote: t("about.testimonials.beUpTwo.quote"),
+    author: "BeUpTwo",
+    rating: 5,
+  },
+];
+
+const ctaContent = {
+  title: t("about.cta.title"),
+  bullets: [
+    t("about.cta.bullets.bullet1"),
+    t("about.cta.bullets.bullet2"),
+    t("about.cta.bullets.bullet3"),
+  ],
+  contactTitle: "Contact us now",
+  buttonText: t("about.cta.button"),
+};
 </script>
 
 <style scoped>
-.animated-div {
-  background: linear-gradient(200deg, #6327dd, #dd279e, #2773dd);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 21s ease infinite;
-  -moz-animation: AnimationName 21s ease infinite;
-  animation: AnimationName 21s ease infinite;
+/* Animations */
+#circle svg {
+  animation: rotate 10s linear infinite;
 }
 
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 69% 0%;
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
   }
-  50% {
-    background-position: 32% 100%;
-  }
-  100% {
-    background-position: 69% 0%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 69% 0%;
-  }
-  50% {
-    background-position: 32% 100%;
-  }
-  100% {
-    background-position: 69% 0%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 69% 0%;
-  }
-  50% {
-    background-position: 32% 100%;
-  }
-  100% {
-    background-position: 69% 0%;
+  to {
+    transform: rotate(0);
   }
 }
 </style>

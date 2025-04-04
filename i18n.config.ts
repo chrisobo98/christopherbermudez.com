@@ -255,6 +255,103 @@ export default defineI18nConfig(() => ({
         month: "Monthly",
         year: "Year",
       },
+      about: {
+        title:
+          "Expert Web Development & SEO in Clermont & Greater Orlando Area",
+        subtitle: "About Web & SEO by Christopher Bermudez",
+        description:
+          "Helping local businesses in Clermont, Orlando, and Central Florida grow online with custom websites and high-impact SEO strategies.",
+        whyChooseUs: {
+          title:
+            "Why Businesses in Clermont & Orlando Choose Us for SEO & Web Development",
+          content:
+            "I specialize in web development and SEO for local businesses who might not have the time to handle their online presence. I help restaurants, auto shops, HVAC services, and more rank higher and attract more customers.",
+          seeHow: "See how we help businesses like yours →",
+          points: {
+            localExpertise:
+              "Local Expertise: Deep knowledge of the Orlando/Clermont market.",
+            seoResults:
+              "Proven SEO Results: Websites ranking #1 for competitive keywords.",
+            fastWebsites:
+              "Fast, Mobile-Optimized Websites that convert visitors into customers.",
+            pricing: "Transparent Pricing & Custom Solutions",
+            SeePricing: "See Pricing",
+          },
+        },
+        video: {
+          title: "Meet Christopher Bermudez",
+          subtitle: "Clermont's Web Developer & SEO Expert",
+          description: "With years of experience in web development and SEO, I'm passionate about helping small businesses thrive.",
+          languages: "Languages Spoken: English, Español, Português"
+        },
+        testimonials: {
+          title: "Partners Who Shared Their Feedback",
+          eliteEuro: {
+            quote: "We started getting so many online bookings and calls that we had to hire more staff after Christopher updated our site and implemented marketing techniques.",
+          },
+          beUpTwo: {
+            quote: "Working with Christopher has been a game-changer for my brand. From the start, he had an immediate impact on my website traffic and got me visible on Google - I'm already ranking on the top pages!",
+          },
+        },
+        stats: {
+          title: "Empowering Each Other to Succeed",
+          description:
+            "Every project we've undertaken has been a collaborative effort where every person involved has left their mark. Together, we've not only constructed digital solutions but also built enduring connections that define our success story.",
+
+          label1: "Years of Combined Experience",
+
+          label2: "Successful Projects",
+        },
+        seeHow: "See How We Ranked [Business Name] #1 in Orlando SEO →",
+        mission: {
+          title: "Our Mission",
+          description:
+            "To empower local businesses in Orlando and Clermont with the tools and strategies they need to thrive in the digital landscape. We believe that every business, no matter its size, deserves a strong online presence that drives growth and success.",
+        },
+        vision: {
+          title: "Our Vision",
+          description:
+            "To be the go-to partner for local businesses in Orlando and Clermont, providing innovative web development and SEO solutions that not only meet but exceed our clients' expectations. We envision a future where every local business can harness the power of the internet to reach its full potential.",
+        },
+        process: {
+          title: "Our Process for SEO & Web Development Success",
+          description:
+            "At the heart of every thriving business is a digital foundation built for search dominance and user conversion. Our proven methodology combines local market insights with technical precision",
+          steps: {
+            step1: {
+              title: "Step 1: Free Local Consultation",
+              description:
+                "We analyze your position against local competitors, identifying geo-targeted keyword opportunities specific to your market",
+            },
+            step2: {
+              title: "Step 2: Strategic Website Development",
+              description:
+                "Building mobile-optimized sites with technical SEO foundations and local search pattern alignment",
+            },
+            step3: {
+              title: "Step 3: Targeted SEO Implementation",
+              description:
+                "Content optimization for local trends and 'near me' searches with business directory integration",
+            },
+            step4: {
+              title: "Step 4: Sustainable Growth Maintenance",
+              description:
+                "Continuous refinement of user journeys and local search dominance maintenance",
+            },
+          },
+        },
+        cta: {
+          title: "Why connect with us?",
+          bullets: {
+            bullet1: "Having problem handling finance?",
+            bullet2: "Having revenue problem?",
+            bullet3: "In the needs of professional advice?",
+          },
+          button: "Contact Me",
+        },
+      },
+      // Keep your existing appointments and general translations here
+
       pricing: {
         info: {
           badge: "Strategic Growth Solutions",
@@ -596,6 +693,103 @@ export default defineI18nConfig(() => ({
         month: "Mensual",
         year: "Año",
       },
+      about: {
+        title:
+          "Desarrollo Web y SEO Experto en Clermont y el Área Metropolitana de Orlando",
+        subtitle: "Sobre Web & SEO por Christopher Bermudez",
+        description:
+          "Ayudando a negocios locales en Clermont, Orlando y el centro de Florida a crecer en línea con sitios web personalizados y estrategias de SEO de alto impacto.",
+        whyChooseUs: {
+          title:
+            "Por Qué los Negocios en Clermont y Orlando Nos Eligen para SEO y Desarrollo Web",
+          content:
+            "Me especializo en desarrollo web y SEO para negocios locales que quizás no tienen tiempo para manejar su presencia en línea. Ayudo a restaurantes, talleres de autos, servicios HVAC y más a posicionarse mejor y atraer más clientes.",
+          seeHow: "Ver cómo ayudamos a negocios como el tuyo →",
+          points: {
+            localExpertise:
+              "Conocimiento Local: Conocimiento profundo del mercado de Orlando/Clermont.",
+            seoResults:
+              "Resultados SEO Comprobados: Sitios web en el puesto #1 para palabras clave competitivas.",
+            fastWebsites:
+              "Sitios Web Rápidos y Optimizados para Móviles que convierten visitantes en clientes.",
+            pricing: "Precios Transparentes y Soluciones Personalizadas",
+            SeePricing: "Ver Precios",
+          },
+        },
+        video: {
+          title: "Conoce a Christopher Bermudez",
+          subtitle: "Desarrollador Web y Experto en SEO de Clermont",
+          description: "Con años de experiencia en desarrollo web y SEO, me apasiona ayudar a los pequeños negocios a prosperar.",
+          languages: "Idiomas: Inglés, Español, Portugués"
+        },
+        testimonials: {
+          title: "Socios que dieron su opinión",
+          eliteEuro: {
+            quote: "Comenzamos a recibir tantas reservas en línea y llamadas que tuvimos que contratar más personal después de que Christopher actualizó nuestro sitio e implementó técnicas de marketing.",
+          },
+          beUpTwo: {
+            quote: "Trabajar con Christopher ha sido un cambio radical para mi marca. Desde el principio, impactó inmediatamente el tráfico de mi sitio web y me hizo visible en Google. ¡Ya estoy apareciendo en las primeras páginas!",
+          },
+        },
+        stats: {
+          title: "Empoderándonos Mutuamente para Triunfar",
+          description:
+            "Cada proyecto que hemos emprendido ha sido un esfuerzo colaborativo donde cada persona involucrada ha dejado su huella. Juntos, no solo hemos construido soluciones digitales, sino también conexiones duraderas que definen nuestra historia de éxito.",
+          label1: "Años de Experiencia Combinada",
+          label2: "Proyectos Exitosos",
+        },
+        seeHow:
+          "Descubre Cómo Logramos Posicionar [Nombre del Negocio] en el #1 en SEO en Orlando →",
+        process: {
+          title: "Nuestro Proceso para Éxito en SEO y Desarrollo Web",
+          description:
+            "En el corazón de cada negocio exitoso hay una base digital construida para dominio en búsquedas y conversión de usuarios. Nuestra metodología comprobada combina conocimiento del mercado local con precisión técnica",
+          steps: {
+            step1: {
+              title: "Paso 1: Consulta Local Gratuita",
+              description:
+                "Analizamos tu posición frente a competidores locales, identificando oportunidades de palabras clave específicas para tu mercado",
+            },
+            step2: {
+              title: "Paso 2: Desarrollo Estratégico de Sitio Web",
+              description:
+                "Construcción de sitios móvil-optimizados con bases técnicas de SEO y alineación a patrones de búsqueda local",
+            },
+            step3: {
+              title: "Paso 3: Implementación de SEO Dirigido",
+              description:
+                "Optimización de contenido para tendencias locales y búsquedas 'cerca de mí' con integración en directorios comerciales",
+            },
+            step4: {
+              title: "Paso 4: Mantenimiento de Crecimiento Sostenible",
+              description:
+                "Refinamiento continuo de jornadas de usuario y mantenimiento de dominio en búsquedas locales",
+            },
+          },
+        },
+
+        mission: {
+          title: "Nuestra Misión",
+          description:
+            "Empoderar a las empresas locales en Orlando y Clermont con las herramientas y estrategias que necesitan para prosperar en el panorama digital. Creemos que cada negocio, sin importar su tamaño, merece una fuerte presencia en línea que impulse el crecimiento y el éxito.",
+        },
+        vision: {
+          title: "Nuestra Visión",
+          description:
+            "Ser el socio preferido de las empresas locales en Orlando y Clermont, ofreciendo soluciones innovadoras de desarrollo web y SEO que no solo cumplan, sino superen las expectativas de nuestros clientes. Imaginamos un futuro en el que cada negocio local pueda aprovechar el poder de internet para alcanzar su máximo potencial.",
+        },
+
+        cta: {
+          title: "¿Por qué conectarte con nosotros?",
+          bullets: {
+            bullet1: "¿Tienes problemas de tiempo para manejar tu presencia en línea?",
+            bullet2: "¿No estás generando suficientes clientes potenciales en línea?",
+            bullet3: "¿Necesitas consultoría en servicios web?",
+          },
+          button: "Contáctame",
+        },
+      },
+
       pricing: {
         info: {
           badge: "Soluciones de Crecimiento Estratégico",
