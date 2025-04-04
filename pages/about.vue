@@ -33,7 +33,12 @@
               <div
                 class="p-[13px] bg-purple-600 group-hover:bg-purple-700 transition-all mt-4 rounded-[10px] w-fit"
               >
-                <Icon :name="feature.icon" style="color: white" size="2em" class="mx-3 my-3" />
+                <Icon
+                  :name="feature.icon"
+                  style="color: white"
+                  size="2em"
+                  class="mx-3 my-3"
+                />
               </div>
               <div class="space-y-1.5 my-6">
                 <h4 class="text-2xl font-semibold">{{ feature.title }}</h4>
@@ -160,7 +165,6 @@
         </h2>
         <p class="mt-4 text-lg">
           {{ $t("about.video.subtitle") }}
-
         </p>
         <NuxtImg
           style="transform: scale(1)"
@@ -174,21 +178,22 @@
         />
         <p class="mt-4 text-lg">
           {{ $t("about.video.description") }}
-
         </p>
         <p class="mt-2 text-lg">
           {{ $t("about.video.languages") }}
         </p>
         <div class="mt-4 flex justify-center space-x-4">
-          <a
-            href="https://linkedin.com/in/christopherbermudez"
+          <NuxtLink
+            target="_blank"
+            to="https://www.linkedin.com/in/christopher-bermudez-ortiz/"
             class="text-blue-600 underline"
-            >LinkedIn</a
+            >LinkedIn</NuxtLink
           >
-          <a
-            href="https://youtube.com/c/ChristopherBermudez"
+          <NuxtLink
+            target="_blank"
+            to="https://www.youtube.com/@webandseobychris"
             class="text-blue-600 underline"
-            >YouTube</a
+            >YouTube</NuxtLink
           >
         </div>
       </div>
