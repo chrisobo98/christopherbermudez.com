@@ -72,7 +72,7 @@
           class="w-full lg:flex lg:w-auto lg:order-1"
         >
           <ul
-            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0"
+            class="flex flex-col p-4 mt-4 border border-purple-500 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0"
           >
           <NavLink
               class="nav-item-bounce delay-500"
