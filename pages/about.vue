@@ -57,16 +57,16 @@
         <p class="mt-4 text-lg">
           {{ $t("about.whyChooseUs.content") }}
         </p>
-        <NuxtLink :to="localePath('/services')" class="mt-4 text-blue-600 underline">
+        <!-- <NuxtLink :to="localePath('/services')" class="mt-4 text-blue-600 underline">
           {{ $t("about.whyChooseUs.seeHow") }}</NuxtLink
-        >
+        > -->
         <ul class="mt-6 space-y-4 text-lg">
           <li>✔ {{ $t("about.whyChooseUs.points.localExpertise") }}</li>
           <li>✔ {{ $t("about.whyChooseUs.points.seoResults") }}</li>
           <li>✔ {{ $t("about.whyChooseUs.points.fastWebsites") }}</li>
           <li>
             ✔ {{ $t("about.whyChooseUs.points.pricing") }}
-            <NuxtLink :to="localePath('/pricing')" class="text-blue-600 underline"
+            <NuxtLink :to="localePath('/website-seo-packages')" class="text-blue-600 underline"
               >{{ $t("about.whyChooseUs.points.SeePricing") }} →</NuxtLink
             >
           </li>
