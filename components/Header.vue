@@ -93,20 +93,22 @@
               :text="$t('home.navbar.blogs')"
             />
             <!-- Services Dropdown -->
-            <div
+            <ul
               class="relative group block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-purple-700 lg:p-0 lg:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-purple-500 lg:dark:hover:bg-transparent dark:border-gray-700"
               @mouseenter="handleMouseEnter"
               @mouseleave="handleMouseLeave"
               ref="dropdownRef"
             >
-              <button
-                @click="showServices = !showServices"
-                class="nav-item-bounce delay-500"
-              >
-                {{ $t("home.navbar.services") }}
-                <Icon name="heroicons:chevron-down" class="w-4 h-4" />
-              </button>
-            </div>
+              <li>
+                <button
+                  @click="showServices = !showServices"
+                  class="nav-item-bounce delay-500"
+                >
+                  {{ $t("home.navbar.services") }}
+                  <Icon name="heroicons:chevron-down" class="w-4 h-4" />
+                </button>
+              </li>
+            </ul>
             <!-- Desktop Mega Menu -->
             <div
               v-show="showServices"
@@ -176,7 +178,9 @@
                           yet have a website
                         </p>
                         <NuxtLink
-                          :to="localePath('/blog/e-commerce-website-development')"
+                          :to="
+                            localePath('/blog/e-commerce-website-development')
+                          "
                           aria-label="View blog link"
                           class="text-purple-600 dark:text-purple-400 font-semibold mt-4 inline-block hover:text-purple-700 transition-colors"
                         >
