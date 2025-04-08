@@ -57,13 +57,13 @@
   const switchLocalePath = useSwitchLocalePath()
   
   watch(locale, (newLocale) => {
-    console.log('Locale changed:', newLocale);
+    // console.log('Locale changed:', newLocale);
     currentLocale.value = newLocale;
   });
   
   const toggleLanguageDropdown = () => {
     languageDropdownOpen.value = !languageDropdownOpen.value;
-    console.log('Dropdown toggled:', languageDropdownOpen.value);
+    // console.log('Dropdown toggled:', languageDropdownOpen.value);
   };
   </script>
   

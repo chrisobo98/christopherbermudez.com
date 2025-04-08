@@ -17,7 +17,7 @@
       <PortfolioItem
         :title="$t('home.portfolio.portfolio_elite_header')"
         :description="$t('home.portfolio.portfolio_elite_text')"
-        imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1743102340/eliteeuromockup_yxiqmh.png"
+        imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1744047733/compressed-image-elite_nfrx60.png"
         url="https://eliteeuromotors.com/"
       />
       <PortfolioItem

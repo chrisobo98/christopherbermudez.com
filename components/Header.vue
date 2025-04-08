@@ -9,7 +9,7 @@
       >
         <NuxtImg
           provider="cloudinary"
-          src="https://res.cloudinary.com/dkaakonrp/image/upload/v1735772391/mobile-logo_dklwzn.png"
+          src="v1735772391/mobile-logo_dklwzn.png"
           @click="navigateHome"
           alt="Bermudez 'B' Logo"
           width="100"
@@ -22,10 +22,11 @@
           class="text-4xl font-semibold whitespace-nowrap h8 logo-bounce"
         >
           <span class="hidden uppercase md:inline">Christopher</span>
-          <span class="hidden uppercase md:inline text-purple-700">Bermudez</span>
+          <span class="hidden uppercase md:inline text-purple-700"
+            >Bermudez</span
+          >
         </NuxtLink>
         <div class="flex items-center space-x-3 md:space-x-3">
-          
           <!-- Language Selector -->
           <LanguageSelector class="nav-item-bounce delay-100" />
 
@@ -74,7 +75,7 @@
           <ul
             class="flex flex-col p-4 mt-4 border border-purple-500 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0"
           >
-          <NavLink
+            <NavLink
               class="nav-item-bounce delay-500"
               :href="localePath('/website-seo-packages')"
               :text="$t('home.navbar.pricing')"
@@ -87,8 +88,122 @@
             <NavLink
               class="nav-item-bounce delay-500"
               :href="localePath('/blog')"
-              text="Blog"
+              :text="$t('home.navbar.blogs')"
             />
+            <!-- Services Dropdown -->
+            <div
+              class="relative group block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-purple-700 lg:p-0 lg:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-purple-500 lg:dark:hover:bg-transparent dark:border-gray-700"
+              @mouseenter="handleMouseEnter"
+              @mouseleave="handleMouseLeave"
+              ref="dropdownRef"
+            >
+              <button
+                @click="showServices = !showServices"
+                class="nav-item-bounce delay-500"
+              >
+                {{ $t("home.navbar.services") }}
+                <Icon name="heroicons:chevron-down" class="w-4 h-4" />
+              </button>
+            </div>
+            <!-- Desktop Mega Menu -->
+            <div
+              v-show="showServices"
+              @mouseenter="cancelLeave"
+              @mouseleave="handleMouseLeave"
+              class="absolute left-10 rounded-3xl right-10 bg-white dark:bg-gray-800 shadow-xl border-t dark:border-gray-700 mt-12 hidden lg:block"
+            >
+              <div class="max-w-screen-xl mx-auto px-8 py-12">
+                <h3 class="text-2xl font-bold mb-4">
+                  {{ $t("home.navbar.coreService") }}
+                </h3>
+
+                <div class="grid grid-cols-2 gap-12">
+                  <!-- Left Column -->
+
+                  <div class="grid grid-cols-2">
+                    <template v-for="(service, index) in services" :key="index">
+                      <NuxtLink
+                        :to="localePath(service.path)"
+                        class="p-4 hover:bg-purple-50 dark:hover:bg-gray-700 rounded-xl transition-colors"
+                      >
+                        <div
+                          class="w-12 h-12 bg-purple-100 dark:bg-gray-600 rounded-lg flex items-center justify-center mb-3"
+                        >
+                          <Icon
+                            :name="service.icon"
+                            class="w-6 h-6 text-purple-600 dark:text-purple-400"
+                          />
+                        </div>
+                        <h4
+                          class="text-xl font-bold text-gray-900 dark:text-white mb-1"
+                        >
+                          {{ service.title }}
+                        </h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-base">
+                          {{ service.description }}
+                        </p>
+                      </NuxtLink>
+                    </template>
+                  </div>
+
+                  <!-- Right Column -->
+                  <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                    <!-- Featured Section -->
+                    <div class="bg-purple-50 dark:bg-gray-700 p-8 rounded-xl">
+                      <h3 class="text-2xl font-bold mb-4">
+                        {{ $t("home.navbar.featuredPost") }}
+                      </h3>
+                      <div
+                        class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
+                      >
+                        <NuxtImg
+                          provider="cloudinary"
+                          src="t_Banner 16:9/v1744075475/on-page-seo_ja7prk.png"
+                          class="rounded-lg mb-4 w-full h-48 object-cover"
+                          alt="SEO Success Story"
+                        />
+                        <p
+                          class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+                        >
+                          Mastering E-Commerce Part 1: The Basics
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-300 text-base">
+                          A great starting point for business owners who do not
+                          yet have a website
+                        </p>
+                        <NuxtLink
+                          :to="localePath('/blog/e-commerce-website-development')"
+                          class="text-purple-600 dark:text-purple-400 font-semibold mt-4 inline-block hover:text-purple-700 transition-colors"
+                        >
+                          View Blog Post →
+                        </NuxtLink>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Dropdown -->
+            <div
+              v-show="showServices && menuOpen"
+              class="lg:hidden bg-white dark:bg-gray-800 rounded-xl mt-4"
+            >
+              <div class="px-4 py-4 space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-white text-xl">
+                    {{ $t("home.navbar.coreService") }}
+                  </h3>
+                  <DropdownItemMobile
+                    v-for="(service, index) in mobileServices"
+                    :key="index"
+                    :href="localePath(service.href)"
+                    :icon="service.icon"
+                    :title="service.title"
+                  />
+                </div>
+              </div>
+            </div>
             <!-- Appointment Button Mobile -->
             <NuxtLink
               :to="localePath('/appointments')"
@@ -99,19 +214,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- Megamenu
-      <div v-if="megaMenuOpen" id="mega-menu-full-dropdown"
-        class="mt-1 bg-white shadow-sm bg-gray-50 border-y dark:bg-violet-600 dark:border-purple-500 transition-transform transform">
-        <div class="grid max-w-screen-xl px-4 py-5 mx-auto sm:grid-cols-2 md:px-6">
-          <ul>
-            <DropdownItem href="#" title="E-commerce Solutions"
-              description="Build robust online stores with seamless integrations." />
-            <DropdownItem href="#" title="Custom Websites"
-              description="Get a website tailored to your business needs." />
-          </ul>
-        </div>
-      </div> -->
     </nav>
   </header>
 </template>
@@ -120,12 +222,89 @@
 import { ref, onMounted, onUnmounted } from "vue";
 import LanguageSelector from "~/components/ui/LanguageSelector.vue"; // Import the LanguageSelector component
 import NavLink from "~/components/ui/NavLink.vue";
-import DropdownItem from "~/components/ui/DropdownItem.vue";
+import FeaturedDropdownItem from "~/components/ui/FeaturedDropdownItem.vue";
+import DropdownItemMobile from "~/components/ui/DropdownItemMobile.vue";
 import DarkModeSwitcher from "~/components/effects/DarkModeSwitcher.vue";
+import { onClickOutside } from "@vueuse/core";
+
+import { useHoverWithDelay } from "./composables/useHover";
 
 import { useRouter } from "vue-router";
 
+const { t } = useI18n();
+
 const router = useRouter();
+
+const { showServices, handleMouseEnter, handleMouseLeave, cancelLeave } =
+  useHoverWithDelay(300); // 300ms delay
+
+const dropdownRef = ref(null);
+
+const toggleServices = () => {
+  showServices.value = !showServices.value;
+};
+
+onClickOutside(dropdownRef, () => {
+  showServices.value = false;
+});
+
+const mobileServices = computed(() => [
+  {
+    title: t("home.navbar.mobileServices.local_seo.title"),
+    href: "/services/local-seo-for-clermont-and-orlando-businesses",
+    icon: "heroicons:map-pin",
+  },
+  {
+    title: t("home.navbar.mobileServices.conversion_optimization.title"),
+    href: "/services/conversion-rate-optimization",
+    icon: "heroicons:bolt",
+  },
+  {
+    title: t("home.navbar.mobileServices.web_development.title"),
+    href: "/services/high-speed-web-development",
+    icon: "heroicons:chart-bar",
+  },
+  {
+    title: t("home.navbar.mobileServices.seo_audits.title"),
+    href: "/services/technical-seo-audits-and-fixes",
+    icon: "heroicons:magnifying-glass",
+  },
+]);
+
+const services = computed(() => [
+  {
+    title: t("home.navbar.localSeo.title"),
+    description: t("home.navbar.localSeo.description"),
+    path: "/services/local-seo-for-clermont-and-orlando-businesses",
+    icon: "heroicons:map-pin",
+    bgColor: "bg-purple-100",
+    iconColor: "text-purple-600",
+  },
+  {
+    title: t("home.navbar.webDev.title"),
+    description: t("home.navbar.webDev.title"),
+    path: "/services/high-speed-web-development",
+    icon: "heroicons:bolt",
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-600",
+  },
+  {
+    title: t("home.navbar.cro.title"),
+    description: t("home.navbar.cro.title"),
+    path: "/services/conversion-rate-optimization",
+    icon: "heroicons:chart-bar",
+    bgColor: "bg-green-100",
+    iconColor: "text-green-600",
+  },
+  {
+    title: t("home.navbar.technicalSeo.title"),
+    description: t("home.navbar.technicalSeo.title"),
+    path: "/services/technical-seo-audits-and-fixes",
+    icon: "heroicons:magnifying-glass",
+    bgColor: "bg-orange-100",
+    iconColor: "text-orange-600",
+  },
+]);
 
 const navigateHome = () => {
   router.push(localePath("/"));
@@ -159,6 +338,25 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.group:hover .dropdown {
+  pointer-events: all;
+}
+
+.dropdown {
+  transition: opacity 0.2s, transform 0.2s;
+  transform-origin: top center;
+}
+
+.dropdown[data-show="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown[data-show="false"] {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
 .main-header {
   transition: background-color 0.3s ease, color 0.3s ease;
   position: sticky;
@@ -210,5 +408,27 @@ onUnmounted(() => {
 
 .nav-item-bounce.delay-500 {
   animation-delay: 0.5s;
+}
+/* Mobile-first transitions */
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: all 0.2s ease;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+.dropdown-enter-from,
+.dropdown-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Desktop hover */
+@media (min-width: 1024px) {
+  .dropdown-enter-from,
+  .dropdown-leave-to {
+    max-height: none;
+    opacity: 1;
+  }
 }
 </style>

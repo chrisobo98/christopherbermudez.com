@@ -5,12 +5,11 @@
     <!-- Images -->
     <div class="flex justify-center">
       <NuxtImg
-        style="transform: scale(1)"
         provider="cloudinary"
         loading="lazy"
-        height="500"
-        width="500"
-        src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741369614/mxjsxr4ptx8qeqh3ctkw.jpg"
+        height="400"
+        width="400"
+        src="v1744049301/christopher-bermudez-web-services-headshot_oxlgnf.png"
         alt="Christopher Bermudez"
         class="rounded-lg mb-8 nuxt-img-animation"
       />

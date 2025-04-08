@@ -10,6 +10,28 @@ const { data: post } = await useAsyncData(`blog-${slug}`, () => {
 const { data: posts } = await useAsyncData("blog-list", () => {
   return queryCollection("content").all();
 });
+
+useHead(() => {
+  const seo = post.value?.meta?.seo || post.value?.meta || {};
+
+  return {
+    title: seo.title,
+    meta: [
+      {
+        name: 'description',
+        content: seo.description,
+      },
+      {
+        property: 'og:title',
+        content: seo.title,
+      },
+      {
+        property: 'og:description',
+        content: seo.description,
+      }
+    ],
+  };
+});
 </script>
 
 <template>
@@ -17,6 +39,7 @@ const { data: posts } = await useAsyncData("blog-list", () => {
     <div class="w-full mx-auto">
       <div class="container mx-auto p-8">
         <NuxtImg
+          provider="cloudinary"
           :src="`${post.meta.image}`"
           alt="Build a Site Blog"
           class="w-auto max-h-screen mx-auto rounded-3xl"

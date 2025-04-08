@@ -16,7 +16,6 @@
         <CalendlyWidget />
       </div>
 
-      <!-- Competitive Advantage Section -->
     </div>
   </div>
 </template>
@@ -27,22 +26,22 @@ import FAQ from "@/components/appointments/FAQ.vue";
 import CalendlyWidget from "@/components/appointments/CalendlyWidget.vue";
 import BaseDiv from "@/components/ui/BaseDiv.vue";
 
+const { t } = useI18n();
+
 useHead({
-  title: "Schedule a Consultation | Web Design & SEO",
+  title: t("appointments.metadata.title"),
   meta: [
     {
       name: "description",
-      content:
-        "Book an appointment with Christopher Bermudez to discuss your web design and SEO needs. Let’s create a strategy tailored to your business goals.",
+      content: t("appointments.metadata.description"),
     },
     {
       property: "og:title",
-      content: "Book a Web Design & SEO Appointment",
+      content: t("appointments.metadata.og_title"),
     },
     {
       property: "og:description",
-      content:
-        "Schedule a consultation to explore how Christopher Bermudez can help your business thrive online.",
+      content: t("appointments.metadata.og_description"),
     },
   ],
 });

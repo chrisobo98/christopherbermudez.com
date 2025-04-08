@@ -223,6 +223,24 @@
 import { ref, computed } from "vue";
 const { t, tm } = useI18n();
 
+useHead({
+  title: t("pricing.metadata.title"),
+  meta: [
+    {
+      name: "description",
+      content: t("pricing.metadata.description"),
+    },
+    {
+      property: "og:title",
+      content: t("pricing.metadata.og_title"),
+    },
+    {
+      property: "og:description",
+      content: t("pricing.metadata.og_description"),
+    },
+  ],
+});
+
 const isYearly = ref(false);
 const toggleBilling = () => {
   isYearly.value = !isYearly.value;

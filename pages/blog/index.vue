@@ -1,4 +1,24 @@
 <script setup>
+const { t } = useI18n();
+
+useHead({
+  title: t("blog.metadata.title"),
+  meta: [
+    {
+      name: "description",
+      content: t("blog.metadata.description"),
+    },
+    {
+      property: "og:title",
+      content: t("blog.metadata.og_title"),
+    },
+    {
+      property: "og:description",
+      content: t("blog.metadata.og_description"),
+    },
+  ],
+});
+
 const { data: posts } = await useAsyncData(
   "posts",
 
@@ -39,8 +59,9 @@ const { data: posts } = await useAsyncData(
               :key="post.path"
               class="group bg-white dark:bg-[#2a2a2a] p-5 rounded-xl border border-purple-600 text-black dark:text-white shadow-md hover:shadow-lg transition"
             >
-              <NuxtLink :to="post.path" class="block">
+              <NuxtLink :to="localePath(post.path)" class="block">
                 <NuxtImg
+                  provider="cloudinary"
                   :src="post.meta.image"
                   :alt="post.title"
                   class="rounded-2xl h-48 w-96 object-cover my-4"
@@ -70,10 +91,11 @@ const { data: posts } = await useAsyncData(
           :key="post.path"
           class="group cursor-pointer transition-all duration-500 p-5 bg-white dark:bg-[#2a2a2a] rounded-2xl shadow-sm border border-transparent hover:border-purple-600"
         >
-          <NuxtLink :to="post.path" class="block h-full">
+          <NuxtLink :to="localePath(post.path)" class="block h-full">
             <div class="flex gap-6 flex-col lg:flex-row">
               <div class="relative w-full lg:w-40 h-48 lg:h-40 mx-auto">
                 <NuxtImg
+                  provider="cloudinary"
                   :src="post.meta.image"
                   :alt="post.title"
                   class="rounded-xl w-full h-full object-cover"

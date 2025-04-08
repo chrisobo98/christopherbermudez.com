@@ -5,10 +5,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <NuxtImg
           provider="cloudinary"
-          loading="lazy"
-          height="300"
-          width="500"
-          src="https://res.cloudinary.com/dkaakonrp/image/upload/v1743728212/citrus-tower_aerial_view_isq2g4.png"
+          src="v1744048968/about-christopher-bermudez-central-florida-leading-freelancer_cluuum.png"
           alt="Clermont Citrus Tower Aerial View"
           class="rounded-lg my-6 md:my-12 nuxt-img-animation mx-auto"
         />
@@ -66,7 +63,9 @@
           <li>✔ {{ $t("about.whyChooseUs.points.fastWebsites") }}</li>
           <li>
             ✔ {{ $t("about.whyChooseUs.points.pricing") }}
-            <NuxtLink :to="localePath('/website-seo-packages')" class="text-blue-600 underline"
+            <NuxtLink
+              :to="localePath('/website-seo-packages')"
+              class="text-blue-600 underline"
               >{{ $t("about.whyChooseUs.points.SeePricing") }} →</NuxtLink
             >
           </li>
@@ -167,12 +166,11 @@
           {{ $t("about.video.subtitle") }}
         </p>
         <NuxtImg
-          style="transform: scale(1)"
           provider="cloudinary"
           loading="lazy"
-          height="500"
-          width="500"
-          src="https://res.cloudinary.com/dkaakonrp/image/upload/v1741369614/mxjsxr4ptx8qeqh3ctkw.jpg"
+          height="300"
+          width="300"
+          src="v1744049301/christopher-bermudez-web-services-headshot_oxlgnf.png"
           alt="Christopher Bermudez"
           class="rounded-lg my-8 nuxt-img-animation mt-6 mx-auto rounded-lg shadow-lg w-48 h-48"
         />
@@ -226,6 +224,7 @@
 
         <FAQ class="py-24" />
       </div>
+      <CallToAction />
     </div>
   </section>
 </template>
@@ -233,9 +232,29 @@
 <script setup lang="ts">
 import FAQ from "@/components/appointments/FAQ.vue";
 import BaseButton from "@/components/ui/BaseButton.vue";
+import CallToAction from "@/components/CallToAction.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
+
+useHead({
+  title: t("about.metadata.title"),
+  meta: [
+    {
+      name: "description",
+      content: t("about.metadata.description"),
+    },
+    {
+      property: "og:title",
+      content: t("about.metadata.og_title"),
+    },
+    {
+      property: "og:description",
+      content: t("about.metadata.og_description"),
+    },
+  ],
+});
+
 
 // All data properly defined
 interface ContentSection {
