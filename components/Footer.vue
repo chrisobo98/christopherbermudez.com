@@ -17,6 +17,7 @@
           <!-- Social Media Icons -->
           <NuxtLink
             to="https://www.linkedin.com/company/web-design-seo-by-christopher-bermudez"
+            aria-label="LinkedIn Socia Media Link"
             target="_blank"
           >
             <Icon
@@ -28,6 +29,7 @@
 
           <NuxtLink
             to="https://www.instagram.com/clermontwebdesign/"
+            aria-label="Instagram Socia Media Link"
             target="_blank"
           >
             <Icon
@@ -37,7 +39,7 @@
             />
           </NuxtLink>
 
-          <NuxtLink to="https://www.tiktok.com/@webseobychris" target="_blank">
+          <NuxtLink to="https://www.tiktok.com/@webseobychris" aria-label="Tiktok Socia Media Link" target="_blank">
             <Icon
               name="fa6-brands:tiktok"
               size="2em"
@@ -47,6 +49,7 @@
 
           <NuxtLink
             to="https://www.facebook.com/people/Christopher-Bermudez-Web-Solutions/61561466145301/"
+            aria-label="Facebook Socia Media Link"
             target="_blank"
           >
             <Icon
@@ -58,6 +61,7 @@
 
           <NuxtLink
             to="https://bsky.app/profile/bermudezwebandseo.bsky.social"
+            aria-label="Bluesky Socia Media Link"
             target="_blank"
           >
             <Icon
@@ -69,6 +73,7 @@
 
           <NuxtLink
             to="https://www.youtube.com/@webandseobychris"
+            aria-label="Youtube Socia Media Link"
             target="_blank"
           >
             <Icon
@@ -80,6 +85,7 @@
 
           <NuxtLink
             to="https://www.threads.net/@clermontwebdesign"
+            aria-label="Threads Socia Media Link"
             target="_blank"
           >
             <Icon
@@ -91,6 +97,7 @@
 
           <NuxtLink
             to="https://www.pinterest.com/webandseobychris/"
+            aria-label="Pinterest Socia Media Link"
             target="_blank"
           >
             <Icon

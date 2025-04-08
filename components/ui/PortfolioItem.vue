@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" target="_blank" :class="itemClass">
+  <NuxtLink :to="url" target="_blank" :class="itemClass">
     <!-- Image Area -->
     <NuxtImg
       provider="cloudinary"
@@ -21,7 +21,7 @@
         </div>
       </GSAPStaggeredEffect>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">

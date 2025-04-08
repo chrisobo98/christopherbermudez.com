@@ -64,18 +64,13 @@
           <li>
             ✔ {{ $t("about.whyChooseUs.points.pricing") }}
             <NuxtLink
+              aria-label="Why Choose Us See Price"
               :to="localePath('/website-seo-packages')"
               class="text-blue-600 underline"
               >{{ $t("about.whyChooseUs.points.SeePricing") }} →</NuxtLink
             >
           </li>
         </ul>
-        <!-- Trust Signals -->
-        <!-- <div class="mt-8 flex justify-center space-x-4">
-          <a href="/case-studies" class="text-blue-600 underline">{{
-            $t("about.seeHow")
-          }}</a>
-        </div> -->
       </div>
 
       <!-- Stats Section -->
@@ -183,12 +178,14 @@
         <div class="mt-4 flex justify-center space-x-4">
           <NuxtLink
             target="_blank"
+            aria-label="LinkedIn Link"
             to="https://www.linkedin.com/in/christopher-bermudez-ortiz/"
             class="text-blue-600 underline"
             >LinkedIn</NuxtLink
           >
           <NuxtLink
             target="_blank"
+            aria-label="Youtube Link"
             to="https://www.youtube.com/@webandseobychris"
             class="text-blue-600 underline"
             >YouTube</NuxtLink
@@ -254,7 +251,6 @@ useHead({
     },
   ],
 });
-
 
 // All data properly defined
 interface ContentSection {

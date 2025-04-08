@@ -20,6 +20,7 @@
         <NuxtLink
           :to="localePath('/')"
           class="text-4xl font-semibold whitespace-nowrap h8 logo-bounce"
+          aria-label="Christopher Bermudez Logo"
         >
           <span class="hidden uppercase md:inline">Christopher</span>
           <span class="hidden uppercase md:inline text-purple-700"
@@ -33,6 +34,7 @@
           <!-- Appointment Button Desktop -->
           <NuxtLink
             :to="localePath('/appointments')"
+            aria-label="Appointments link"
             class="nav-item-bounce hidden md:inline delay-200 text-white bg-purple-600 dark:bg-black border border-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
           >
             {{ $t("home.navbar.appointment") }}
@@ -124,6 +126,7 @@
                     <template v-for="(service, index) in services" :key="index">
                       <NuxtLink
                         :to="localePath(service.path)"
+                        aria-label="Our Services"
                         class="p-4 hover:bg-purple-50 dark:hover:bg-gray-700 rounded-xl transition-colors"
                       >
                         <div
@@ -158,6 +161,7 @@
                       >
                         <NuxtImg
                           provider="cloudinary"
+                          loading="lazy"
                           src="t_Banner 16:9/v1744075475/on-page-seo_ja7prk.png"
                           class="rounded-lg mb-4 w-full h-48 object-cover"
                           alt="SEO Success Story"
@@ -173,6 +177,7 @@
                         </p>
                         <NuxtLink
                           :to="localePath('/blog/e-commerce-website-development')"
+                          aria-label="View blog link"
                           class="text-purple-600 dark:text-purple-400 font-semibold mt-4 inline-block hover:text-purple-700 transition-colors"
                         >
                           View Blog Post →
@@ -207,6 +212,7 @@
             <!-- Appointment Button Mobile -->
             <NuxtLink
               :to="localePath('/appointments')"
+              aria-label="Appointments link"
               class="nav-item-bounce mt-4 delay-200 md:hidden text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
             >
               {{ $t("home.navbar.appointment") }}

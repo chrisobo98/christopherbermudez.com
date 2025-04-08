@@ -7,7 +7,7 @@
       <p class="text-xl mb-8">
         {{ $t('finalCta.subheading') }}
       </p>
-      <NuxtLink :to="localePath('/appointments')" class="btn-secondary">
+      <NuxtLink :to="localePath('/appointments')" aria-label="Call to action button contact us" class="btn-secondary">
         {{ $t('finalCta.button') }}
       </NuxtLink>
     </div>

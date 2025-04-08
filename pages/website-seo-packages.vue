@@ -96,6 +96,7 @@
             >
               <NuxtLink
                 :to="localePath(ctaLink)"
+                aria-label="Call to action contact"
                 class="px-2 text-white transition-all duration-500 ease-in-out text-base font-semibold"
               >
                 {{ $t("pricing.info.contactButton") }}
@@ -208,7 +209,11 @@
             <button
               class="bg-purple-600 py-2 px-4 rounded-lg hover:bg-purple-700 transition mt-4"
             >
-              <NuxtLink :to="localePath('/appointments')" class="text-white">
+              <NuxtLink
+                :to="localePath('/appointments')"
+                aria-label="Appointments page link"
+                class="text-white"
+              >
                 {{ $t("pricing.plans.additionalServices.custom.button") }}
               </NuxtLink>
             </button>
