@@ -5,12 +5,15 @@ description: If you're a business owner in Clermont or Orlando, having a fast,
   businesses grow online.
 date: 2025-02-12
 image: t_Banner 16:9/v1744075472/build-a-site-blog_wnpb7b.png
+path: /blog/web-and-seo-clermont-orlando-helping-businesses
 tags:
   - web development
   - SEO
   - business assistance
   - Clermont
   - Orlando
+categories:
+  - SEO
 author: Christopher Bermudez
 slug: web-and-seo-clermont-orlando-helping-businesses
 seo:

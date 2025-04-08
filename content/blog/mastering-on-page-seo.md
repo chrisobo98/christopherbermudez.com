@@ -5,10 +5,15 @@ description: Discover actionable on-page SEO techniques to dominate search ranki
   structure, and more.
 date: 2025-02-15
 image: t_Banner 16:9/v1744075475/on-page-seo_ja7prk.png
+path: /blog/mastering-on-page-seo
 tags:
   - SEO
   - business assistance
 author: Christopher Bermudez
+categories:
+  - SEO
+  - On-Page
+  - Strategy
 slug: mastering-on-page-seo-optimization-guide
 seo:
   title: "Mastering On-Page SEO: Boost Your Online Visibility with Proven Strategies"

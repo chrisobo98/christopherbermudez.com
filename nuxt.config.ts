@@ -53,6 +53,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       gtagId: "G-3CC4904P02", // Dynamic ID if needed
+      siteUrl: 'https://christopherbermudez.com',
     },
   },
   fonts: {
