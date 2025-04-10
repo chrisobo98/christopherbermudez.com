@@ -89,7 +89,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import {
   UserIcon,
   EnvelopeIcon,
