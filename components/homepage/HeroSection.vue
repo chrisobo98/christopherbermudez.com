@@ -2,19 +2,19 @@
   <BaseSection class="grid">
     <div class="z-10">
       <h1
-        class="lg:text-7xl text-5xl font-bold text-left md:text-center drop-shadow-xl mb-2"
+        class="lg:text-7xl text-5xl font-bold text-left md:text-center drop-shadow-xl"
       >
         {{ $t("home.hero.title") }}
       </h1>
 
       <!-- Hero Description -->
-      <p class="text-xl md:text-2xl text-left md:text-center my-2 h-14">
+      <p class="text-xl md:text-2xl text-left md:text-center">
         {{ $t("home.hero.description") }}
       </p>
 
       <!-- text for site scanner -->
       <p
-        class="text-xl md:text-2xl font-extralight text-left md:text-center mt-12 mb-6 md:my-4"
+        class="text-xl md:text-2xl font-extralight text-left md:text-center mt-12 md:my-4"
       >
         Step 1: {{ $t("home.hero.callToAction")
         }}<span class="font-bold text-purple-500">{{
@@ -25,7 +25,7 @@
       <SiteScanner />
 
       <!-- Star Icon -->
-      <p class="my-4 flex font-light text-center mx-auto">
+      <p class="flex font-light text-center mx-auto">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"

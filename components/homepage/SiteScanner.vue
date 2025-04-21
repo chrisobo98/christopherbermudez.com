@@ -1,136 +1,198 @@
 <template>
-  <form
-    class="so-widget-form"
-    id="so1734451725"
-    :action="formAction"
-    target="so-iframe"
-    data-behaviour="new_tab"
-    data-title="Website Report for"
-    data-touch="Thank you for requesting a report. We'll be in touch shortly!"
-    @submit="handleSubmit"
-  >
-    <input id="so-typeso1734451725" type="hidden" name="type" value="pdf" />
-    <input type="hidden" name="uid" value="71622" />
-    <input type="hidden" name="behaviour" value="new_tab" />
-    <input type="hidden" name="template" value="0" />
+  <BaseSection>
+    <form @submit.prevent="handleSubmit">
+      <GSAPStaggeredEffect>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-4"
+          id="so-fieldswrapso1734451725"
+        >
+          <!-- Website URL Input -->
+          <div class="col-span-3 md:col-span-1">
+            <label for="domain" class="block mb-2 font-medium">
+              {{ $t("home.hero.websiteUrl") }}
+            </label>
+            <input
+              type="text"
+              id="domain"
+              v-model="form.domain"
+              :placeholder="$t('home.hero.websiteUrl')"
+              class="bg-gray-200 dark:bg-gray-700 border border-gray-100 dark:border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5"
+              required
+            />
+          </div>
 
-    <div class="grid grid-cols-8 gap-4" id="so-fieldswrapso1734451725">
-      <input
-        type="text"
-        name="domain"
-        id="so-domainso1734451725"
-        class="col-span-4 md:col-span-4 bg-gray-100 dark:bg-gray-900 px-3 py-2 border border-gray-500 dark:border-gray-600 outline-none rounded-lg ring-indigo-600 transition duration-100 focus:ring-indigo-600"
-        :placeholder="$t('home.hero.websiteUrl')"
-        data-validation="Please enter a correct Website URL."
-        v-model="form.domain"
-      />
-      <input
-        type="text"
-        name="first_name"
-        id="so-first-nameso1734451725"
-        class="col-span-4 md:col-span-4 bg-gray-100 dark:bg-gray-900 px-3 py-2 border border-gray-500 dark:border-gray-600 outline-none rounded-lg ring-indigo-600 transition duration-100 focus:ring-indigo-600"
-        :placeholder="$t('home.hero.firstName')"
-        data-validation="Please enter your First Name"
-        v-model="form.firstName"
-      />
-      <input
-        type="text"
-        name="phone"
-        id="so-phoneso1734451725"
-        class="col-span-8 md:col-span-3 bg-gray-100 dark:bg-gray-900 px-3 py-2 border border-gray-500 dark:border-gray-600 outline-none rounded-lg ring-indigo-600 transition duration-100 focus:ring-indigo-600"
-        :placeholder="$t('home.hero.phone')"
-        data-validation="Please enter a valid phone number"
-        v-model="form.phone"
-      />
-      <input
-        type="text"
-        name="email"
-        id="so-emailso1734451725"
-        class="col-span-8 md:col-span-3 bg-gray-100 dark:bg-gray-900 px-3 py-2 border border-gray-500 dark:border-gray-600 outline-none rounded-lg ring-indigo-600 transition duration-100 focus:ring-indigo-600"
-        :placeholder="$t('home.hero.email')"
-        data-validation="Please enter a valid email address."
-        v-model="form.email"
-      />
-      <input
-        class="cursor-pointer col-span-8 md:col-span-2 inline-flex items-center justify-center px-5 py-3 mb-4 sm:mb-0 text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm transition focus:ring-purple-800"
-        type="submit"
-        id="so-submitso1734451725"
-        :value="$t('home.hero.audit')"
-      />
-    </div>
-  </form>
+          <!-- First Name Input -->
+          <div class="col-span-3 md:col-span-1">
+            <label for="firstName" class="block mb-2 font-medium">
+              {{ $t("home.hero.firstName") }}
+            </label>
+            <input
+              type="text"
+              id="firstName"
+              v-model="form.firstName"
+                :placeholder="$t('home.hero.firstName')"
+              class="bg-gray-200 dark:bg-gray-700 border border-gray-100 dark:border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5"
+              required
+            />
+          </div>
+
+          <!-- Phone Input -->
+          <div class="col-span-3 md:col-span-1">
+            <label for="phone" class="block mb-2 font-medium">
+              {{ $t("home.hero.phone") }}
+            </label>
+            <input
+              type="text"
+              id="phone"
+              v-model="form.phone"
+              :placeholder="$t('home.hero.phone')"
+              class="bg-gray-200 dark:bg-gray-700 border border-gray-100 dark:border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5"
+              required
+
+            />
+          </div>
+
+          <!-- Email Input -->
+          <div class="col-span-3 md:col-span-2">
+            <label for="email" class="block mb-2 font-medium">
+              {{ $t("home.hero.email") }}
+            </label>
+            <input
+              type="email"
+              id="email"
+              v-model="form.email"
+              :placeholder="$t('home.hero.email')"
+              class="bg-gray-200 dark:bg-gray-700 border border-gray-100 dark:border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5"
+              required
+            />
+          </div>
+
+<!-- Submit Button -->
+<div class="col-span-3 md:col-span-1 mt-8">
+  <BaseButton type="submit" :disabled="loading" class="w-full">
+    <template v-if="loading">
+      <svg
+        aria-hidden="true"
+        role="status"
+        class="inline w-4 h-4 me-3 text-white animate-spin"
+        viewBox="0 0 100 101"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+          fill="#E5E7EB"
+        />
+        <path
+          d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+          fill="currentColor"
+        />
+      </svg>
+      Loading...
+    </template>
+    <template v-else> Submit </template>
+  </BaseButton>
+</div>
+        </div>
+      </GSAPStaggeredEffect>
+    </form>
+
+    <!-- Successfully sent notification -->
+    <Notification
+      v-if="notification.show"
+      :message="notification.message"
+      :type="notification.type"
+      :duration="5000"
+    />
+  </BaseSection>
 </template>
 
-<script lang="ts" setup>
-const form = reactive({
+<script setup lang="ts">
+import { ref } from "vue";
+import emailjs from "@emailjs/browser";
+import BaseButton from "@/components/ui/BaseButton.vue";
+import Notification from "@/components/effects/MessageSentNotification.vue";
+import GSAPStaggeredEffect from "@/components/effects/GSAPStaggeredReveal.vue";
+import BaseSection from "../ui/BaseSection.vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
+interface NotificationData {
+  show: boolean;
+  message: string;
+  type: "success" | "error";
+}
+
+interface FormData {
+  domain: string;
+  firstName: string;
+  phone: string;
+  email: string;
+}
+
+const form = ref<FormData>({
   domain: "",
   firstName: "",
-  email: "",
   phone: "",
+  email: "",
 });
 
-const formAction = "https://www.websiteauditserver.com/process-embedded.inc";
+const loading = ref(false);
+const notification = ref<NotificationData>({
+  show: false,
+  message: "",
+  type: "success",
+});
 
-function handleSubmit(event: Event) {
-  const el = event.target as HTMLFormElement;
+const handleSubmit = () => {
+  loading.value = true;
+  notification.value.show = false;
+  const templateParams = {
+    domain: form.value.domain,
+    firstName: form.value.firstName,
+    phone: form.value.phone,
+    email: form.value.email,
+  };
 
-  if (!validateForm(el)) {
-    event.preventDefault();
-    return false;
-  }
+  emailjs
+    .send(
+      "service_lqkg3cd", // Replace with your EmailJS Service ID
+      "template_nv86y98", // Replace with your EmailJS Template ID
+      templateParams,
+      "URSQb8MOeSJGnLiuH" // Replace with your EmailJS User ID
+    )
+    .then(
+      (response) => {
+        loading.value = false;
+        notification.value = {
+          show: true,
+          message: "Message sent successfully.",
+          type: "success",
+        };
+        clearForm();
+      },
+      (error) => {
+        loading.value = false;
+        notification.value = {
+          show: true,
+          message: "Message sending failed.",
+          type: "error",
+        };
+      }
+    );
+};
 
-  const behaviour = el.getAttribute("data-behaviour");
-  if (behaviour === "new_tab") {
-    return true;
-  }
-
-  event.preventDefault();
-  alert('Non "new_tab" behaviours are not implemented.');
-  return false;
-}
-
-function validateForm(el: HTMLFormElement): boolean {
-  const domain = el.querySelector<HTMLInputElement>('input[name="domain"]');
-  const phone = el.querySelector<HTMLInputElement>('input[name="phone"]');
-
-  const email = el.querySelector<HTMLInputElement>('input[name="email"]');
-  const firstName = el.querySelector<HTMLInputElement>(
-    'input[name="first_name"]'
-  );
-
-  if (!domain || domain.value.trim() === "") {
-    alert(domain?.dataset.validation || "Invalid domain");
-    return false;
-  }
-
-  if (!/^(https?:\/\/)?[a-z\d\-]{1,62}\..*/i.test(domain.value.trim())) {
-    alert(domain.dataset.validation || "Invalid domain");
-    return false;
-  }
-
-  if (firstName && firstName.value.trim() === "") {
-    alert(firstName.dataset.validation || "First name is required");
-    return false;
-  }
-
-  if (
-    phone &&
-    phone.value.trim() !== "" &&
-    !/^\d{7,15}$/.test(phone.value.trim())
-  ) {
-    alert(phone.dataset.validation || "Invalid phone number.");
-    return false;
-  }
-
-  if (
-    email &&
-    email.value.trim() !== "" &&
-    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())
-  ) {
-    alert(email.dataset.validation || "Invalid email address");
-    return false;
-  }
-
-  return true;
-}
+const clearForm = () => {
+  form.value = {
+    domain: "",
+    firstName: "",
+    phone: "",
+    email: "",
+  };
+};
 </script>
+
+<style scoped>
+/* Add any custom styles you might need */
+</style>
