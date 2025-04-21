@@ -1,6 +1,6 @@
 <template>
   <div class="w-11/12 mx-auto">
-    <HeroSection id="hero-section" class="h-screen" />
+    <HeroSection id="hero-section" />
     <WhyUsSection id="why-us-section" />
     <ServicesSection id="services-section" />
     <PortfolioSection id="portfolio-section" />
