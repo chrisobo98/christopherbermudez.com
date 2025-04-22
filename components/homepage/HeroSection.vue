@@ -25,7 +25,7 @@
       <SiteScanner />
 
       <!-- Star Icon -->
-      <p class="flex font-light text-center mx-auto">
+      <p class="flex font-light text-center mx-auto py-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
