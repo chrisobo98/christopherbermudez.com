@@ -2,7 +2,7 @@
   <BaseSection class="grid">
     <div class="z-10">
       <h1
-        class="lg:text-7xl text-5xl font-bold text-left md:text-center drop-shadow-xl"
+        class="lg:text-6xl text-5xl font-bold text-left md:text-center drop-shadow-xl"
       >
         {{ $t("home.hero.title") }}
       </h1>
@@ -14,7 +14,7 @@
 
       <!-- text for site scanner -->
       <p
-        class="text-xl md:text-2xl font-extralight text-left md:text-center mt-12 md:my-4"
+        class="text-xl md:text-2xl font-extralight text-left md:text-center my-4 md:my-4"
       >
         Step 1: {{ $t("home.hero.callToAction")
         }}<span class="font-bold text-purple-500">{{

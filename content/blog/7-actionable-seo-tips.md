@@ -1,7 +1,7 @@
 ---
 title: "7 Actionable SEO Tips to Improve Your Website's Performance"
 description: Want your website to rank higher and load faster? These 7 SEO tips will help you improve site speed, user experience, and search visibility.
-date: 2025-02-12
+date: February 10, 2025
 image: v1744075472/7-actionable-seo-tips_n1oewq.jpg
 path: /blog/7-actionable-seo-tips
 tags:
