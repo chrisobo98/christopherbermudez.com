@@ -1,3 +1,5 @@
+import { templates } from "./data/templates";
+
 export default defineI18nConfig(() => ({
   legacy: false,
   locale: "en",
@@ -48,6 +50,7 @@ export default defineI18nConfig(() => ({
           appointment: "30 Min Consultation",
           software: "Software Development",
           web: "Web Development",
+          templates: "Templates",
           marketing: "Ads & Marketing",
           blogs: "Blogs",
           journal: "Journal",
@@ -904,7 +907,8 @@ export default defineI18nConfig(() => ({
           },
         },
         metadata: {
-          title: "Enterprise Web Development – Blazing Fast, SEO-Optimized Websites",
+          title:
+            "Enterprise Web Development – Blazing Fast, SEO-Optimized Websites",
           description:
             "We build high-performance websites that score 95%+ on Lighthouse and load in under a second. From caching to schema markup, every line of code is optimized for speed and SEO.",
           og_title:
@@ -1442,6 +1446,132 @@ export default defineI18nConfig(() => ({
           "Get your custom local SEO plan – proven with over 15 Central Florida businesses",
         button: "Start My Local SEO Dominance →",
       },
+      templates: {
+        card: {
+          viewDetails: "View Details",
+        },
+        index: {
+          subtitle: "Our Collection",
+          title: "Revolutionary Website Templates",
+          description:
+            "Browse our collection of high-performance, SEO-optimized, and beautifully designed Nuxt templates. Built for speed and success.",
+          meta: {
+            title: "Website Templates | Your Company Name",
+            description:
+              "Discover premium Nuxt.js templates designed for performance, SEO, and user experience. Perfect for businesses, portfolios, and SaaS.",
+          },
+        },
+        detail: {
+          oneTime: "one-time payment",
+          livePreview: "Live Preview",
+          purchase: "Purchase Template",
+          featuresTitle: "What's Included?",
+          featuresDescription:
+            "Every template comes packed with essential features to get you started right away.",
+          whyChooseTitle: "The Philosophy Behind It",
+          techStackTitle: "Developer-First Tech Stack",
+          techStackDescription:
+            "Built with a modern, maintainable, and powerful set of tools that developers love.",
+          notFound: "Oops! Template not found.",
+          comingSoon: "Coming Soon",
+          notifyMe: "Notify Me When Available",
+          meta: {
+            title: "{templateName} Template | Your Company Name",
+            comingSoonTitle: "Coming Soon: {templateName} | Your Company Name",
+          },
+        },
+        data: {
+          // --- QuickBite Data ---
+          quickbite: {
+            name: "QuickBite Restaurant Template",
+            description:
+              "A white-label menu website for restaurants, cafés, or takeout businesses. Built for performance and scale.",
+            longDescription:
+              "QuickBite is a developer-first template made for freelancers and agencies. It integrates a full menu system, a pickup email form, and a blog - all set up for real-world performance, SEO, and scale.",
+            whyChoose:
+              "It's built the way a developer would actually build a real project, not like those over-engineered template libraries. The goal is to cut production time in half. It's DRY, readable, and made for real-world customization.",
+            features: {
+              menu: {
+                title: "Full Menu System",
+                description:
+                  "Easily manage categories and items for a dynamic and engaging restaurant menu.",
+              },
+              pickup: {
+                title: "Pickup/Cart Logic",
+                description:
+                  "Integrated cart state management with Pinia for a seamless pickup order process.",
+              },
+              blog: {
+                title: "Integrated Blog",
+                description:
+                  "Powered by Nuxt/Content for easy, CMS-style blog and article management.",
+              },
+              performance: {
+                title: "Performance Optimized",
+                description:
+                  "Built for top-tier Core Web Vitals, image optimization, and fast loading.",
+              },
+            },
+          },
+          // --- Realtor Data ---
+          realtor: {
+            name: "Realtor-Edge Template",
+            description:
+              "The ultimate template for realtors, agencies, and property sellers. Coming soon.",
+            longDescription:
+              "Showcase properties like never before. Realtor-Edge will provide a complete solution for real estate professionals, including agent profiles, beautiful property listings with detailed info pages, and advanced search functionality.",
+            whyChoose:
+              "Designed to convert visitors into leads, this template will focus on high-quality imagery, intuitive navigation, and providing all the critical information buyers need at their fingertips.",
+            features: {
+              profiles: {
+                title: "Agent Profiles",
+                description:
+                  "Dedicated pages for realtors to build trust and showcase their expertise.",
+              },
+              listings: {
+                title: "Dynamic Listings",
+                description:
+                  "A powerful and filterable system to display all available properties beautifully.",
+              },
+              search: {
+                title: "Advanced Search",
+                description:
+                  "Allow users to find the perfect home by filtering by price, size, location, and more.",
+              },
+              maps: {
+                title: "Map Integration",
+                description:
+                  "Visualize property locations and nearby amenities with integrated maps.",
+              },
+            },
+          },
+          // --- Existing Data ---
+          nexus: {
+            name: "Nexus Corporate",
+            description:
+              "A sleek and modern template for SaaS companies, startups, and corporate businesses.",
+            longDescription:
+              "Nexus Corporate is the ultimate solution for businesses looking to establish a strong online presence. It features a clean design, fast loading times, and all the sections a modern company needs.",
+            whyChoose:
+              "This template prioritizes clarity and professionalism, allowing your business's value proposition to shine through without unnecessary clutter. It's a rock-solid foundation for any corporate site.",
+            features: {
+              /* ... as before ... */
+            },
+          },
+          portfolio: {
+            name: "Creative Portfolio",
+            description:
+              "A minimalist and elegant template to showcase your creative work and projects.",
+            longDescription:
+              "Designed for artists, designers, and developers, this portfolio template focuses on your work. It includes beautiful galleries, smooth animations, and a contact form.",
+            whyChoose:
+              "In a creative field, your work should do the talking. This template gets out of the way, providing a clean, elegant canvas to make your projects the hero.",
+            features: {
+              /* ... as before ... */
+            },
+          },
+        },
+      },
     },
     es: {
       home: {
@@ -1466,6 +1596,7 @@ export default defineI18nConfig(() => ({
         navbar: {
           appointment: "Establecer Cita",
           software: "Desarrollo de Programas",
+          templates: "Plantillas",
           web: "Desarrollo de Web",
           marketing: "Publicidad y Mercadeo",
           journal: "Diario",
@@ -2355,7 +2486,8 @@ export default defineI18nConfig(() => ({
           },
         },
         metadata: {
-          title: "Desarrollo Web Empresarial – Sitios Ultra Rápidos y Optimizados para SEO",
+          title:
+            "Desarrollo Web Empresarial – Sitios Ultra Rápidos y Optimizados para SEO",
           description:
             "Creamos sitios web de alto rendimiento con más del 95% en Lighthouse y tiempos de carga menores a un segundo. Cada línea de código está diseñada para velocidad y posicionamiento en buscadores.",
           og_title:
@@ -2904,6 +3036,133 @@ export default defineI18nConfig(() => ({
         subheading:
           "Obtén tu plan personalizado de SEO local - comprobado con más de 15 negocios en Florida Central",
         button: "Comenzar mi Dominio en SEO Local →",
+      },
+      templates: {
+        card: {
+          viewDetails: "Ver Detalles",
+        },
+        index: {
+          subtitle: "Nuestra Colección",
+          title: "Plantillas Web Revolucionarias",
+          description:
+            "Explora nuestra colección de plantillas Nuxt de alto rendimiento, optimizadas para SEO y con un diseño increíble. Creadas para la velocidad y el éxito.",
+          meta: {
+            title: "Plantillas de Sitios Web | Tu Nombre de Empresa",
+            description:
+              "Descubre plantillas premium de Nuxt.js diseñadas para el rendimiento, SEO y experiencia de usuario. Perfectas para negocios, portafolios y SaaS.",
+          },
+        },
+        detail: {
+          oneTime: "pago único",
+          livePreview: "Vista Previa",
+          purchase: "Comprar Plantilla",
+          featuresTitle: "¿Qué está incluido?",
+          featuresDescription:
+            "Cada plantilla viene con características esenciales para que puedas empezar de inmediato.",
+          whyChooseTitle: "La Filosofía Detrás",
+          techStackTitle: "Tecnologías Utilizadas",
+          techStackDescription:
+            "Construido con un conjunto de herramientas modernas, mantenibles y potentes que los desarrolladores adoran.",
+          notFound: "¡Ups! Plantilla no encontrada.",
+          comingSoon: "Próximamente",
+          notifyMe: "Notificarme Cuando Esté Disponible",
+          meta: {
+            title: "Plantilla {templateName} | Tu Nombre de Empresa",
+            comingSoonTitle:
+              "Próximamente: {templateName} | Tu Nombre de Empresa",
+          },
+        },
+        data: {
+          // --- QuickBite Data ---
+          quickbite: {
+            name: "Plantilla de Restaurante QuickBite",
+            description:
+              "Un sitio web de menú de marca blanca para restaurantes, cafés o negocios de comida para llevar. Hecho para el rendimiento y la escala.",
+            longDescription:
+              "QuickBite es una plantilla pensada para desarrolladores, freelancers y agencias. Integra un sistema de menú completo, un formulario para pedidos de recogida y un blog, todo configurado para el rendimiento, SEO y escalabilidad del mundo real.",
+            whyChoose:
+              "Está construida como un desarrollador construiría un proyecto real, no como esas librerías de plantillas sobre-diseñadas. El objetivo es reducir el tiempo de producción a la mitad. Es DRY, legible y hecha para la personalización real.",
+            features: {
+              menu: {
+                title: "Sistema de Menú Completo",
+                description:
+                  "Gestiona fácilmente categorías y productos para un menú de restaurante dinámico y atractivo.",
+              },
+              pickup: {
+                title: "Lógica de Recogida/Carrito",
+                description:
+                  "Gestión de estado del carrito integrada con Pinia para un proceso de pedido de recogida fluido.",
+              },
+              blog: {
+                title: "Blog Integrado",
+                description:
+                  "Potenciado por Nuxt/Content para una gestión de blogs y artículos sencilla, al estilo CMS.",
+              },
+              performance: {
+                title: "Rendimiento Optimizado",
+                description:
+                  "Construido para Core Web Vitals de primer nivel, optimización de imágenes y carga rápida.",
+              },
+            },
+          },
+          // --- Realtor Data ---
+          realtor: {
+            name: "Plantilla Realtor-Edge",
+            description:
+              "La plantilla definitiva para agentes inmobiliarios, agencias y vendedores de propiedades. Próximamente.",
+            longDescription:
+              "Muestra propiedades como nunca antes. Realtor-Edge proporcionará una solución completa para profesionales de bienes raíces, incluyendo perfiles de agentes, hermosos listados de propiedades con páginas de información detallada y búsqueda avanzada.",
+            whyChoose:
+              "Diseñada para convertir visitantes en clientes potenciales, esta plantilla se centrará en imágenes de alta calidad, navegación intuitiva y en proporcionar toda la información crítica que los compradores necesitan al alcance de la mano.",
+            features: {
+              profiles: {
+                title: "Perfiles de Agente",
+                description:
+                  "Páginas dedicadas para que los agentes generen confianza y muestren su experiencia.",
+              },
+              listings: {
+                title: "Listados Dinámicos",
+                description:
+                  "Un sistema potente y filtrable para mostrar todas las propiedades disponibles de forma atractiva.",
+              },
+              search: {
+                title: "Búsqueda Avanzada",
+                description:
+                  "Permite a los usuarios encontrar la casa perfecta filtrando por precio, tamaño, ubicación y más.",
+              },
+              maps: {
+                title: "Integración de Mapas",
+                description:
+                  "Visualiza la ubicación de las propiedades y los servicios cercanos con mapas integrados.",
+              },
+            },
+          },
+          // --- Existing Data ---
+          nexus: {
+            name: "Nexus Corporativo",
+            description:
+              "Una plantilla elegante y moderna para empresas SaaS, startups y negocios corporativos.",
+            longDescription:
+              "Nexus Corporativo es la solución definitiva para empresas que buscan establecer una fuerte presencia en línea. Presenta un diseño limpio, tiempos de carga rápidos y todas las secciones que una empresa moderna necesita.",
+            whyChoose:
+              "Esta plantilla prioriza la claridad y el profesionalismo, permitiendo que la propuesta de valor de su negocio brille sin desorden innecesario. Es una base sólida como una roca para cualquier sitio corporativo.",
+            features: {
+              /* ... as before ... */
+            },
+          },
+          portfolio: {
+            name: "Portafolio Creativo",
+            description:
+              "Una plantilla minimalista y elegante para mostrar tu trabajo y proyectos creativos.",
+            longDescription:
+              "Diseñada para artistas, diseñadores y desarrolladores, esta plantilla de portafolio se centra en tu trabajo. Incluye hermosas galerías, animaciones suaves y un formulario de contacto.",
+            whyChoose:
+              "En un campo creativo, tu trabajo debe hablar por sí mismo. Esta plantilla se quita de en medio, proporcionando un lienzo limpio y elegante para hacer que tus proyectos sean los protagonistas.",
+            features: {
+              /* ... as before ... */
+            },
+          },
+        },
       },
     },
   },

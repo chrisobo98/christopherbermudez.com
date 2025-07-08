@@ -89,6 +89,11 @@
             />
             <NavLink
               class="nav-item-bounce delay-500"
+              :href="localePath('/templates')"
+              :text="$t('home.navbar.templates')"
+            />
+            <NavLink
+              class="nav-item-bounce delay-500"
               :href="localePath('/blog')"
               :text="$t('home.navbar.blogs')"
             />
