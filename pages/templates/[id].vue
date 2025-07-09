@@ -53,7 +53,7 @@
                       <Icon name="carbon:launch" size="1.2em" />
                       {{ $t('templates.detail.livePreview') }}
                   </NuxtLink>
-                  <NuxtLink to="/contact" class="w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center gap-2" :class="template.isComingSoon ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-gray-100 text-gray-900 hover:bg-gray-200'">
+                  <NuxtLink to="/appointments" class="w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center gap-2" :class="template.isComingSoon ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-gray-100 text-gray-900 hover:bg-gray-200'">
                       <Icon :name="template.isComingSoon ? 'carbon:notification' : 'carbon:shopping-cart'" size="1.2em" />
                       {{ template.isComingSoon ? $t('templates.detail.notifyMe') : $t('templates.detail.purchase') }}
                   </NuxtLink>
