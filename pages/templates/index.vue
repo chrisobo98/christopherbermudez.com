@@ -9,7 +9,7 @@
         <h1 class="text-4xl md:text-6xl font-bold font-manrope mt-2">
           {{ $t('templates.index.title') }}
         </h1>
-        <p class="mt-4 text-lg text-gray-300">
+        <p class="mt-4 text-lg">
           {{ $t('templates.index.description') }}
         </p>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <main v-if="template" class="py-12 md:py-20 relative text-white">
+  <main v-if="template" class="py-12 md:py-20 relative">
     <!-- Coming Soon Banner -->
     <div v-if="template.isComingSoon" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
         <div class="bg-yellow-400 text-yellow-900 font-bold uppercase tracking-wider text-sm px-6 py-2 rounded-full shadow-lg -rotate-6">
@@ -38,15 +38,15 @@
             <h1 class="text-4xl md:text-5xl font-bold font-manrope">
               {{ t(template.nameKey) }}
             </h1>
-            <p class="text-lg text-gray-300">
+            <p class="text-lg">
               {{ t(template.longDescriptionKey) }}
             </p>
           </div>
           
           <div class="border-t border-gray-800 pt-6 space-y-4">
-              <p class="text-3xl font-bold text-white">
+              <p class="text-3xl font-bold">
                 ${{ template.price }}
-                <span class="text-base font-normal text-gray-400">{{ $t('templates.detail.oneTime') }}</span>
+                <span class="text-base font-normal">{{ $t('templates.detail.oneTime') }}</span>
               </p>
               <div class="flex flex-col sm:flex-row gap-4">
                   <NuxtLink :to="template.livePreviewUrl" v-if="!template.isComingSoon" target="_blank" class="w-full text-center px-6 py-3 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors duration-300 flex items-center justify-center gap-2">
@@ -66,7 +66,7 @@
       <section v-if="t(template.whyChooseKey)" class="py-16 text-center bg-gray-900 rounded-2xl border border-purple-900/50">
           <div class="max-w-3xl mx-auto px-6">
               <Icon name="carbon:idea" class="text-purple-400 mx-auto" size="3em"/>
-              <h2 class="text-3xl font-bold font-manrope mt-4">
+              <h2 class="text-3xl font-bold font-manrope mt-4 text-white">
                   {{ $t('templates.detail.whyChooseTitle') }}
               </h2>
               <p class="mt-3 text-lg text-gray-300">
@@ -81,7 +81,7 @@
             <h2 class="text-3xl md:text-4xl font-bold font-manrope">
                 {{ $t('templates.detail.featuresTitle') }}
             </h2>
-            <p class="mt-3 text-gray-400">
+            <p class="mt-3">
                 {{ $t('templates.detail.featuresDescription') }}
             </p>
         </div>
@@ -98,7 +98,7 @@
                 />
               </div>
               <div class="mt-4">
-                <h3 class="text-xl font-semibold">{{ t(feature.titleKey) }}</h3>
+                <h3 class="text-xl font-semibold text-white">{{ t(feature.titleKey) }}</h3>
                 <p class="mt-1 text-sm text-gray-400">{{ t(feature.descriptionKey) }}</p>
               </div>
             </div>
@@ -111,12 +111,12 @@
             <h2 class="text-3xl md:text-4xl font-bold font-manrope">
                 {{ $t('templates.detail.techStackTitle') }}
             </h2>
-            <p class="mt-3 text-gray-400">
+            <p class="mt-3">
                 {{ $t('templates.detail.techStackDescription') }}
             </p>
         </div>
         <div class="mt-12 flex flex-wrap justify-center gap-3">
-          <span v-for="tech in template.techStack" :key="tech" class="bg-gray-800 text-gray-300 text-sm font-medium px-4 py-2 rounded-full border border-gray-700">
+          <span v-for="tech in template.techStack" :key="tech" class="bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium px-4 py-2 rounded-full border border-gray-300 dark:border-gray-700">
               {{ tech }}
           </span>
         </div>

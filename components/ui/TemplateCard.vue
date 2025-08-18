@@ -34,9 +34,9 @@
 
     <!-- Content -->
     <!-- THE FIX IS HERE: Make the content area a growing flex column -->
-    <div class="relative flex flex-grow flex-col bg-gray-900 p-6">
+    <div class="relative flex flex-grow flex-col bg-white dark:bg-gray-900 p-6">
       <div class="flex items-start justify-between">
-        <h3 class="text-xl font-bold font-manrope text-white">
+        <h3 class="text-xl font-bold font-manrope text-gray-900 dark:text-white">
           {{ t(template.nameKey) }}
         </h3>
         <span class="rounded-full bg-purple-600 px-3 py-1.5 text-xs font-semibold text-white">
@@ -45,7 +45,7 @@
       </div>
 
       <!-- THE FIX IS HERE: Make the description grow to push tags down -->
-      <p class="mt-2 text-sm text-gray-400 flex-grow">
+      <p class="mt-2 text-sm flex-grow text-gray-600 dark:text-gray-400">
         {{ t(template.descriptionKey) }}
       </p>
 
@@ -53,7 +53,7 @@
         <span
           v-for="tag in template.tags"
           :key="tag"
-          class="whitespace-nowrap rounded-full bg-gray-800 px-2.5 py-1 text-xs text-gray-300"
+          class="whitespace-nowrap rounded-full bg-gray-200 dark:bg-gray-800 px-2.5 py-1 text-xs text-gray-700 dark:text-gray-300"
         >
           {{ tag }}
         </span>
