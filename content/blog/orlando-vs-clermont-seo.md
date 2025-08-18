@@ -2,7 +2,7 @@
 title: "Orlando vs Clermont: Where Should Your Business Focus Its SEO?"
 description: "Should you compete with Orlando's SEO bloodbath or dominate Clermont's goldmine? A Central Florida developer's brutally honest take on local SEO strategy."
 date: August 10, 2025
-image: https://res.cloudinary.com/dkaakonrp/image/upload/v1755134672/ChatGPT_Image_Aug_13_2025_09_22_48_PM_optimized_150_1_mvekiv.png
+image: https://res.cloudinary.com/dkaakonrp/image/upload/v1744048968/about-christopher-bermudez-central-florida-leading-freelancer_cluuum.png
 path: /blog/orlando-vs-clermont-seo-strategy
 tags:
   - Local SEO
@@ -68,7 +68,7 @@ Unless you've got serious money and patience (we're talking 12-18 months minimum
 
 :br
 
-<div class="my-8 rounded-xl p-6 text-center shadow-lg" style="background-color: #7f1d1d; border: 2px solid #dc2626;">
+<div class="my-8 rounded-xl p-6 text-center shadow-lg text-white" style="background-color: #7f1d1d; border: 2px solid #dc2626;">
  <p class="text-xl font-bold">🚨 Reality Check: Most Orlando searches aren't even looking for you anyway</p>
 </div>
 
@@ -98,7 +98,7 @@ More importantly, when someone searches "Clermont dentist" or "plumber near Cler
 
 :br
 
-<div class="my-8 rounded-xl p-6 shadow-lg" style="background-color: #14532d; border: 2px solid #16a34a;">
+<div class="my-8 rounded-xl p-6 shadow-lg text-white" style="background-color: #14532d; border: 2px solid #16a34a;">
   <h3 class="text-xl font-bold mb-4">🎯 What Actually Works in Clermont:</h3>
   <ul class="space-y-2">
     <li>✅ Way less competition (3-5 businesses vs 300-500)</li>
@@ -168,7 +168,7 @@ Only AFTER you've locked down the local stuff, start going after specific **Orla
 :br
 
 <div class="my-8 rounded-xl p-6 text-center shadow-lg" style="background-color: #1e3a8a; border: 2px solid #2563eb;">
-  <p class="text-xl font-bold">💡 Pro Tip: Target neighborhoods, not the entire metro area. Be a big fish in a small pond before becoming fish food in the ocean.</p>
+  <p class="text-xl font-bold text-white">💡 Pro Tip: Target neighborhoods, not the entire metro area. Be a big fish in a small pond before becoming fish food in the ocean.</p>
 </div>
 
 :br
@@ -230,7 +230,7 @@ Only AFTER you've locked down the local stuff, start going after specific **Orla
 
 :br
 
-<div class="my-8 rounded-xl p-6 shadow-lg" style="background-color: #581c87; border: 2px solid #9333ea;">
+<div class="my-8 rounded-xl p-6 shadow-lg text-white" style="background-color: #581c87; border: 2px solid #9333ea;">
  <h3 class="text-xl font-bold mb-4">🔥 Hot Take Alert:</h3>
  <p class="">Most of your customers are probably within 15 miles of your business anyway. Stop trying to be everything to everyone across a 50-mile radius.</p>
 </div>
@@ -253,7 +253,7 @@ I've seen small **Clermont** businesses completely crush it locally while their 
 
 :br
 
-<div class="my-8 rounded-xl p-6 text-center shadow-lg" style="background-color: #713f12; border: 2px solid #ca8a04;">
+<div class="my-8 rounded-xl p-6 text-center shadow-lg text-white" style="background-color: #713f12; border: 2px solid #ca8a04;">
   <p class="text-2xl font-bold">🎯 The real secret? Your local customers are easier to rank for, more likely to convert, and way more profitable than some random person searching from across town who's just price shopping.</p>
 </div>
 
