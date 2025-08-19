@@ -8,7 +8,7 @@
       width="auto"
       height="auto"
       loading="lazy"
-      class="nuxt-img-animation rounded-2xl shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+      class="nuxt-img-animation rounded-2xl transition-transform duration-300 ease-in-out transform hover:scale-105"
     />
 
     <!-- Rest of the content -->
