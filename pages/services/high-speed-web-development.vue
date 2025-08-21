@@ -186,6 +186,23 @@ useHead({
       content: t("webDev.metadata.og_description"),
     },
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": webDevFaqs.value.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
+          }
+        }))
+      })
+    }
+  ]
 });
 
 

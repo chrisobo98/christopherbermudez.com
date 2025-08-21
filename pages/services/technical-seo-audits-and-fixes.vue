@@ -170,6 +170,23 @@ useHead({
       content: t("technicalSeo.metadata.og_description"),
     },
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": technicalSeoFaqs.value.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
+          }
+        }))
+      })
+    }
+  ]
 });
 
 const technicalServices = computed(() => [
