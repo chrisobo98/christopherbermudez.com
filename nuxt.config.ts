@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxt/fonts",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
     "nuxt-vitalizer",
     "@nuxt/icon",
   ],
@@ -56,6 +57,17 @@ export default defineNuxtConfig({
       siteUrl: 'https://christopherbermudez.com',
     },
   },
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '',
+    storageKey: 'color-theme'
+  },
+
   fonts: {
     defaults: {
       weights: [400, 700], // Default weights for all fonts

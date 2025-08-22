@@ -10,26 +10,13 @@
   </template>
   
   <script setup>
-  import { ref, onMounted } from 'vue';
-  
-  const isDark = ref(false);
-  
+  const colorMode = useColorMode();
+
+  const isDark = computed(() => colorMode.value === 'dark');
+
   const toggleTheme = () => {
-    isDark.value = !isDark.value;
-    document.documentElement.classList.toggle('dark', isDark.value);
-    localStorage.setItem('color-theme', isDark.value ? 'dark' : 'light');
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
   };
-  
-  onMounted(() => {
-    const savedTheme = localStorage.getItem('color-theme');
-    if (savedTheme) {
-      isDark.value = savedTheme === 'dark';
-      document.documentElement.classList.toggle('dark', isDark.value);
-    } else {
-      isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.classList.toggle('dark', isDark.value);
-    }
-  });
   </script>
   
   <style scoped>
