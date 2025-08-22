@@ -11,6 +11,39 @@ const { data: posts } = await useAsyncData("blog-list", () => {
   return queryCollection("content").all();
 });
 
+// Mobile TOC functionality
+const showMobileToc = ref(false);
+
+const toggleMobileToc = () => {
+  showMobileToc.value = !showMobileToc.value;
+  
+  // Lock/unlock body scroll
+  if (process.client) {
+    if (showMobileToc.value) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+};
+
+// Clean up on component unmount
+onUnmounted(() => {
+  if (process.client) {
+    document.body.style.overflow = '';
+  }
+});
+
+// Also clean up if user navigates away
+watch(showMobileToc, (newVal) => {
+  if (process.client) {
+    if (newVal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+});
 
 useHead(() => {
   const seo = post.value?.meta?.seo || post.value?.meta || {};
@@ -131,5 +164,53 @@ useHead(() => {
         </div>
       </div>
     </div>
+
+    <!-- Mobile TOC Floating Button -->
+    <button 
+      v-if="post.body?.toc?.links?.length"
+      @click="toggleMobileToc"
+      class="mobile-nav-fab lg:hidden"
+      aria-label="Table of Contents"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>
+    </button>
+
+    <!-- Mobile TOC Popup -->
+    <div 
+      v-if="post.body?.toc?.links?.length"
+      :class="['mobile-toc-popup lg:hidden', { 'show': showMobileToc }]"
+    >
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-lg font-semibold">Table of Contents</h3>
+        <button @click="toggleMobileToc" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <ul class="space-y-3">
+        <li
+          v-for="link in post.body.toc.links"
+          :key="link.id"
+        >
+          <a 
+            :href="`#${link.id}`" 
+            @click="showMobileToc = false"
+            class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            {{ link.text }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Backdrop -->
+    <div 
+      v-if="showMobileToc"
+      @click="showMobileToc = false"
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden"
+    ></div>
   </div>
 </template>

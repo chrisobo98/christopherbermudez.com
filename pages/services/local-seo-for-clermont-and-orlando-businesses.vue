@@ -211,42 +211,6 @@ import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
-useHead({
-  title: t("localSeo.metadata.title"),
-  meta: [
-    {
-      name: "description",
-      content: t("localSeo.metadata.description"),
-    },
-    {
-      property: "og:title",
-      content: t("localSeo.metadata.og_title"),
-    },
-    {
-      property: "og:description",
-      content: t("localSeo.metadata.og_description"),
-    },
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": localSeoFaqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
-          }
-        }))
-      })
-    }
-  ]
-});
-
-
 const localSeoFaqs = [
   {
     question: t("localSeo.faqs.1.question"),
@@ -427,4 +391,40 @@ const testimonials = [
     location: t("localSeo.testimonials.elCerro.location"),
   },
 ];
+
+// Move useHead to the bottom after all variables are defined
+useHead({
+  title: t("localSeo.metadata.title"),
+  meta: [
+    {
+      name: "description",
+      content: t("localSeo.metadata.description"),
+    },
+    {
+      property: "og:title",
+      content: t("localSeo.metadata.og_title"),
+    },
+    {
+      property: "og:description",
+      content: t("localSeo.metadata.og_description"),
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": localSeoFaqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
+          }
+        }))
+      })
+    }
+  ]
+});
 </script>

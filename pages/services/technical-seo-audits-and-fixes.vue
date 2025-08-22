@@ -154,41 +154,6 @@ import FaqSection from "../../components/ui/FaqSection.vue";
 
 const { t } = useI18n();
 
-useHead({
-  title: t("technicalSeo.metadata.title"),
-  meta: [
-    {
-      name: "description",
-      content: t("technicalSeo.metadata.description"),
-    },
-    {
-      property: "og:title",
-      content: t("technicalSeo.metadata.og_title"),
-    },
-    {
-      property: "og:description",
-      content: t("technicalSeo.metadata.og_description"),
-    },
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": technicalSeoFaqs.value.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
-          }
-        }))
-      })
-    }
-  ]
-});
-
 const technicalServices = computed(() => [
   {
     title: t("technicalSeo.services.speedBoost.title"),
@@ -438,4 +403,40 @@ const technicalSeoFaqs = computed(() => [
     open: false,
   },
 ]);
+
+// Move useHead to the bottom after all variables are defined
+useHead({
+  title: t("technicalSeo.metadata.title"),
+  meta: [
+    {
+      name: "description",
+      content: t("technicalSeo.metadata.description"),
+    },
+    {
+      property: "og:title",
+      content: t("technicalSeo.metadata.og_title"),
+    },
+    {
+      property: "og:description",
+      content: t("technicalSeo.metadata.og_description"),
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": technicalSeoFaqs.value.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
+          }
+        }))
+      })
+    }
+  ]
+});
 </script>

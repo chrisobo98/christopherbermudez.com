@@ -170,42 +170,6 @@ import FaqSection from "../../components/ui/FaqSection.vue";
 
 const { t } = useI18n();
 
-useHead({
-  title: t("webDev.metadata.title"),
-  meta: [
-    {
-      name: "description",
-      content: t("webDev.metadata.description"),
-    },
-    {
-      property: "og:title",
-      content: t("webDev.metadata.og_title"),
-    },
-    {
-      property: "og:description",
-      content: t("webDev.metadata.og_description"),
-    },
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": webDevFaqs.value.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
-          }
-        }))
-      })
-    }
-  ]
-});
-
-
 // Performance Services
 const performanceServices = computed(() => [
   {
@@ -450,4 +414,40 @@ const practices = computed(() => [
     ],
   },
 ]);
+
+// Move useHead to the bottom after all variables are defined
+useHead({
+  title: t("webDev.metadata.title"),
+  meta: [
+    {
+      name: "description",
+      content: t("webDev.metadata.description"),
+    },
+    {
+      property: "og:title",
+      content: t("webDev.metadata.og_title"),
+    },
+    {
+      property: "og:description",
+      content: t("webDev.metadata.og_description"),
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": webDevFaqs.value.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer + (faq.details ? ' ' + faq.details.join(' ') : '')
+          }
+        }))
+      })
+    }
+  ]
+});
 </script>

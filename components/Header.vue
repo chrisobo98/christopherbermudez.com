@@ -99,14 +99,14 @@
             />
             <!-- Services Dropdown -->
             <ul
-              class="relative group block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-purple-700 lg:p-0 lg:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-purple-500 lg:dark:hover:bg-transparent dark:border-gray-700"
-              @mouseenter="handleMouseEnter"
-              @mouseleave="handleMouseLeave"
+              class="services-dropdown relative group block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-purple-700 lg:p-0 lg:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-purple-500 lg:dark:hover:bg-transparent dark:border-gray-700"
+              @mouseenter="handleMouseEnterResponsive"
+              @mouseleave="handleMouseLeaveResponsive"
               ref="dropdownRef"
             >
               <li>
                 <button
-                  @click="showServices = !showServices"
+                  @click="handleServicesClick"
                   class="nav-item-bounce delay-500"
                 >
                   {{ $t("home.navbar.services") }}
@@ -117,9 +117,9 @@
             <!-- Desktop Mega Menu -->
             <div
               v-show="showServices"
-              @mouseenter="cancelLeave"
-              @mouseleave="handleMouseLeave"
-              class="absolute left-10 rounded-3xl right-10 bg-white dark:bg-gray-800 shadow-xl border-t dark:border-gray-700 mt-12 hidden lg:block"
+              @mouseenter="cancelLeaveResponsive"
+              @mouseleave="handleMouseLeaveResponsive"
+              :class="['services-mega-menu absolute left-10 rounded-3xl right-10 bg-white dark:bg-gray-800 shadow-xl border-t dark:border-gray-700 mt-12 hidden lg:block', { 'show': showServices }]"
             >
               <div class="max-w-screen-xl mx-auto px-8 py-12">
                 <h3 class="text-2xl font-bold mb-4">
@@ -257,6 +257,35 @@ const dropdownRef = ref(null);
 
 const toggleServices = () => {
   showServices.value = !showServices.value;
+};
+
+// Handle click for both mobile and desktop
+const handleServicesClick = () => {
+  showServices.value = !showServices.value;
+};
+
+// Check if screen is desktop size (1024px+)
+const isDesktopSize = () => {
+  return window.innerWidth >= 1024;
+};
+
+// Responsive hover handlers - only work on desktop screen sizes
+const handleMouseEnterResponsive = () => {
+  if (isDesktopSize()) {
+    handleMouseEnter();
+  }
+};
+
+const handleMouseLeaveResponsive = () => {
+  if (isDesktopSize()) {
+    handleMouseLeave();
+  }
+};
+
+const cancelLeaveResponsive = () => {
+  if (isDesktopSize()) {
+    cancelLeave();
+  }
 };
 
 onClickOutside(dropdownRef, () => {
