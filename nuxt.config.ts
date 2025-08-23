@@ -50,12 +50,6 @@ export default defineNuxtConfig({
       "/static/**": { cache: { maxAge: 31536000 } },
       "/video/**": { cache: { maxAge: 604800 } },
     },
-    storage: {
-      redis: {
-        driver: 'redis',
-        // Configure if using Redis for caching
-      }
-    }
   },
   runtimeConfig: {
     public: {
@@ -79,21 +73,15 @@ export default defineNuxtConfig({
       weights: [400, 700],
       styles: ["normal"],
       subsets: ["latin"],
-      preload: true,
-      display: 'swap'
     },
     families: [
       {
         name: "Big Shoulders",
         provider: "google",
-        weights: [400, 700],
-        preload: true
       },
       {
-        name: "Space Grotesk", 
+        name: "Space Grotesk",
         provider: "google",
-        weights: [400, 700],
-        preload: true
       },
     ],
     priority: ["google"],

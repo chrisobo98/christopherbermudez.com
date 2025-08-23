@@ -11,10 +11,9 @@ useHead({
   titleTemplate: '%s · Christopher Bermudez',
   link: [
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
     { rel: 'preconnect', href: 'https://res.cloudinary.com' },
-    { rel: 'dns-prefetch', href: 'https://www.googletagmanager.com' },
-    { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap', as: 'style', onload: "this.onload=null;this.rel='stylesheet'" }
+    { rel: 'dns-prefetch', href: 'https://www.googletagmanager.com' }
   ],
   meta: [
     { name: 'description', content: 'Your go-to expert for web design, SEO, and digital marketing.' }

@@ -21,35 +21,21 @@ export function useScrollNavigation(sections: string[]) {
     }
   };
 
-  let ticking = false;
-  
   const onScroll = () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        let foundSection = false;
-        const scrollY = window.scrollY;
-        const viewportHeight = window.innerHeight;
-        const midPoint = viewportHeight / 2;
-        
-        for (let i = 0; i < sections.length; i++) {
-          const section = document.getElementById(sections[i]);
-          if (section) {
-            const offsetTop = section.offsetTop;
-            const offsetHeight = section.offsetHeight;
-            
-            if (scrollY + midPoint >= offsetTop && scrollY + midPoint < offsetTop + offsetHeight) {
-              currentSection.value = sections[i];
-              foundSection = true;
-              break;
-            }
-          }
+    let foundSection = false;
+    for (let i = 0; i < sections.length; i++) {
+      const section = document.getElementById(sections[i]);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          currentSection.value = sections[i];
+          foundSection = true;
+          break;
         }
-        if (!foundSection) {
-          currentSection.value = sections[0];
-        }
-        ticking = false;
-      });
-      ticking = true;
+      }
+    }
+    if (!foundSection) {
+      currentSection.value = sections[0]; // Default to hero section if no other section is found
     }
   };
 
