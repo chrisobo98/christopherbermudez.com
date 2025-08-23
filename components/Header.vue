@@ -98,22 +98,20 @@
               :text="$t('home.navbar.blogs')"
             />
             <!-- Services Dropdown -->
-            <ul
+            <li
               class="services-dropdown relative group block py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-purple-700 lg:p-0 lg:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-purple-500 lg:dark:hover:bg-transparent dark:border-gray-700"
               @mouseenter="handleMouseEnterResponsive"
               @mouseleave="handleMouseLeaveResponsive"
               ref="dropdownRef"
             >
-              <li>
-                <button
-                  @click="handleServicesClick"
-                  class="nav-item-bounce delay-500"
-                >
-                  {{ $t("home.navbar.services") }}
-                  <Icon name="heroicons:chevron-down" class="w-4 h-4" />
-                </button>
-              </li>
-            </ul>
+              <button
+                @click="handleServicesClick"
+                class="nav-item-bounce delay-500"
+              >
+                {{ $t("home.navbar.services") }}
+                <Icon name="heroicons:chevron-down" class="w-4 h-4" />
+              </button>
+            </li>
             <!-- Desktop Mega Menu -->
             <div
               v-show="showServices"
@@ -219,13 +217,15 @@
               </div>
             </div>
             <!-- Appointment Button Mobile -->
-            <NuxtLink
-              :to="localePath('/appointments')"
-              aria-label="Appointments link"
-              class="nav-item-bounce mt-4 delay-200 md:hidden text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
-            >
-              {{ $t("home.navbar.appointment") }}
-            </NuxtLink>
+            <li>
+              <NuxtLink
+                :to="localePath('/appointments')"
+                aria-label="Appointments link"
+                class="nav-item-bounce mt-4 delay-200 md:hidden text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center block"
+              >
+                {{ $t("home.navbar.appointment") }}
+              </NuxtLink>
+            </li>
           </ul>
         </div>
       </div>
