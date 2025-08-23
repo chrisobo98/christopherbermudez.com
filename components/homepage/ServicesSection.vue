@@ -58,14 +58,14 @@ const services = [
   },
   {
     iconSrc:
-      "https://res.cloudinary.com/dkaakonrp/image/upload/f_webp,q_80,w_250,h_250/v1743106264/ballon-support_e5ur0d.png",
+      "https://res.cloudinary.com/dkaakonrp/image/upload/v1743106264/ballon-support_e5ur0d.png",
     altText: "Maintenance and Support Service",
     title: t("home.services.maintenance_and_support"),
     description: t("home.services.maintenance_and_support_text"),
   },
   {
     iconSrc:
-      "https://res.cloudinary.com/dkaakonrp/image/upload/f_webp,q_80,w_250,h_250/v1743105775/seo_vyewfv.png",
+      "https://res.cloudinary.com/dkaakonrp/image/upload/v1743105775/seo_vyewfv.png",
     altText: "SEO and Marketing Service",
     title: t("home.services.seo_marketing_ads"),
     description: t("home.services.seo_marketing_ads_text"),
