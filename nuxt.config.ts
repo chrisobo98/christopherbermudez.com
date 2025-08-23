@@ -92,6 +92,17 @@ export default defineNuxtConfig({
     cloudinary: {
       baseURL: "https://res.cloudinary.com/dkaakonrp/image/upload/",
     },
+    format: ['webp'],
+    quality: 80,
+    densities: [1, 2],
+    presets: {
+      avatar: {
+        modifiers: {
+          format: 'webp',
+          quality: '80'
+        }
+      }
+    }
   },
 
   i18n: {

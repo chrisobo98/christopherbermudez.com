@@ -7,8 +7,10 @@
       <NuxtImg
         provider="cloudinary"
         loading="lazy"
-        height="400"
-        width="400"
+        height="378"
+        width="378"
+        format="webp"
+        quality="80"
         src="v1744049301/christopher-bermudez-web-services-headshot_oxlgnf.png"
         alt="Christopher Bermudez"
         class="rounded-lg mb-8 nuxt-img-animation"
@@ -18,7 +20,7 @@
     <!-- Text Content -->
     <div>
       <p
-        class="text-purple-500 dark:text-[#b695ff] mt-0 md:mt-20 lg:mt-0 font-semibold uppercase mb-2"
+        class="text-purple-600 dark:text-[#b695ff] mt-0 md:mt-20 lg:mt-0 font-semibold uppercase mb-2"
       >
         {{ $t("home.whyUs.creativeSolutions") }}
       </p>

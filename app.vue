@@ -9,6 +9,12 @@ import '@/assets/css/main.css'
 useHead({
   htmlAttrs: { lang: 'en' },
   titleTemplate: '%s · Christopher Bermudez',
+  link: [
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+    { rel: 'preconnect', href: 'https://res.cloudinary.com' },
+    { rel: 'dns-prefetch', href: 'https://www.googletagmanager.com' }
+  ],
   meta: [
     { name: 'description', content: 'Your go-to expert for web design, SEO, and digital marketing.' }
   ],
