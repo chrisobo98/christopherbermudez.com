@@ -42,14 +42,20 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      crawlLinks: true, // Automatically finds and prerenders all pages
-      routes: ["/", "/blog"], // Ensures homepage is always prerendered
+      crawlLinks: true,
+      routes: ["/", "/blog"],
     },
     routeRules: {
-      "/_nuxt/**": { cache: { maxAge: 31536000 } }, // Cache static assets for 1 year
-      "/static/**": { cache: { maxAge: 31536000 } }, // Cache static files for 1 year
-      "/video/**": { cache: { maxAge: 604800 } }, // Cache videos for 1 week
+      "/_nuxt/**": { cache: { maxAge: 31536000 } },
+      "/static/**": { cache: { maxAge: 31536000 } },
+      "/video/**": { cache: { maxAge: 604800 } },
     },
+    storage: {
+      redis: {
+        driver: 'redis',
+        // Configure if using Redis for caching
+      }
+    }
   },
   runtimeConfig: {
     public: {
@@ -70,21 +76,27 @@ export default defineNuxtConfig({
 
   fonts: {
     defaults: {
-      weights: [400, 700], // Default weights for all fonts
-      styles: ["normal", "italic"], // Default styles
-      subsets: ["latin", "latin-ext"], // Default subsets
+      weights: [400, 700],
+      styles: ["normal"],
+      subsets: ["latin"],
+      preload: true,
+      display: 'swap'
     },
     families: [
       {
         name: "Big Shoulders",
         provider: "google",
+        weights: [400, 700],
+        preload: true
       },
       {
-        name: "Space Grotesk",
+        name: "Space Grotesk", 
         provider: "google",
+        weights: [400, 700],
+        preload: true
       },
     ],
-    priority: ["google"], // Set Google as the primary provider
+    priority: ["google"],
   },
 
   image: {
