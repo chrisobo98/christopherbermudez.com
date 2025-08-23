@@ -65,16 +65,18 @@
         <li>
           <NuxtLink
             :to="switchLocalePath('en')"
+            @click="closeDropdown"
             aria-label="English Language Switcher"
-            class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400"
+            class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600"
             >English (US)</NuxtLink
           >
         </li>
         <li>
           <NuxtLink
             :to="switchLocalePath('es')"
+            @click="closeDropdown"
             aria-label="Spanish Language Switcher"
-            class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400"
+            class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600"
             >Spanish (ES)</NuxtLink
           >
         </li>
@@ -101,6 +103,10 @@ watch(locale, (newLocale) => {
 const toggleLanguageDropdown = () => {
   languageDropdownOpen.value = !languageDropdownOpen.value;
   // console.log('Dropdown toggled:', languageDropdownOpen.value);
+};
+
+const closeDropdown = () => {
+  languageDropdownOpen.value = false;
 };
 </script>
 

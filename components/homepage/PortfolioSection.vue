@@ -28,8 +28,8 @@
         reverse
       />
       <PortfolioItem
-        title="LOH Brows"
-        description="Website for LOH Brows, a beauty salon in Tobyhana, PA specializing in micropigmentation services."
+        :title="$t('home.portfolio.portfolio_lohbrows_header')"
+        :description="$t('home.portfolio.portfolio_lohbrows_text')"
         imageSrc="https://res.cloudinary.com/dkaakonrp/image/upload/v1754795185/Screenshot_2025-08-09_at_11.01.17_PM-min_eufpfb.png"
         url="https://lohbrows.com/"
       />

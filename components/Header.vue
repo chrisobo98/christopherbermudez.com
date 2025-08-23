@@ -234,7 +234,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, watch } from "vue";
 import LanguageSelector from "~/components/ui/LanguageSelector.vue"; // Import the LanguageSelector component
 import NavLink from "~/components/ui/NavLink.vue";
 import FeaturedDropdownItem from "~/components/ui/FeaturedDropdownItem.vue";
@@ -242,13 +242,26 @@ import DropdownItemMobile from "~/components/ui/DropdownItemMobile.vue";
 import DarkModeSwitcher from "~/components/effects/DarkModeSwitcher.vue";
 import { onClickOutside } from "@vueuse/core";
 
-import { useHoverWithDelay } from "./composables/useHover";
+import { useHoverWithDelay } from "~/composables/useHover";
 
 import { useRouter } from "vue-router";
 
 const { t } = useI18n();
 
 const router = useRouter();
+
+// Close mobile menu on route change
+router.beforeEach(() => {
+  menuOpen.value = false;
+  showServices.value = false;
+});
+
+// Also watch route changes for Nuxt navigation
+const route = useRoute();
+watch(() => route.path, () => {
+  menuOpen.value = false;
+  showServices.value = false;
+});
 
 const { showServices, handleMouseEnter, handleMouseLeave, cancelLeave } =
   useHoverWithDelay(300); // 300ms delay

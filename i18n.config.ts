@@ -128,6 +128,9 @@ export default defineI18nConfig(() => ({
           portfolio_beuptwo_header: "BeUpTwo",
           portfolio_beuptwo_text:
             "Website design, SEO, and strategic brand consulting. I transformed its online presence with a sleek, ultra-fast website built without WordPress, leveraging Nuxt for optimal performance. Now, the website mirrors its essence: regal and authoritative, with a black and gold color scheme that enhances its brand identity. With perfect scores on PageSpeed Insights and advanced analytics, the platform is not only visually striking but also powerful and built to last.",
+          portfolio_lohbrows_header: "LOH Brows",
+          portfolio_lohbrows_text:
+            "Website for LOH Brows, a beauty salon in Tobyhana, PA specializing in micropigmentation services.",
           portfolio_4star_header: "4 Star Customs",
           portfolio_4star_text:
             "Website design and implementation done for 4StarCustoms, a body shop in Ocoee, Florida.",
@@ -157,6 +160,12 @@ export default defineI18nConfig(() => ({
           other_details: "Leave additional details or questions...",
           other_details_header:
             "Please provide any other details or questions you have about your website",
+        },
+        blog: {
+          title: "Latest Insights & Tips",
+          subtitle: "Stay ahead with the latest web development, SEO strategies, and digital marketing insights.",
+          readMore: "Read More",
+          viewAll: "View All Articles",
         },
         footer: {
           resources: "Resources",
@@ -1694,6 +1703,9 @@ export default defineI18nConfig(() => ({
           portfolio_beuptwo_header: "BeUpTwo",
           portfolio_beuptwo_text:
             "Diseño de sitio web, SEO y consultoría estratégica de marca. Transformé su presencia en línea con un sitio web ultrarrápido y elegante, construido sin WordPress, utilizando Nuxt para un rendimiento óptimo. Ahora su web refleja su esencia: autoridad y sofisticación, con una combinación de colores negro y dorado que refuerza su imagen de marca. Con puntuaciones perfectas en PageSpeed Insights y análisis avanzados, su plataforma no solo es visualmente impactante, sino también potente y duradera.",
+          portfolio_lohbrows_header: "LOH Brows",
+          portfolio_lohbrows_text:
+            "Sitio web para LOH Brows, un salón de belleza en Tobyhana, PA especializado en servicios de micropigmentación.",
           portfolio_4star_header: "4 Star Customs",
           portfolio_4star_text:
             "Diseño e implementación de sitios web para 4StarCustoms, un taller de carrocería en Ocoee, Florida.",
@@ -1723,6 +1735,12 @@ export default defineI18nConfig(() => ({
           other_details: "Deja detalles o preguntas adicionales...",
           other_details_header:
             "Por favor, proporciona cualquier otro detalle o pregunta que tengas sobre tu sitio web",
+        },
+        blog: {
+          title: "Últimas Perspectivas y Consejos",
+          subtitle: "Mantente al día con las últimas estrategias de desarrollo web, SEO y marketing digital.",
+          readMore: "Leer Más",
+          viewAll: "Ver Todos los Artículos",
         },
         footer: {
           resources: "Recursos",

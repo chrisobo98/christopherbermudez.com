@@ -4,6 +4,7 @@
     <WhyUsSection id="why-us-section" />
     <ServicesSection id="services-section" />
     <PortfolioSection id="portfolio-section" />
+    <BlogPreviewSection id="blog-section" />
     <ContactSection id="contact-section" />
   </div>
 </template>
@@ -13,6 +14,7 @@ import HeroSection from "../components/homepage/HeroSection.vue";
 import WhyUsSection from "../components/homepage/WhyUsSection.vue";
 import ServicesSection from "../components/homepage/ServicesSection.vue";
 import PortfolioSection from "../components/homepage/PortfolioSection.vue";
+import BlogPreviewSection from "../components/homepage/BlogPreviewSection.vue";
 import ContactSection from "../components/homepage/ContactSection.vue";
 
 const { t } = useI18n();
