@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-md md:max-w-screen-lg xl:max-w-screen-xl">
+  <div class="mx-auto max-w-md md:max-w-screen-lg xl:max-w-screen-xl px-4">
     <footer id="footer-section" class="md:mx-4">
 
       <!-- Horizontal Ruler -->
@@ -8,12 +8,12 @@
       />
 
       <!-- Below footer area -->
-      <div class="md:flex items-center justify-between">
+      <div class="md:flex items-center justify-between px-2 sm:px-0">
         <p
           v-html="$t('home.footer.textarea')"
           class="text-sm text-gray-800 sm:text-center dark:text-gray-300"
         />
-        <div class="my-8 mx-auto md:mx-0">
+        <div class="my-8 mx-auto md:mx-0 flex flex-wrap justify-center md:justify-end">
           <!-- Social Media Icons -->
           <NuxtLink
             to="https://www.linkedin.com/company/web-design-seo-by-christopher-bermudez"
@@ -54,18 +54,6 @@
           >
             <Icon
               name="fa6-brands:facebook"
-              size="2em"
-              class="mx-3 my-3"
-            />
-          </NuxtLink>
-
-          <NuxtLink
-            to="https://bsky.app/profile/bermudezwebandseo.bsky.social"
-            aria-label="Bluesky Socia Media Link"
-            target="_blank"
-          >
-            <Icon
-              name="fa6-brands:bluesky"
               size="2em"
               class="mx-3 my-3"
             />
