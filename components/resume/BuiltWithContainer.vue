@@ -7,7 +7,7 @@
       ref="logoRefs"
     >
       <div class="bubble">
-        <img :src="logo.src" :alt="logo.alt" class="logo" />
+        <Icon :name="logo.icon" class="logo" :aria-label="logo.alt" />
       </div>
     </div>
   </div>
@@ -17,30 +17,19 @@
 import { ref, onMounted } from "vue";
 import { gsap } from "gsap";
 
-import NuxtLogo from "@/assets/css/svg/nuxtjs.svg";
-import TypeScriptLogo from "@/assets/css/svg/typescript_logo.svg";
-import HTTPSLogo from "@/assets/css/svg/https.svg";
-import GoogleAnalyticsLogo from "@/assets/css/svg/google_analytics.svg";
-import GoogleFontAPILogo from "@/assets/css/svg/Google Font API.svg";
-import GSAPLogo from "@/assets/css/svg/GSAP.svg";
-import VueLogo from "@/assets/css/svg/vue.svg";
-import NetlifyLogo from "@/assets/css/svg/Netlify.svg";
-import FlowbiteLogo from "@/assets/css/svg/flowbite.svg";
-import TailwindCSSLogo from "@/assets/css/svg/tailwindcss.svg";
-import NodeJSLogo from "@/assets/css/svg/nodejs.svg";
-
+// Using icons instead of SVG files since they don't exist
 const logos = [
-  { src: NuxtLogo, alt: "Nuxt.js" },
-  { src: TypeScriptLogo, alt: "TypeScript" },
-  { src: HTTPSLogo, alt: "HTTPS" },
-  { src: GoogleAnalyticsLogo, alt: "Google Analytics" },
-  { src: GoogleFontAPILogo, alt: "Google Font API" },
-  { src: GSAPLogo, alt: "GSAP" },
-  { src: VueLogo, alt: "Vue.js" },
-  { src: NetlifyLogo, alt: "Netlify" },
-  { src: FlowbiteLogo, alt: "Flowbite" },
-  { src: TailwindCSSLogo, alt: "Tailwind CSS" },
-  { src: NodeJSLogo, alt: "Node.js" },
+  { icon: "logos:nuxt-icon", alt: "Nuxt.js" },
+  { icon: "logos:typescript-icon", alt: "TypeScript" },
+  { icon: "heroicons:lock-closed", alt: "HTTPS" },
+  { icon: "logos:google-analytics", alt: "Google Analytics" },
+  { icon: "logos:google-fonts", alt: "Google Font API" },
+  { icon: "simple-icons:greensock", alt: "GSAP" },
+  { icon: "logos:vue", alt: "Vue.js" },
+  { icon: "logos:netlify", alt: "Netlify" },
+  { icon: "simple-icons:flowbite", alt: "Flowbite" },
+  { icon: "logos:tailwindcss-icon", alt: "Tailwind CSS" },
+  { icon: "logos:nodejs-icon", alt: "Node.js" },
 ];
 
 const logoRefs = ref([]);
@@ -116,8 +105,8 @@ onMounted(() => {
 }
 
 .logo {
-  max-width: 60%;
-  max-height: 60%;
+  width: 48px;
+  height: 48px;
   transition: transform 0.3s ease;
 }
 

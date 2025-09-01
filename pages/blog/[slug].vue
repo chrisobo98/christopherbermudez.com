@@ -69,12 +69,30 @@ useHead(() => {
 </script>
 
 <template>
-  <div class="bg-white dark:bg-[#1d1d1d] text-black dark:text-white">
+  <div v-if="!post" class="bg-white dark:bg-[#1d1d1d] text-black dark:text-white min-h-screen flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Post Not Found</h1>
+      <p class="text-gray-600 dark:text-gray-400">The blog post you're looking for doesn't exist.</p>
+      <NuxtLink to="/blog" class="mt-4 inline-block text-purple-600 hover:text-purple-700">← Back to Blog</NuxtLink>
+    </div>
+  </div>
+  <div v-else class="bg-white dark:bg-[#1d1d1d] text-black dark:text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Breadcrumb Navigation -->
+      <nav class="max-w-5xl mx-auto mb-8">
+        <NuxtLink 
+          :to="localePath('/blog')" 
+          class="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 transition-colors font-medium"
+        >
+          <Icon name="heroicons:arrow-left" class="w-4 h-4" />
+          Back to Blog
+        </NuxtLink>
+      </nav>
+
       <!-- Title and Image -->
       <header class="max-w-5xl mx-auto">
         <h1 class="text-4xl md:text-5xl font-bold mt-8 drop-shadow-sm mb-8">
-          {{ post.title }}
+          {{ post?.title || 'Loading...' }}
         </h1>
         <NuxtImg
           v-if="post?.meta?.image"
@@ -83,11 +101,11 @@ useHead(() => {
           class="rounded-2xl w-full max-h-[500px] object-cover"
         />
 
-        <p class="mt-2 text-gray-600 dark:text-gray-400">{{ post.date }}</p>
+        <p class="mt-2 text-gray-600 dark:text-gray-400">{{ post?.date || '' }}</p>
 
-        <div v-if="post.categories?.length" class="mt-4 flex gap-3 flex-wrap">
+        <div v-if="post?.categories?.length" class="mt-4 flex gap-3 flex-wrap">
           <NuxtLink
-            v-for="category in post.categories"
+            v-for="category in post?.categories || []"
             :key="category"
             :to="`/categories/${category}`"
             class="text-sm px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-primary hover:text-white transition"
@@ -120,16 +138,16 @@ useHead(() => {
 
         <!-- Blog Content -->
         <main class="prose dark:prose-invert max-w-full prose-lg text-base">
-          <ContentRenderer :value="post" />
+          <ContentRenderer v-if="post" :value="post" />
         </main>
 
         <!-- Sidebar -->
         <aside class="space-y-8">
-          <div v-if="post.body?.toc?.links?.length">
+          <div v-if="post?.body?.toc?.links?.length">
             <h3 class="text-3xl font-semibold mb-2">Table of Contents</h3>
             <ul class="text-sm space-y-2 border-l border-gray-300 dark:border-gray-600 pl-4">
               <li
-                v-for="link in post.body.toc.links"
+                v-for="link in post?.body?.toc?.links || []"
                 :key="link.id"
               >
                 <a :href="`#${link.id}`" class="hover:underline">{{ link.text }}</a>
@@ -167,7 +185,7 @@ useHead(() => {
 
     <!-- Mobile TOC Floating Button -->
     <button 
-      v-if="post.body?.toc?.links?.length"
+      v-if="post?.body?.toc?.links?.length"
       @click="toggleMobileToc"
       class="mobile-nav-fab lg:hidden"
       aria-label="Table of Contents"
@@ -179,7 +197,7 @@ useHead(() => {
 
     <!-- Mobile TOC Popup -->
     <div 
-      v-if="post.body?.toc?.links?.length"
+      v-if="post?.body?.toc?.links?.length"
       :class="['mobile-toc-popup lg:hidden', { 'show': showMobileToc }]"
     >
       <div class="flex justify-between items-center mb-4">
@@ -192,7 +210,7 @@ useHead(() => {
       </div>
       <ul class="space-y-3">
         <li
-          v-for="link in post.body.toc.links"
+          v-for="link in post?.body?.toc?.links || []"
           :key="link.id"
         >
           <a 

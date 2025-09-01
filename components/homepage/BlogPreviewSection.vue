@@ -110,7 +110,7 @@ const latestPosts = ref([
     tags: ['AI SEO', 'ChatGPT SEO', 'Voice Search']
   },
   {
-    _path: '/blog/orlando-vs-clermont-seo',
+    _path: '/blog/orlando-vs-clermont-seo-strategy',
     title: 'Orlando vs Clermont: Where Should Your Business Focus Its SEO?',
     description: 'Should you compete with Orlando\'s SEO bloodbath or dominate Clermont\'s goldmine? A Central Florida developer\'s brutally honest take on local SEO strategy.',
     date: 'August 10, 2025',
@@ -118,7 +118,7 @@ const latestPosts = ref([
     tags: ['Local SEO', 'Clermont', 'Orlando']
   },
   {
-    _path: '/blog/central-florida-ai-bill-changes-guide',
+    _path: '/blog/ai-deregulation-big-beautiful-bill',
     title: 'Florida\'s AI Scene Unleashed: What the New Bill Means for Orlando Developers',
     description: 'While everyone was distracted, a massive bill just passed. Tucked deep inside are some game-changing clauses that just took the brakes off AI development in America.',
     date: 'July 13, 2025',
