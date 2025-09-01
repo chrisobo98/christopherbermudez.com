@@ -25,9 +25,16 @@ const { data: posts } = await useAsyncData(
   async () => {
     const allPosts = await queryCollection("content").all();
 
+    // Sort posts by date from newest to oldest
+    const sortedPosts = allPosts.sort((a, b) => {
+      const dateA = new Date(a.meta?.date || a.date || 0);
+      const dateB = new Date(b.meta?.date || b.date || 0);
+      return dateB - dateA; // Newest first
+    });
+
     return {
-      latestPosts: allPosts.slice(0, 2), // First 2 posts
-      remainingPosts: allPosts.slice(2), // Rest of the posts
+      latestPosts: sortedPosts.slice(0, 2), // First 2 posts (newest)
+      remainingPosts: sortedPosts.slice(2), // Rest of the posts
     };
   },
   { server: true }
