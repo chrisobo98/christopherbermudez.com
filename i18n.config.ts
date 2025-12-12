@@ -9,13 +9,13 @@ export default defineI18nConfig(() => ({
     en: {
       home: {
         hero: {
-          title: "Web Development & SEO Specialist",
+          title: "Frontend Developer & Custom Business Solutions",
           subtitle1: "Web Development",
-          subtitle2: "Software Development",
-          subtitle3: "Ads & Marketing",
-          subtitle4: "SEO Services",
+          subtitle2: "Custom Business Solutions",
+          subtitle3: "SaaS Development",
+          subtitle4: "AI Integration",
           description:
-            "Helping businesses in Central Florida establish an online footprint since 2016.",
+            "Building custom web solutions that replace expensive third-party tools and streamline business operations since 2016.",
           callToAction: "How does your website ",
           coloredCTA: "score?",
           button: "Contact Me",
@@ -27,24 +27,24 @@ export default defineI18nConfig(() => ({
           answer: "Get the answer in minutes!",
         },
         whyUs: {
-          creativeSolutions: "Creative Solutions",
-          resultsTitle: "Building Sites That Drive Results 🚀",
-          whyUsDescription: "Supercharge your online presence with",
-          customWebDevBold: "custom web development",
-          advancedSeoBold: "advanced SEO strategies",
+          creativeSolutions: "Custom Solutions",
+          resultsTitle: "Building Tools That Streamline Your Business 🚀",
+          whyUsDescription: "Transform your operations with",
+          customWebDevBold: "custom web applications",
+          advancedSeoBold: "business automation solutions",
           creativeSolutionsSummary:
-            "Increase visibility, attract leads, and convert visitors into loyal customers.",
-          optimizedDesignsBold: "80% faster load times",
-          optimizedDesigns: "with optimized designs",
-          leadsBold: "65% more leads",
-          leads: "with targeted SEO campaigns",
-          conversionsBold: "50% higher conversions",
-          conversions: "with user-centric designs",
-          mobileBold: "Complete mobile optimization",
-          mobile: "for better engagement",
-          uptimeBold: "100% uptime guarantee",
-          uptime: "for your business",
-          learnMoreButton: "Learn More About SEO",
+            "Replace expensive third-party tools, automate workflows, and save thousands on subscriptions.",
+          optimizedDesignsBold: "Save $500+/month",
+          optimizedDesigns: "by replacing multiple SaaS tools",
+          leadsBold: "Custom CRMs & dashboards",
+          leads: "built specifically for your workflow",
+          conversionsBold: "Digital signatures & PDFs",
+          conversions: "integrated intake forms",
+          mobileBold: "Stripe payment integration",
+          mobile: "and customer management",
+          uptimeBold: "Modern tech stack",
+          uptime: "Vue 3, Nuxt, TypeScript, Supabase",
+          learnMoreButton: "See My Work",
         },
         navbar: {
           appointment: "30 Min Consultation",
@@ -59,40 +59,39 @@ export default defineI18nConfig(() => ({
           services: "Services",
           downloadresume: "Download Resume",
           coreService: "Core Services",
-          featuredPost: "Featured Post",
-          localSeo: {
-            title: "Local SEO for Clermont & Orlando Businesses",
-            description: "Own 'Near Me' Searches",
+          frontendDev: {
+            title: "Frontend Web Development",
+            description: "Vue 3, Nuxt, TypeScript Solutions",
           },
-          webDev: {
-            title: "High-Speed Web Development",
-            description: "JavaScript/TypeScript Solutions",
+          customSolutions: {
+            title: "Custom Business Solutions",
+            description: "CRMs, Intake Forms, Dashboards",
           },
-          cro: {
-            title: "Conversion Rate Optimization",
-            description: "Boost Your Conversion Rates",
+          saasDev: {
+            title: "SaaS Development",
+            description: "Scalable Web Applications",
           },
-          technicalSeo: {
-            title: "Technical SEO Audits",
-            description: "Core Web Vitals Optimization",
+          aiIntegration: {
+            title: "AI Integration",
+            description: "Chatbots, Automation, Analytics",
           },
 
           mobileServices: {
-            local_seo: {
-              title: "Local SEO",
-              path: "/services/local-seo-for-clermont-and-orlando-businesses",
+            frontend_dev: {
+              title: "Frontend Development",
+              path: "/services/frontend-web-development",
             },
-            conversion_optimization: {
-              title: "Conversion Optimization",
-              path: "/services/high-speed-web-development",
+            custom_solutions: {
+              title: "Custom Solutions",
+              path: "/services/custom-business-solutions",
             },
-            web_development: {
-              title: "Web Development",
-              path: "/services/conversion-rate-optimization",
+            saas_dev: {
+              title: "SaaS Development",
+              path: "/services/saas-development",
             },
-            seo_audits: {
-              title: "SEO Audits",
-              path: "/services/technical-seo-audits-and-fixes",
+            ai_integration: {
+              title: "AI Integration",
+              path: "/services/ai-integration-for-small-businesses",
             },
           },
         },
@@ -105,19 +104,410 @@ export default defineI18nConfig(() => ({
         },
         services: {
           subheader: "MY SERVICES",
-          header: "PROFESSIONAL SERVICES",
-          consultation: "Small Business Consultation",
+          header: "WHAT I DO BEST",
+          consultation: "Frontend Web Development",
           consultation_text:
-            "Empowering small businesses to establish a robust online footprint.",
-          softwaredev: "Website & Software Development",
+            "Building fast, modern websites and web applications using Vue 3, Nuxt, TypeScript, and the latest technologies.",
+          softwaredev: "Custom Business Solutions",
           softwaredev_text:
-            "From concept to creation, crafting websites tailored to your brand’s needs.",
-          maintenance_and_support: "Maintenance & Training",
+            "Custom CRMs, intake forms with digital signatures, payment integrations, and dashboards that replace costly third-party tools.",
+          maintenance_and_support: "SaaS Development",
           maintenance_and_support_text:
-            "Ensuring sustainability through comprehensive maintenance and hands-on training.",
-          seo_marketing_ads: "Advanced SEO, Marketing, & Ads",
+            "Building scalable software-as-a-service applications with real-time features, user management, and cloud infrastructure.",
+          seo_marketing_ads: "AI Integration for Small Businesses",
           seo_marketing_ads_text:
-            "SEO-optimiziation, implementing targeted digital marketing campaigns, and creating impactful advertisements",
+            "Implementing AI chatbots, automation, data analysis, and intelligent features to streamline your business operations.",
+        },
+        aiIntegration: {
+          subheader: "AI INTEGRATION",
+          header: "How AI Can Transform Your Small Business",
+          description:
+            "As a tech-savvy developer, I help small businesses leverage AI to automate tasks, improve customer service, and make data-driven decisions. Here are some ways AI can help your business:",
+          use_case_1_title: "Customer Service Automation",
+          use_case_1_description:
+            "AI chatbots handle FAQs, provide after-hours support, and route complex queries to humans, improving response times and customer satisfaction.",
+          use_case_2_title: "Data & Analytics",
+          use_case_2_description:
+            "Analyze sales trends, customer behavior, and financial data with AI-powered insights to make informed business decisions.",
+          use_case_3_title: "Marketing & Content Generation",
+          use_case_3_description:
+            "Generate blog posts, social media updates, ad copy, product descriptions, and even create images to streamline your marketing efforts.",
+          use_case_4_title: "Operations Automation",
+          use_case_4_description:
+            "Automate data entry, manage inventory, forecast demand, schedule appointments, and record meeting minutes to save time and reduce errors.",
+          use_case_5_title: "HR & Recruitment",
+          use_case_5_description:
+            "Draft job descriptions, analyze resumes, automate onboarding workflows, and create training materials to streamline human resources.",
+          use_case_6_title: "Cybersecurity & Monitoring",
+          use_case_6_description:
+            "Monitor for unusual activity, detect potential threats, and protect your business against data breaches with AI-powered security.",
+          cta_text:
+            "Ready to explore how AI can work for your business? Let's discuss your needs.",
+          cta_button: "Schedule a Consultation",
+        },
+        projects: {
+          subheader: "FEATURED PROJECTS",
+          header: "Personal Projects & Experiments",
+          description:
+            "Beyond client work, I build passion projects that push the boundaries of web development and explore new technologies.",
+          historicus_title: "Historicus - Interactive History Platform",
+          historicus_description:
+            "A lesson-based history education platform with interactive timelines, quizzes, and progress tracking. Built with Vue 3, Nuxt, TypeScript, and Supabase to create an engaging learning experience.",
+          exoplanet_title: "Exoplanet Discovery Hub",
+          exoplanet_description:
+            "A 3D space exploration tool with interactive star maps, habitable-zone analysis, and NASA data integration. Features a custom-built 3D rendering engine running at 60 FPS without Three.js.",
+          view_project: "View Project",
+        },
+        frontendDev: {
+          hero: {
+            title: "Modern",
+            highlight: "Frontend Development",
+            subtitle: " with Vue & Nuxt",
+            description: "Building fast, scalable, and beautiful web applications using Vue 3, Nuxt, and TypeScript",
+            button: "Schedule Consultation",
+            trustMetrics: {
+              experience: { value: "9+", label: "Years Experience" },
+              tech: { value: "Vue 3", label: "Latest Tech" },
+              typescript: { value: "TypeScript", label: "Type Safety" },
+            },
+          },
+          techStack: {
+            title: "My Tech Stack",
+            vue: {
+              title: "Vue 3 & Composition API",
+              description: "Building reactive, component-based UIs with the latest Vue 3 features and Composition API.",
+            },
+            nuxt: {
+              title: "Nuxt 3",
+              description: "Server-side rendering, static site generation, and powerful routing for optimal performance.",
+            },
+            typescript: {
+              title: "TypeScript",
+              description: "Type-safe code with better IDE support, fewer bugs, and improved developer experience.",
+            },
+            tailwind: {
+              title: "Tailwind CSS",
+              description: "Utility-first CSS framework for rapidly building custom, responsive designs.",
+            },
+            supabase: {
+              title: "Supabase",
+              description: "PostgreSQL database, authentication, real-time subscriptions, and storage - all in one.",
+            },
+            vite: {
+              title: "Vite",
+              description: "Lightning-fast build tool with instant hot module replacement for rapid development.",
+            },
+          },
+          whatIBuild: {
+            title: "What I Build",
+            spa: {
+              title: "Single Page Applications (SPAs)",
+              description: "Fast, fluid user experiences with client-side routing and dynamic content loading.",
+            },
+            ssr: {
+              title: "Server-Side Rendered Apps (SSR)",
+              description: "SEO-optimized applications with faster initial page loads and better performance.",
+            },
+            pwa: {
+              title: "Progressive Web Apps (PWAs)",
+              description: "App-like experiences that work offline and can be installed on any device.",
+            },
+            ssg: {
+              title: "Static Site Generation (SSG)",
+              description: "Lightning-fast websites pre-rendered at build time for maximum performance.",
+            },
+            dashboard: {
+              title: "Dashboard & Admin Panels",
+              description: "Data visualization, real-time updates, and complex state management made simple.",
+            },
+            ecommerce: {
+              title: "E-Commerce Platforms",
+              description: "Shopping carts, product catalogs, payment integration, and order management.",
+            },
+          },
+        },
+        customSolutions: {
+          hero: {
+            title: "Custom Business Solutions",
+            highlight: " That Replace Expensive SaaS Tools",
+            description: "Stop paying hundreds per month for generic tools. Get custom CRMs, intake forms, dashboards, and payment systems built specifically for your business.",
+            button: "Get a Custom Quote",
+            trustMetrics: {
+              savings: { value: "$500+", label: "Saved Per Month" },
+              custom: { value: "100%", label: "Custom Built" },
+              fees: { value: "No", label: "Monthly Fees" },
+            },
+          },
+          realExamples: {
+            title: "What I've Built for Real Businesses",
+            autoShop: {
+              title: "Custom CRM for Auto Shop",
+              description: "Built a complete customer relationship management system with:",
+              features: {
+                vinLookup: "Customer intake forms with VIN lookup",
+                signatures: "Digital signatures and PDF generation",
+                vehicleHistory: "Vehicle history tracking per customer",
+                printable: "Printable service records",
+              },
+            },
+            salon: {
+              title: "Course Platform for Salon",
+              description: "Created a complete course management and booking system with:",
+              features: {
+                stripe: "Stripe integration for course deposits",
+                intakeForms: "Digital intake forms with signatures",
+                dashboard: "Dashboard to view and manage all forms",
+                customerHistory: "Customer history and return visit tracking",
+              },
+            },
+          },
+          solutions: {
+            title: "Custom Solutions I Build",
+            intakeForms: {
+              title: "Intake Forms & Signatures",
+              description: "Digital forms with e-signatures, PDF generation, and automated email delivery. Perfect for service-based businesses.",
+            },
+            crm: {
+              title: "Custom CRM Systems",
+              description: "Track customers, manage interactions, store documents, and maintain history - all tailored to your workflow.",
+            },
+            dashboards: {
+              title: "Business Dashboards",
+              description: "Real-time metrics, data visualization, and insights - see everything important in one place.",
+            },
+            payment: {
+              title: "Payment Integration",
+              description: "Stripe payments, deposit collection, invoicing, and payment tracking built right into your system.",
+            },
+            booking: {
+              title: "Booking & Scheduling",
+              description: "Custom booking systems with availability management, confirmations, and reminders.",
+            },
+            documents: {
+              title: "Document Management",
+              description: "Upload, organize, and retrieve documents with search, tagging, and version control.",
+            },
+          },
+          whyCustom: {
+            title: "Why Custom > Generic SaaS",
+            oneTime: {
+              title: "One-Time Cost",
+              main: "Pay once, own forever. No monthly subscriptions eating into your profits.",
+              sub: "Most SaaS tools cost $50-200/month. That's $600-2,400/year for features you might not even need.",
+            },
+            workflow: {
+              title: "Built for YOUR Workflow",
+              main: "Every field, button, and feature designed around how you actually work.",
+              sub: "No more forcing your process into someone else's template. No unused features cluttering your interface.",
+            },
+            data: {
+              title: "Own Your Data",
+              main: "Your customer data lives in your database. Export anytime, no lock-in.",
+              sub: "With SaaS, your data is hostage. Stop paying, lose everything.",
+            },
+            features: {
+              title: "No Feature Limitations",
+              main: "Need something? We add it. No \"upgrade to enterprise\" paywalls.",
+              sub: "SaaS companies nickel-and-dime you for every feature. Custom means you decide what you need.",
+            },
+          },
+        },
+        saasDev: {
+          hero: {
+            title: "Build Scalable",
+            highlight: " SaaS Applications",
+            subtitle: " That Grow With You",
+            description: "From MVP to enterprise-scale SaaS platforms. Real-time features, user management, subscription billing, and cloud infrastructure.",
+            button: "Discuss Your SaaS Idea",
+            trustMetrics: {
+              realtime: { value: "Real-Time", label: "Data Updates" },
+              scalable: { value: "Scalable", label: "Architecture" },
+              secure: { value: "Secure", label: "By Default" },
+            },
+          },
+          features: {
+            title: "Everything Your SaaS Needs",
+            userAuth: {
+              title: "User Management & Auth",
+              description: "Sign up, login, password reset, email verification, social auth, and role-based permissions.",
+            },
+            billing: {
+              title: "Subscription Billing",
+              description: "Stripe integration with multiple plans, trial periods, invoicing, and automatic renewals.",
+            },
+            realtime: {
+              title: "Real-Time Updates",
+              description: "WebSockets and subscriptions for live data updates without page refreshes.",
+            },
+            analytics: {
+              title: "Analytics Dashboard",
+              description: "Track key metrics, user activity, revenue, and business insights in real-time.",
+            },
+            api: {
+              title: "API Development",
+              description: "RESTful APIs with authentication, rate limiting, and comprehensive documentation.",
+            },
+            notifications: {
+              title: "Email & Notifications",
+              description: "Transactional emails, in-app notifications, and automated communication workflows.",
+            },
+            security: {
+              title: "Security & Compliance",
+              description: "Data encryption, secure authentication, GDPR compliance, and regular security audits.",
+            },
+            admin: {
+              title: "Admin Controls",
+              description: "Manage users, view analytics, configure settings, and moderate content from one place.",
+            },
+            multiTenant: {
+              title: "Multi-Tenant Architecture",
+              description: "Support multiple organizations/workspaces with data isolation and custom domains.",
+            },
+          },
+          techStack: {
+            title: "Built With Modern Tech",
+            frontend: {
+              title: "Frontend",
+              vue: { name: "Vue 3 & Nuxt", description: "Reactive UI with SSR/SSG" },
+              typescript: { name: "TypeScript", description: "Type-safe development" },
+              tailwind: { name: "Tailwind CSS", description: "Beautiful, responsive UI" },
+            },
+            backend: {
+              title: "Backend & Infrastructure",
+              supabase: { name: "Supabase", description: "Database, Auth, Real-time" },
+              stripe: { name: "Stripe, Square, PayPal", description: "Payment processing" },
+              hosting: { name: "Cloudflare/Netlify", description: "CDN & hosting" },
+            },
+          },
+          process: {
+            title: "How We Build Your SaaS",
+            discovery: {
+              title: "Discovery & Planning",
+              description: "Define features, user flows, and technical requirements. Create wireframes and architecture.",
+            },
+            mvp: {
+              title: "MVP Development",
+              description: "Build core features first. Get to market fast with a functional product you can test.",
+            },
+            iterate: {
+              title: "Iterate & Scale",
+              description: "Add features based on feedback. Optimize performance. Scale infrastructure as you grow.",
+            },
+            launch: {
+              title: "Launch & Support",
+              description: "Deploy to production. Monitor performance. Provide ongoing maintenance and updates.",
+            },
+          },
+        },
+        aiIntegrationService: {
+          hero: {
+            title: "AI Integration",
+            highlight: " for Small Businesses",
+            description: "Automate tasks, improve customer service, and make data-driven decisions with AI - without the enterprise price tag.",
+            button: "Explore AI Solutions",
+            trustMetrics: {
+              automation: { value: "24/7", label: "Automation" },
+              practical: { value: "Practical", label: "Solutions" },
+              affordable: { value: "Affordable", label: "Implementation" },
+            },
+          },
+          useCases: {
+            title: "How AI Can Transform Your Business",
+            customerService: {
+              title: "Customer Service Automation",
+              description: "AI chatbots handle FAQs, provide after-hours support, and route complex queries to humans. Improve response times and customer satisfaction without hiring more staff.",
+            },
+            dataAnalytics: {
+              title: "Data & Analytics",
+              description: "Analyze sales trends, customer behavior, and financial data with AI-powered insights. Make informed business decisions based on patterns you couldn't see before.",
+            },
+            marketing: {
+              title: "Marketing & Content Generation",
+              description: "Generate blog posts, social media updates, ad copy, and product descriptions. Create images and videos to streamline your marketing efforts.",
+            },
+            operations: {
+              title: "Operations Automation",
+              description: "Automate data entry, manage inventory, forecast demand, schedule appointments, and record meeting minutes. Save time and reduce human errors.",
+            },
+            hr: {
+              title: "HR & Recruitment",
+              description: "Draft job descriptions, analyze resumes, automate onboarding workflows, and create training materials. Streamline your hiring process.",
+            },
+            security: {
+              title: "Cybersecurity & Monitoring",
+              description: "Monitor for unusual activity, detect potential threats, and protect your business against data breaches with AI-powered security monitoring.",
+            },
+          },
+          realExamples: {
+            title: "Real AI Solutions for Small Businesses",
+            restaurant: {
+              title: "Restaurant: Smart Ordering Assistant",
+              description: "AI chatbot on your website that takes orders, answers menu questions, and handles special requests 24/7.",
+              benefits: {
+                workload: "Reduces phone staff workload",
+                afterHours: "Captures after-hours orders",
+              },
+            },
+            retail: {
+              title: "Retail: Inventory Forecasting",
+              description: "AI analyzes sales patterns to predict what products you'll need and when, reducing overstock and stockouts.",
+              benefits: {
+                optimize: "Optimize inventory levels",
+                reduce: "Reduce waste and costs",
+              },
+            },
+            service: {
+              title: "Service Business: Appointment Scheduler",
+              description: "AI assistant that handles booking, rescheduling, and sends reminders via text or email automatically.",
+              benefits: {
+                phoneTag: "Eliminates phone tag",
+                noShows: "Reduces no-shows",
+              },
+            },
+            ecommerce: {
+              title: "E-Commerce: Product Recommendations",
+              description: "AI suggests products based on browsing history and purchase patterns, increasing average order value.",
+              benefits: {
+                personalized: "Personalized shopping experience",
+                boost: "Boost sales automatically",
+              },
+            },
+            professional: {
+              title: "Professional Services: Document Processing",
+              description: "AI extracts data from forms, contracts, and invoices - no more manual data entry.",
+              benefits: {
+                saveTime: "Save hours per week",
+                eliminate: "Eliminate data entry errors",
+              },
+            },
+            agency: {
+              title: "Marketing Agency: Content Creation",
+              description: "AI generates first drafts of blog posts, social posts, and email campaigns based on your brand voice.",
+              benefits: {
+                faster: "Faster content production",
+                consistent: "Maintain consistent voice",
+              },
+            },
+          },
+          howItWorks: {
+            title: "How I Integrate AI Into Your Business",
+            identify: {
+              title: "Identify Opportunities",
+              description: "We discuss your workflows and find tasks that AI can automate or improve.",
+            },
+            choose: {
+              title: "Choose the Right AI",
+              description: "Select AI tools and models that fit your specific use case and budget.",
+            },
+            integrate: {
+              title: "Integrate & Test",
+              description: "Build the AI features into your existing systems and test with real data.",
+            },
+            optimize: {
+              title: "Train & Optimize",
+              description: "Fine-tune the AI based on your feedback and monitor performance over time.",
+            },
+          },
         },
         portfolio: {
           subheader: "PORTFOLIO",
@@ -172,7 +562,8 @@ export default defineI18nConfig(() => ({
           follow: "Follow Me",
           legal: "Legal",
           textarea:
-            "2024, Christopher Bermudez™ Made with ❤️ in Clermont, Florida",
+            "2025, Christopher Bermudez™ Made with ❤️ in Clermont, Florida",
+          proudlyServing: "Proudly serving Clermont, Orlando & Central Florida since 2016",
         },
         metadata: {
           title: "Web Design, SEO & Digital Marketing",
@@ -1585,13 +1976,13 @@ export default defineI18nConfig(() => ({
     es: {
       home: {
         hero: {
-          title: "Desarrollador De Web y Especialista en SEO",
-          subtitle1: "Desarrollo de Sitios Web",
-          subtitle2: "Desarrollo de Programas",
-          subtitle3: "Publicidad y Mercadeo",
-          subtitle4: "Servicios de SEO",
+          title: "Desarrollador Frontend y Soluciones Empresariales Personalizadas",
+          subtitle1: "Desarrollo Web",
+          subtitle2: "Soluciones Empresariales Personalizadas",
+          subtitle3: "Desarrollo de SaaS",
+          subtitle4: "Integración de IA",
           description:
-            "Ayudando a negocios en la Florida Central a establecer su presencia en el web desde 2016.",
+            "Construyendo soluciones web personalizadas que reemplazan herramientas costosas de terceros y optimizan las operaciones comerciales desde 2016.",
           callToAction: "¿Cómo está su sitio web ",
           coloredCTA: "posicionado?",
           button: "Contáctame",
@@ -1615,61 +2006,60 @@ export default defineI18nConfig(() => ({
           downloadresume: "Descargar Currículum",
           services: "Servicios",
           coreService: "Servicios Centrales",
-          localSeo: {
-            title: "SEO Local para Negocios de Clermont y Orlando",
-            description: "Domina Búsquedas 'Cerca de Mí'",
+          frontendDev: {
+            title: "Desarrollo Web Frontend",
+            description: "Soluciones Vue 3, Nuxt, TypeScript",
           },
-          webDev: {
-            title: "Desarrollo Web de Alta Velocidad",
-            description: "Soluciones JavaScript/TypeScript",
+          customSolutions: {
+            title: "Soluciones Empresariales Personalizadas",
+            description: "CRMs, Formularios, Paneles",
           },
-          cro: {
-            title: "Optimización de Tasa de Conversión",
-            description: "Impulsa Tus Conversiones",
+          saasDev: {
+            title: "Desarrollo de SaaS",
+            description: "Aplicaciones Web Escalables",
           },
-          technicalSeo: {
-            title: "Auditorías Técnicas de SEO",
-            description: "Optimización Core Web Vitals",
+          aiIntegration: {
+            title: "Integración de IA",
+            description: "Chatbots, Automatización, Análisis",
           },
-          featuredPost: "Publicaciones Destacadas",
           mobileServices: {
-            local_seo: {
-              title: "SEO Local",
-              path: "/servicios/seo-local-para-empresas",
+            frontend_dev: {
+              title: "Desarrollo Frontend",
+              path: "/servicios/desarrollo-web-frontend",
             },
-            conversion_optimization: {
-              title: "Optimización de Conversión",
-              path: "/servicios/desarrollo-web-rapido",
+            custom_solutions: {
+              title: "Soluciones Personalizadas",
+              path: "/servicios/soluciones-empresariales-personalizadas",
             },
-            web_development: {
-              title: "Desarrollo Web",
-              path: "/servicios/optimizacion-tasa-conversion",
+            saas_dev: {
+              title: "Desarrollo de SaaS",
+              path: "/servicios/desarrollo-saas",
             },
-            seo_audits: {
-              title: "Auditorías SEO",
-              path: "/servicios/auditorias-seo-tecnicas",
+            ai_integration: {
+              title: "Integración de IA",
+              path: "/servicios/integracion-ia-empresas",
             },
           },
         },
         whyUs: {
-          creativeSolutions: "Soluciones Creativas",
-          resultsTitle: "Creando Sitios que Generan Resultados 🚀",
-          whyUsDescription: "Impulsa tu presencia en línea con",
-          customWebDevBold: "desarrollo web personalizado",
-          advancedSeoBold: "estrategias avanzadas de SEO",
+          creativeSolutions: "Soluciones Personalizadas",
+          resultsTitle: "Construyendo Herramientas que Optimizan Tu Negocio 🚀",
+          whyUsDescription: "Transforma tus operaciones con",
+          customWebDevBold: "aplicaciones web personalizadas",
+          advancedSeoBold: "soluciones de automatización empresarial",
           creativeSolutionsSummary:
-            "Aumenta tu visibilidad, atrae prospectos y convierte visitantes en clientes leales.",
-          optimizedDesignsBold: "80% tiempos de carga más rápidos",
-          optimizedDesigns: "con diseños optimizados",
-          leadsBold: "65% más prospectos",
-          leads: "con campañas de SEO dirigidas",
-          conversionsBold: "50% más conversiones",
-          conversions: "con diseños centrados en el usuario",
-          mobileBold: "Optimización móvil completa",
-          mobile: "para mejor interacción",
-          uptimeBold: "100% de garantía de tiempo activo",
-          uptime: "para tu negocio",
-          learnMoreButton: "Aprende Más Sobre SEO",
+            "Reemplaza herramientas costosas de terceros, automatiza flujos de trabajo y ahorra miles en suscripciones.",
+          optimizedDesignsBold: "Ahorra $500+/mes",
+          optimizedDesigns: "reemplazando múltiples herramientas SaaS",
+          leadsBold: "CRMs y paneles personalizados",
+          leads: "construidos específicamente para tu flujo de trabajo",
+          conversionsBold: "Firmas digitales y PDFs",
+          conversions: "formularios de admisión integrados",
+          mobileBold: "Integración de pagos Stripe",
+          mobile: "y gestión de clientes",
+          uptimeBold: "Stack tecnológico moderno",
+          uptime: "Vue 3, Nuxt, TypeScript, Supabase",
+          learnMoreButton: "Ver Mi Trabajo",
         },
         mystory: {
           journey: "SOBRE MI",
@@ -1680,19 +2070,59 @@ export default defineI18nConfig(() => ({
         },
         services: {
           subheader: "MIS SERVICIOS",
-          header: "SERVICIOS PROFESIONALES",
-          consultation: "Consultoría para Empresas",
+          header: "LO QUE HAGO MEJOR",
+          consultation: "Desarrollo Web Frontend",
           consultation_text:
-            "Empoderando a las pequeñas empresas para establecer una presencia en el internet robusta.",
-          softwaredev: "Desarrollo de Sitios Web y Software",
+            "Construyendo sitios web y aplicaciones modernas y rápidas usando Vue 3, Nuxt, TypeScript y las últimas tecnologías.",
+          softwaredev: "Soluciones Empresariales Personalizadas",
           softwaredev_text:
-            "Desde el concepto hasta la creación, diseñando sitios web a medida de las necesidades de tu marca.",
-          maintenance_and_support: "Mantenimiento y Capacitación",
+            "CRMs personalizados, formularios con firmas digitales, integraciones de pago y paneles que reemplazan herramientas costosas de terceros.",
+          maintenance_and_support: "Desarrollo de SaaS",
           maintenance_and_support_text:
-            "Garantizando la sostenibilidad a través de un mantenimiento integral y capacitación práctica.",
-          seo_marketing_ads: "SEO Avanzado, Mercadeo y Publicidad",
+            "Construyendo aplicaciones de software como servicio escalables con funciones en tiempo real, gestión de usuarios e infraestructura en la nube.",
+          seo_marketing_ads: "Integración de IA para Pequeñas Empresas",
           seo_marketing_ads_text:
-            "Estrategias de optimización en motores de búsqueda, mercadeo digital y publicidad efectiva.",
+            "Implementando chatbots de IA, automatización, análisis de datos y funciones inteligentes para optimizar sus operaciones comerciales.",
+        },
+        aiIntegration: {
+          subheader: "INTEGRACIÓN DE IA",
+          header: "Cómo la IA Puede Transformar Tu Pequeña Empresa",
+          description:
+            "Como desarrollador experto en tecnología, ayudo a las pequeñas empresas a aprovechar la IA para automatizar tareas, mejorar el servicio al cliente y tomar decisiones basadas en datos. Aquí hay algunas formas en que la IA puede ayudar a su negocio:",
+          use_case_1_title: "Automatización del Servicio al Cliente",
+          use_case_1_description:
+            "Los chatbots de IA manejan preguntas frecuentes, brindan soporte fuera del horario laboral y dirigen consultas complejas a humanos, mejorando los tiempos de respuesta y la satisfacción del cliente.",
+          use_case_2_title: "Datos y Análisis",
+          use_case_2_description:
+            "Analiza tendencias de ventas, comportamiento del cliente y datos financieros con información impulsada por IA para tomar decisiones comerciales informadas.",
+          use_case_3_title: "Generación de Marketing y Contenido",
+          use_case_3_description:
+            "Genera publicaciones de blog, actualizaciones de redes sociales, textos publicitarios, descripciones de productos e incluso crea imágenes para optimizar tus esfuerzos de marketing.",
+          use_case_4_title: "Automatización de Operaciones",
+          use_case_4_description:
+            "Automatiza la entrada de datos, gestiona el inventario, pronostica la demanda, programa citas y registra actas de reuniones para ahorrar tiempo y reducir errores.",
+          use_case_5_title: "Recursos Humanos y Reclutamiento",
+          use_case_5_description:
+            "Redacta descripciones de puestos, analiza currículums, automatiza flujos de trabajo de incorporación y crea materiales de capacitación para optimizar los recursos humanos.",
+          use_case_6_title: "Ciberseguridad y Monitoreo",
+          use_case_6_description:
+            "Monitorea actividades inusuales, detecta amenazas potenciales y protege tu negocio contra violaciones de datos con seguridad impulsada por IA.",
+          cta_text:
+            "¿Listo para explorar cómo la IA puede funcionar para tu negocio? Discutamos tus necesidades.",
+          cta_button: "Programar una Consulta",
+        },
+        projects: {
+          subheader: "PROYECTOS DESTACADOS",
+          header: "Proyectos Personales y Experimentos",
+          description:
+            "Más allá del trabajo con clientes, construyo proyectos apasionantes que empujan los límites del desarrollo web y exploran nuevas tecnologías.",
+          historicus_title: "Historicus - Plataforma Interactiva de Historia",
+          historicus_description:
+            "Una plataforma educativa de historia basada en lecciones con cronogramas interactivos, cuestionarios y seguimiento de progreso. Construida con Vue 3, Nuxt, TypeScript y Supabase para crear una experiencia de aprendizaje atractiva.",
+          exoplanet_title: "Centro de Descubrimiento de Exoplanetas",
+          exoplanet_description:
+            "Una herramienta de exploración espacial 3D con mapas estelares interactivos, análisis de zonas habitables e integración de datos de la NASA. Cuenta con un motor de renderizado 3D personalizado que funciona a 60 FPS sin Three.js.",
+          view_project: "Ver Proyecto",
         },
         portfolio: {
           subheader: "PORTAFOLIO",
@@ -1747,7 +2177,8 @@ export default defineI18nConfig(() => ({
           follow: "Sígueme",
           legal: "Legal",
           textarea:
-            "2024, Christopher Bermudez™. Hecho con ❤️ en Clermont, Florida",
+            "2025, Christopher Bermudez™. Hecho con ❤️ en Clermont, Florida",
+          proudlyServing: "Orgullosamente sirviendo a Clermont, Orlando y el centro de Florida desde 2016",
         },
         metadata: {
           title: "Diseño de Web, SEO y Mercadeo Digital",
@@ -1756,6 +2187,370 @@ export default defineI18nConfig(() => ({
           og_title: "Diseño Web, SEO y Mercadeo Digital",
           og_description:
             "Servicios expertos en diseño web y SEO para negocios en Central Florida. Christopher Bermudez puede elevar tu presencia en el web.",
+        },
+      },
+      frontendDev: {
+        hero: {
+          title: "Construye Sitios Web Modernos y Rápidos con",
+          highlight: "Vue 3 & Nuxt",
+          description: "Sitios web y aplicaciones de alto rendimiento, optimizados para SEO y totalmente responsive. Experiencia de usuario perfecta con tecnologías modernas de frontend.",
+          cta: "Discute Tu Proyecto",
+          metrics: {
+            performance: { value: "Rápido", label: "Rendimiento Superior" },
+            modern: { value: "Moderno", label: "Stack Tecnológico" },
+            responsive: { value: "100%", label: "Responsive" },
+          },
+        },
+        techStack: {
+          title: "Construido con Tecnología Moderna",
+          frontend: {
+            title: "Frontend",
+            vue: { name: "Vue 3 & Nuxt", description: "UI reactiva con SSR/SSG" },
+            typescript: { name: "TypeScript", description: "Desarrollo con seguridad de tipos" },
+            tailwind: { name: "Tailwind CSS", description: "UI hermosa y responsive" },
+          },
+          backend: {
+            title: "Backend e Infraestructura",
+            supabase: { name: "Supabase", description: "Base de datos, autenticación, tiempo real" },
+            vite: { name: "Vite", description: "Compilaciones ultrarrápidas" },
+            cloudflare: { name: "Cloudflare", description: "CDN y alojamiento" },
+          },
+        },
+        whatIBuild: {
+          title: "Lo Que Construyo",
+          spa: {
+            title: "Aplicaciones de Página Única (SPAs)",
+            description: "Interfaces rápidas e interactivas con Vue 3. Actualizaciones instantáneas de página sin recargas.",
+          },
+          ssr: {
+            title: "Sitios Renderizados por Servidor (SSR)",
+            description: "Nuxt para SSR que mejora el SEO, tiempos de carga más rápidos e indexación perfecta de motores de búsqueda.",
+          },
+          pwa: {
+            title: "Aplicaciones Web Progresivas (PWAs)",
+            description: "Instalables, funciona sin conexión y se sienten como aplicaciones nativas. El mejor de ambos mundos.",
+          },
+          ssg: {
+            title: "Sitios Estáticos Generados (SSG)",
+            description: "Sitios ultrarrápidos con contenido pregenerado. Perfecto para blogs, portafolios y páginas de marketing.",
+          },
+          dashboards: {
+            title: "Dashboards y Paneles de Admin",
+            description: "Paneles personalizados con visualización de datos en tiempo real, tablas y gráficos interactivos.",
+          },
+          ecommerce: {
+            title: "Frontends de E-commerce",
+            description: "Tiendas online rápidas con listados de productos, carritos de compra e integración de pagos.",
+          },
+        },
+        whyChoose: {
+          title: "Por Qué Elegir Vue 3 & Nuxt",
+          performance: {
+            title: "Rendimiento Superior",
+            description: "Compilaciones optimizadas, división de código y carga diferida para tiempos de carga ultrarrápidos.",
+          },
+          seo: {
+            title: "Amigable con SEO",
+            description: "SSR y SSG aseguran que tu sitio sea totalmente indexado por motores de búsqueda.",
+          },
+          scalable: {
+            title: "Escalable",
+            description: "Arquitectura modular que crece con tu negocio. Añade características sin reescribir.",
+          },
+          modern: {
+            title: "Stack Moderno",
+            description: "Herramientas de vanguardia, desarrollo TypeScript y las mejores prácticas incluidas.",
+          },
+        },
+        process: {
+          title: "Cómo Construyo Tu Sitio",
+          step1: {
+            number: "1",
+            title: "Descubrimiento y Planificación",
+            description: "Discutir requisitos, objetivos del usuario y stack tecnológico. Crear wireframes y arquitectura.",
+          },
+          step2: {
+            number: "2",
+            title: "Diseño y Prototipo",
+            description: "Diseñar componentes UI, establecer guías de estilo y crear prototipos interactivos.",
+          },
+          step3: {
+            number: "3",
+            title: "Desarrollo",
+            description: "Construir componentes, integrar APIs, configurar SSR/SSG y optimizar el rendimiento.",
+          },
+          step4: {
+            number: "4",
+            title: "Pruebas y Lanzamiento",
+            description: "Pruebas de navegador cruzado, optimización SEO, configurar alojamiento y hacer el despliegue.",
+          },
+        },
+      },
+      customSolutions: {
+        hero: {
+          title: "Soluciones Empresariales Personalizadas",
+          highlight: "Que Reemplazan Herramientas SaaS Costosas",
+          description: "Deja de pagar cientos al mes por herramientas genéricas. Obtén CRMs personalizados, formularios de admisión, dashboards y sistemas de pago construidos específicamente para tu negocio.",
+          cta: "Obtén una Cotización Personalizada",
+          metrics: {
+            savings: { value: "$500+", label: "Ahorrados Por Mes" },
+            custom: { value: "100%", label: "Construido a Medida" },
+            fees: { value: "No", label: "Tarifas Mensuales" },
+          },
+        },
+        realExamples: {
+          title: "Lo Que He Construido para Negocios Reales",
+          autoShop: {
+            title: "CRM Personalizado para Taller Mecánico",
+            description: "Construí un sistema completo de gestión de relaciones con clientes con:",
+            features: {
+              intake: "Formularios de admisión de clientes con búsqueda de VIN",
+              signatures: "Firmas digitales y generación de PDF",
+              history: "Seguimiento del historial de vehículos por cliente",
+              records: "Registros de servicio imprimibles",
+            },
+          },
+          salon: {
+            title: "Plataforma de Cursos para Salón",
+            description: "Creé un sistema completo de gestión de cursos y reservas con:",
+            features: {
+              stripe: "Integración de Stripe para depósitos de cursos",
+              forms: "Formularios de admisión digital con firmas",
+              dashboard: "Dashboard para ver y gestionar todos los formularios",
+              tracking: "Historial de clientes y seguimiento de visitas de retorno",
+            },
+          },
+        },
+        solutions: {
+          title: "Soluciones Personalizadas Que Construyo",
+          intakeForms: {
+            title: "Formularios de Admisión y Firmas",
+            description: "Formularios digitales con firmas electrónicas, generación de PDF y entrega automática por correo. Perfecto para negocios basados en servicios.",
+          },
+          crm: {
+            title: "Sistemas CRM Personalizados",
+            description: "Rastrea clientes, gestiona interacciones, almacena documentos y mantiene historial - todo adaptado a tu flujo de trabajo.",
+          },
+          dashboards: {
+            title: "Dashboards Empresariales",
+            description: "Métricas en tiempo real, visualización de datos e insights - ve todo lo importante en un solo lugar.",
+          },
+          payments: {
+            title: "Integración de Pagos",
+            description: "Pagos de Stripe, recolección de depósitos, facturación y seguimiento de pagos integrados directamente en tu sistema.",
+          },
+          booking: {
+            title: "Reservas y Programación",
+            description: "Sistemas de reserva personalizados con gestión de disponibilidad, confirmaciones y recordatorios.",
+          },
+          documents: {
+            title: "Gestión de Documentos",
+            description: "Sube, organiza y recupera documentos con búsqueda, etiquetado y control de versiones.",
+          },
+        },
+        whyCustom: {
+          title: "Por Qué Personalizado > SaaS Genérico",
+          oneTime: {
+            title: "Costo Único",
+            description: "Paga una vez, posee para siempre. Sin suscripciones mensuales que consuman tus ganancias.",
+            detail: "La mayoría de las herramientas SaaS cuestan $50-200/mes. Eso es $600-2,400/año por características que quizás ni necesites.",
+          },
+          workflow: {
+            title: "Construido para TU Flujo de Trabajo",
+            description: "Cada campo, botón y característica diseñada alrededor de cómo realmente trabajas.",
+            detail: "No más forzar tu proceso en la plantilla de otra persona. Sin características no utilizadas saturando tu interfaz.",
+          },
+          data: {
+            title: "Posee Tus Datos",
+            description: "Los datos de tus clientes viven en tu base de datos. Exporta en cualquier momento, sin bloqueo.",
+            detail: "Con SaaS, tus datos son rehenes. Deja de pagar, pierde todo.",
+          },
+          features: {
+            title: "Sin Limitaciones de Características",
+            description: "¿Necesitas algo? Lo agregamos. Sin muros de pago de 'actualizar a empresarial'.",
+            detail: "Las empresas SaaS te cobran por cada característica. Personalizado significa que tú decides lo que necesitas.",
+          },
+        },
+      },
+      saasDev: {
+        hero: {
+          title: "Construye Aplicaciones",
+          highlight: "SaaS Escalables",
+          subtitle: "Que Crecen Contigo",
+          description: "De MVP a plataformas SaaS de nivel empresarial. Características en tiempo real, gestión de usuarios, facturación por suscripción e infraestructura en la nube.",
+          cta: "Discute Tu Idea SaaS",
+          metrics: {
+            realtime: { value: "Tiempo Real", label: "Actualizaciones de Datos" },
+            scalable: { value: "Escalable", label: "Arquitectura" },
+            secure: { value: "Seguro", label: "Por Defecto" },
+          },
+        },
+        features: {
+          title: "Todo Lo Que Tu SaaS Necesita",
+          userManagement: {
+            title: "Gestión de Usuarios y Autenticación",
+            description: "Registro, inicio de sesión, restablecimiento de contraseña, verificación de correo, autenticación social y permisos basados en roles.",
+          },
+          billing: {
+            title: "Facturación por Suscripción",
+            description: "Integración de Stripe con múltiples planes, períodos de prueba, facturación y renovaciones automáticas.",
+          },
+          realtime: {
+            title: "Actualizaciones en Tiempo Real",
+            description: "WebSockets y suscripciones para actualizaciones de datos en vivo sin recargas de página.",
+          },
+          analytics: {
+            title: "Dashboard de Análisis",
+            description: "Rastrea métricas clave, actividad de usuarios, ingresos e insights empresariales en tiempo real.",
+          },
+          api: {
+            title: "Desarrollo de API",
+            description: "APIs RESTful con autenticación, limitación de tasa y documentación completa.",
+          },
+          notifications: {
+            title: "Correos y Notificaciones",
+            description: "Correos transaccionales, notificaciones en la aplicación y flujos de comunicación automatizados.",
+          },
+          security: {
+            title: "Seguridad y Cumplimiento",
+            description: "Cifrado de datos, autenticación segura, cumplimiento GDPR y auditorías de seguridad regulares.",
+          },
+          admin: {
+            title: "Controles de Administración",
+            description: "Gestiona usuarios, ve análisis, configura ajustes y modera contenido desde un solo lugar.",
+          },
+          multiTenant: {
+            title: "Arquitectura Multi-Inquilino",
+            description: "Soporta múltiples organizaciones/espacios de trabajo con aislamiento de datos y dominios personalizados.",
+          },
+        },
+        techStack: {
+          title: "Construido con Tecnología Moderna",
+          frontend: {
+            title: "Frontend",
+            vue: { name: "Vue 3 & Nuxt", description: "UI reactiva con SSR/SSG" },
+            typescript: { name: "TypeScript", description: "Desarrollo con seguridad de tipos" },
+            tailwind: { name: "Tailwind CSS", description: "UI hermosa y responsive" },
+          },
+          backend: {
+            title: "Backend e Infraestructura",
+            supabase: { name: "Supabase", description: "Base de datos, autenticación, tiempo real" },
+            stripe: { name: "Stripe, Square, PayPal", description: "Procesamiento de pagos" },
+            cloudflare: { name: "Cloudflare/Netlify", description: "CDN y alojamiento" },
+          },
+        },
+        process: {
+          title: "Cómo Construimos Tu SaaS",
+          step1: {
+            number: "1",
+            title: "Descubrimiento y Planificación",
+            description: "Definir características, flujos de usuario y requisitos técnicos. Crear wireframes y arquitectura.",
+          },
+          step2: {
+            number: "2",
+            title: "Desarrollo de MVP",
+            description: "Construir primero las características centrales. Llegar al mercado rápido con un producto funcional que puedas probar.",
+          },
+          step3: {
+            number: "3",
+            title: "Iterar y Escalar",
+            description: "Agregar características basadas en retroalimentación. Optimizar rendimiento. Escalar infraestructura a medida que creces.",
+          },
+          step4: {
+            number: "4",
+            title: "Lanzamiento y Soporte",
+            description: "Desplegar a producción. Monitorear rendimiento. Proporcionar mantenimiento y actualizaciones continuas.",
+          },
+        },
+      },
+      aiIntegrationService: {
+        hero: {
+          title: "Integración de IA",
+          highlight: "para Pequeñas Empresas",
+          description: "Automatiza tareas, mejora el servicio al cliente y obtén insights basados en datos con integraciones de IA personalizadas construidas específicamente para tu negocio.",
+          cta: "Explorar Soluciones de IA",
+          metrics: {
+            hours: { value: "10+", label: "Horas Ahorradas/Semana" },
+            automation: { value: "24/7", label: "Automatización" },
+            smart: { value: "Más Inteligente", label: "Decisiones" },
+          },
+        },
+        useCases: {
+          title: "Cómo la IA Puede Ayudar a Tu Negocio",
+          customerService: {
+            title: "Automatización del Servicio al Cliente",
+            description: "Chatbots de IA que manejan preguntas frecuentes, brindan soporte fuera del horario y enrutan consultas complejas a humanos.",
+          },
+          dataAnalytics: {
+            title: "Análisis de Datos e Insights",
+            description: "Analiza tendencias de ventas, comportamiento del cliente y datos financieros con información impulsada por IA.",
+          },
+          contentGeneration: {
+            title: "Generación de Contenido",
+            description: "Genera publicaciones de blog, actualizaciones de redes sociales, textos publicitarios y descripciones de productos.",
+          },
+          automation: {
+            title: "Automatización de Operaciones",
+            description: "Automatiza entrada de datos, gestión de inventario, pronóstico de demanda y programación de citas.",
+          },
+          hrRecruitment: {
+            title: "Recursos Humanos y Reclutamiento",
+            description: "Redacta descripciones de puestos, analiza currículums, automatiza flujos de incorporación y crea materiales de capacitación.",
+          },
+          security: {
+            title: "Ciberseguridad y Monitoreo",
+            description: "Monitorea actividades inusuales, detecta amenazas potenciales y protege contra violaciones de datos.",
+          },
+        },
+        realExamples: {
+          title: "Ejemplos de IA en Acción",
+          restaurant: {
+            title: "Chatbot de Reservas para Restaurante",
+            description: "Chatbot de IA que maneja reservas, responde preguntas del menú y envía confirmaciones, reduciendo llamadas telefónicas en un 70%.",
+          },
+          retail: {
+            title: "Análisis de Inventario para Tienda Minorista",
+            description: "Herramienta de IA que analiza datos de ventas, predice demanda y recomienda niveles de inventario óptimos, reduciendo exceso de stock en un 30%.",
+          },
+          legal: {
+            title: "Automatización de Documentos para Firma Legal",
+            description: "Sistema de IA que redacta contratos estándar, completa plantillas y extrae información clave de documentos, ahorrando 15+ horas/semana.",
+          },
+          fitness: {
+            title: "Entrenador Personal de IA para Gimnasio",
+            description: "Chatbot que crea planes de entrenamiento personalizados, rastrea progreso y envía recordatorios de entrenamiento, aumentando retención de miembros en un 25%.",
+          },
+          realEstate: {
+            title: "Generador de Listados para Inmobiliaria",
+            description: "IA que escribe descripciones de propiedades atractivas, genera publicaciones de redes sociales y crea tours virtuales a partir de fotos.",
+          },
+          ecommerce: {
+            title: "Soporte al Cliente para E-commerce",
+            description: "Chatbot de IA que responde preguntas de productos, rastrea pedidos y procesa devoluciones, manejando 80% de consultas de clientes automáticamente.",
+          },
+        },
+        howItWorks: {
+          title: "Cómo Integro IA en Tu Negocio",
+          step1: {
+            number: "1",
+            title: "Consulta de Descubrimiento",
+            description: "Entender tus procesos empresariales, puntos de dolor y objetivos. Identificar las mejores oportunidades de IA.",
+          },
+          step2: {
+            number: "2",
+            title: "Solución Personalizada de IA",
+            description: "Diseñar e integrar herramientas de IA adaptadas a tus necesidades. Chatbots, automatización, análisis o generación de contenido.",
+          },
+          step3: {
+            number: "3",
+            title: "Pruebas y Refinamiento",
+            description: "Probar la solución de IA con datos del mundo real. Refinar respuestas, mejorar precisión y optimizar rendimiento.",
+          },
+          step4: {
+            number: "4",
+            title: "Lanzamiento y Soporte",
+            description: "Desplegar tu solución de IA. Proporcionar capacitación, monitoreo continuo y actualizaciones a medida que tu negocio evoluciona.",
+          },
         },
       },
       blog: {

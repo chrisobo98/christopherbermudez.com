@@ -120,78 +120,35 @@
               :class="['services-mega-menu absolute left-10 rounded-3xl right-10 bg-white dark:bg-gray-800 shadow-xl border-t dark:border-gray-700 mt-12 hidden lg:block', { 'show': showServices }]"
             >
               <div class="max-w-screen-xl mx-auto px-8 py-12">
-                <h3 class="text-2xl font-bold mb-4">
+                <h3 class="text-2xl font-bold mb-8">
                   {{ $t("home.navbar.coreService") }}
                 </h3>
 
-                <div class="grid grid-cols-2 gap-12">
-                  <!-- Left Column -->
-
-                  <div class="grid grid-cols-2">
-                    <template v-for="(service, index) in services" :key="index">
-                      <NuxtLink
-                        :to="localePath(service.path)"
-                        aria-label="Our Services"
-                        class="p-4 hover:bg-purple-50 dark:hover:bg-gray-700 rounded-xl transition-colors"
-                      >
-                        <div
-                          class="w-12 h-12 bg-purple-100 dark:bg-gray-600 rounded-lg flex items-center justify-center mb-3"
-                        >
-                          <Icon
-                            :name="service.icon"
-                            class="w-6 h-6 text-purple-600 dark:text-purple-400"
-                          />
-                        </div>
-                        <h4
-                          class="text-xl font-bold text-gray-900 dark:text-white mb-1"
-                        >
-                          {{ service.title }}
-                        </h4>
-                        <p class="text-gray-600 dark:text-gray-300 text-base">
-                          {{ service.description }}
-                        </p>
-                      </NuxtLink>
-                    </template>
-                  </div>
-
-                  <!-- Right Column -->
-                  <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
-                    <!-- Featured Section -->
-                    <div class="bg-purple-50 dark:bg-gray-700 p-8 rounded-xl">
-                      <h3 class="text-2xl font-bold mb-4">
-                        {{ $t("home.navbar.featuredPost") }}
-                      </h3>
+                <div class="grid grid-cols-2 gap-6">
+                  <template v-for="(service, index) in services" :key="index">
+                    <NuxtLink
+                      :to="localePath(service.path)"
+                      aria-label="Our Services"
+                      class="p-6 hover:bg-purple-50 dark:hover:bg-gray-700 rounded-xl transition-colors border border-gray-200 dark:border-gray-700"
+                    >
                       <div
-                        class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
+                        class="w-12 h-12 bg-purple-100 dark:bg-gray-600 rounded-lg flex items-center justify-center mb-3"
                       >
-                        <NuxtImg
-                          provider="cloudinary"
-                          loading="lazy"
-                          src="t_Banner 16:9/v1744075475/on-page-seo_ja7prk.png"
-                          class="rounded-lg mb-4 w-full h-48 object-cover"
-                          alt="SEO Success Story"
+                        <Icon
+                          :name="service.icon"
+                          class="w-6 h-6 text-purple-600 dark:text-purple-400"
                         />
-                        <p
-                          class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
-                        >
-                          Mastering E-Commerce Part 1: The Basics
-                        </p>
-                        <p class="text-gray-600 dark:text-gray-300 text-base">
-                          A great starting point for business owners who do not
-                          yet have a website
-                        </p>
-                        <NuxtLink
-                          :to="
-                            localePath('/blog/e-commerce-website-development')
-                          "
-                          aria-label="View blog link"
-                          class="text-purple-600 dark:text-purple-400 font-semibold mt-4 inline-block hover:text-purple-700 transition-colors"
-                        >
-                          View Blog Post →
-                        </NuxtLink>
                       </div>
-                    </div>
-                  </div>
+                      <h4
+                        class="text-xl font-bold text-gray-900 dark:text-white mb-2"
+                      >
+                        {{ service.title }}
+                      </h4>
+                      <p class="text-gray-600 dark:text-gray-300 text-base">
+                        {{ service.description }}
+                      </p>
+                    </NuxtLink>
+                  </template>
                 </div>
               </div>
             </div>
@@ -307,57 +264,57 @@ onClickOutside(dropdownRef, () => {
 
 const mobileServices = computed(() => [
   {
-    title: t("home.navbar.mobileServices.local_seo.title"),
-    href: "/services/local-seo-for-clermont-and-orlando-businesses",
-    icon: "heroicons:map-pin",
+    title: t("home.navbar.mobileServices.frontend_dev.title"),
+    href: "/services/frontend-web-development",
+    icon: "heroicons:code-bracket",
   },
   {
-    title: t("home.navbar.mobileServices.conversion_optimization.title"),
-    href: "/services/conversion-rate-optimization",
-    icon: "heroicons:bolt",
+    title: t("home.navbar.mobileServices.custom_solutions.title"),
+    href: "/services/custom-business-solutions",
+    icon: "heroicons:cog-6-tooth",
   },
   {
-    title: t("home.navbar.mobileServices.web_development.title"),
-    href: "/services/high-speed-web-development",
-    icon: "heroicons:chart-bar",
+    title: t("home.navbar.mobileServices.saas_dev.title"),
+    href: "/services/saas-development",
+    icon: "heroicons:cloud",
   },
   {
-    title: t("home.navbar.mobileServices.seo_audits.title"),
-    href: "/services/technical-seo-audits-and-fixes",
-    icon: "heroicons:magnifying-glass",
+    title: t("home.navbar.mobileServices.ai_integration.title"),
+    href: "/services/ai-integration-for-small-businesses",
+    icon: "heroicons:sparkles",
   },
 ]);
 
 const services = computed(() => [
   {
-    title: t("home.navbar.localSeo.title"),
-    description: t("home.navbar.localSeo.description"),
-    path: "/services/local-seo-for-clermont-and-orlando-businesses",
-    icon: "heroicons:map-pin",
+    title: t("home.navbar.frontendDev.title"),
+    description: t("home.navbar.frontendDev.description"),
+    path: "/services/frontend-web-development",
+    icon: "heroicons:code-bracket",
     bgColor: "bg-purple-100",
     iconColor: "text-purple-600",
   },
   {
-    title: t("home.navbar.webDev.title"),
-    description: t("home.navbar.webDev.title"),
-    path: "/services/high-speed-web-development",
-    icon: "heroicons:bolt",
+    title: t("home.navbar.customSolutions.title"),
+    description: t("home.navbar.customSolutions.description"),
+    path: "/services/custom-business-solutions",
+    icon: "heroicons:cog-6-tooth",
     bgColor: "bg-blue-100",
     iconColor: "text-blue-600",
   },
   {
-    title: t("home.navbar.cro.title"),
-    description: t("home.navbar.cro.title"),
-    path: "/services/conversion-rate-optimization",
-    icon: "heroicons:chart-bar",
+    title: t("home.navbar.saasDev.title"),
+    description: t("home.navbar.saasDev.description"),
+    path: "/services/saas-development",
+    icon: "heroicons:cloud",
     bgColor: "bg-green-100",
     iconColor: "text-green-600",
   },
   {
-    title: t("home.navbar.technicalSeo.title"),
-    description: t("home.navbar.technicalSeo.title"),
-    path: "/services/technical-seo-audits-and-fixes",
-    icon: "heroicons:magnifying-glass",
+    title: t("home.navbar.aiIntegration.title"),
+    description: t("home.navbar.aiIntegration.description"),
+    path: "/services/ai-integration-for-small-businesses",
+    icon: "heroicons:sparkles",
     bgColor: "bg-orange-100",
     iconColor: "text-orange-600",
   },

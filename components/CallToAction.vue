@@ -1,6 +1,6 @@
 <!-- Final CTA -->
 <template>
-    <div class="bg-purple-600 text-white p-12 rounded-2xl text-center">
+    <div class="bg-purple-600 text-white p-12 rounded-2xl text-center mt-16">
       <h2 class="text-3xl font-bold mb-6">
         {{ $t('finalCta.heading') }}
       </h2>

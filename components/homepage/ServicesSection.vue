@@ -44,29 +44,29 @@ const { t } = useI18n();
 const services = [
   {
     iconSrc:
-      "https://res.cloudinary.com/dkaakonrp/image/upload/v1743106183/consultation_g5qw6d.png",
-    altText: "Consultation Service",
+      "https://res.cloudinary.com/dkaakonrp/image/upload/v1743105640/web-design_bkkrny.png",
+    altText: "Frontend Web Development",
     title: t("home.services.consultation"),
     description: t("home.services.consultation_text"),
   },
   {
     iconSrc:
-      "https://res.cloudinary.com/dkaakonrp/image/upload/v1743105640/web-design_bkkrny.png",
-    altText: "Web Development Service",
+      "https://res.cloudinary.com/dkaakonrp/image/upload/v1743106183/consultation_g5qw6d.png",
+    altText: "Custom Business Solutions",
     title: t("home.services.softwaredev"),
     description: t("home.services.softwaredev_text"),
   },
   {
     iconSrc:
       "https://res.cloudinary.com/dkaakonrp/image/upload/v1743106264/ballon-support_e5ur0d.png",
-    altText: "Maintenance and Support Service",
+    altText: "SaaS Development",
     title: t("home.services.maintenance_and_support"),
     description: t("home.services.maintenance_and_support_text"),
   },
   {
     iconSrc:
       "https://res.cloudinary.com/dkaakonrp/image/upload/v1743105775/seo_vyewfv.png",
-    altText: "SEO and Marketing Service",
+    altText: "AI Integration for Small Businesses",
     title: t("home.services.seo_marketing_ads"),
     description: t("home.services.seo_marketing_ads_text"),
   },
