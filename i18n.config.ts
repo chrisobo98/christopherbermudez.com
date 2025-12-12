@@ -7,158 +7,7 @@ export default defineI18nConfig(() => ({
   globalInjection: true,
   messages: {
     en: {
-      home: {
-        hero: {
-          title: "Frontend Developer & Custom Business Solutions",
-          subtitle1: "Web Development",
-          subtitle2: "Custom Business Solutions",
-          subtitle3: "SaaS Development",
-          subtitle4: "AI Integration",
-          description:
-            "Building custom web solutions that replace expensive third-party tools and streamline business operations since 2016.",
-          callToAction: "How does your website ",
-          coloredCTA: "score?",
-          button: "Contact Me",
-          websiteUrl: "Website URL",
-          firstName: "Name",
-          phone: "Phone",
-          email: "Email",
-          audit: "Free Site Audit",
-          answer: "Get the answer in minutes!",
-        },
-        whyUs: {
-          creativeSolutions: "Custom Solutions",
-          resultsTitle: "Building Tools That Streamline Your Business 🚀",
-          whyUsDescription: "Transform your operations with",
-          customWebDevBold: "custom web applications",
-          advancedSeoBold: "business automation solutions",
-          creativeSolutionsSummary:
-            "Replace expensive third-party tools, automate workflows, and save thousands on subscriptions.",
-          optimizedDesignsBold: "Save $500+/month",
-          optimizedDesigns: "by replacing multiple SaaS tools",
-          leadsBold: "Custom CRMs & dashboards",
-          leads: "built specifically for your workflow",
-          conversionsBold: "Digital signatures & PDFs",
-          conversions: "integrated intake forms",
-          mobileBold: "Stripe payment integration",
-          mobile: "and customer management",
-          uptimeBold: "Modern tech stack",
-          uptime: "Vue 3, Nuxt, TypeScript, Supabase",
-          learnMoreButton: "See My Work",
-        },
-        navbar: {
-          appointment: "30 Min Consultation",
-          software: "Software Development",
-          web: "Web Development",
-          templates: "Templates",
-          marketing: "Ads & Marketing",
-          blogs: "Blogs",
-          journal: "Journal",
-          about: "About",
-          pricing: "Pricing",
-          services: "Services",
-          downloadresume: "Download Resume",
-          coreService: "Core Services",
-          frontendDev: {
-            title: "Frontend Web Development",
-            description: "Vue 3, Nuxt, TypeScript Solutions",
-          },
-          customSolutions: {
-            title: "Custom Business Solutions",
-            description: "CRMs, Intake Forms, Dashboards",
-          },
-          saasDev: {
-            title: "SaaS Development",
-            description: "Scalable Web Applications",
-          },
-          aiIntegration: {
-            title: "AI Integration",
-            description: "Chatbots, Automation, Analytics",
-          },
-
-          mobileServices: {
-            frontend_dev: {
-              title: "Frontend Development",
-              path: "/services/frontend-web-development",
-            },
-            custom_solutions: {
-              title: "Custom Solutions",
-              path: "/services/custom-business-solutions",
-            },
-            saas_dev: {
-              title: "SaaS Development",
-              path: "/services/saas-development",
-            },
-            ai_integration: {
-              title: "AI Integration",
-              path: "/services/ai-integration-for-small-businesses",
-            },
-          },
-        },
-        mystory: {
-          journey: "ABOUT ME",
-          storyheader: "MY STORY",
-          storytext:
-            "A seasoned front-end software developer with a proven track record in both the corporate sphere and the startup ecosystem. With a passion for crafting user-centric solutions, I ensure that every project not only meets but exceeds expectations.",
-          storyButton: "Read More",
-        },
-        services: {
-          subheader: "MY SERVICES",
-          header: "WHAT I DO BEST",
-          consultation: "Frontend Web Development",
-          consultation_text:
-            "Building fast, modern websites and web applications using Vue 3, Nuxt, TypeScript, and the latest technologies.",
-          softwaredev: "Custom Business Solutions",
-          softwaredev_text:
-            "Custom CRMs, intake forms with digital signatures, payment integrations, and dashboards that replace costly third-party tools.",
-          maintenance_and_support: "SaaS Development",
-          maintenance_and_support_text:
-            "Building scalable software-as-a-service applications with real-time features, user management, and cloud infrastructure.",
-          seo_marketing_ads: "AI Integration for Small Businesses",
-          seo_marketing_ads_text:
-            "Implementing AI chatbots, automation, data analysis, and intelligent features to streamline your business operations.",
-        },
-        aiIntegration: {
-          subheader: "AI INTEGRATION",
-          header: "How AI Can Transform Your Small Business",
-          description:
-            "As a tech-savvy developer, I help small businesses leverage AI to automate tasks, improve customer service, and make data-driven decisions. Here are some ways AI can help your business:",
-          use_case_1_title: "Customer Service Automation",
-          use_case_1_description:
-            "AI chatbots handle FAQs, provide after-hours support, and route complex queries to humans, improving response times and customer satisfaction.",
-          use_case_2_title: "Data & Analytics",
-          use_case_2_description:
-            "Analyze sales trends, customer behavior, and financial data with AI-powered insights to make informed business decisions.",
-          use_case_3_title: "Marketing & Content Generation",
-          use_case_3_description:
-            "Generate blog posts, social media updates, ad copy, product descriptions, and even create images to streamline your marketing efforts.",
-          use_case_4_title: "Operations Automation",
-          use_case_4_description:
-            "Automate data entry, manage inventory, forecast demand, schedule appointments, and record meeting minutes to save time and reduce errors.",
-          use_case_5_title: "HR & Recruitment",
-          use_case_5_description:
-            "Draft job descriptions, analyze resumes, automate onboarding workflows, and create training materials to streamline human resources.",
-          use_case_6_title: "Cybersecurity & Monitoring",
-          use_case_6_description:
-            "Monitor for unusual activity, detect potential threats, and protect your business against data breaches with AI-powered security.",
-          cta_text:
-            "Ready to explore how AI can work for your business? Let's discuss your needs.",
-          cta_button: "Schedule a Consultation",
-        },
-        projects: {
-          subheader: "FEATURED PROJECTS",
-          header: "Personal Projects & Experiments",
-          description:
-            "Beyond client work, I build passion projects that push the boundaries of web development and explore new technologies.",
-          historicus_title: "Historicus - Interactive History Platform",
-          historicus_description:
-            "A lesson-based history education platform with interactive timelines, quizzes, and progress tracking. Built with Vue 3, Nuxt, TypeScript, and Supabase to create an engaging learning experience.",
-          exoplanet_title: "Exoplanet Discovery Hub",
-          exoplanet_description:
-            "A 3D space exploration tool with interactive star maps, habitable-zone analysis, and NASA data integration. Features a custom-built 3D rendering engine running at 60 FPS without Three.js.",
-          view_project: "View Project",
-        },
-        frontendDev: {
+              frontendDev: {
           hero: {
             title: "Build Modern, Fast Websites with",
             highlight: "Vue 3 & Nuxt",
@@ -480,6 +329,158 @@ export default defineI18nConfig(() => ({
             },
           },
         },
+      home: {
+        hero: {
+          title: "Frontend Developer & Custom Business Solutions",
+          subtitle1: "Web Development",
+          subtitle2: "Custom Business Solutions",
+          subtitle3: "SaaS Development",
+          subtitle4: "AI Integration",
+          description:
+            "Building custom web solutions that replace expensive third-party tools and streamline business operations since 2016.",
+          callToAction: "How does your website ",
+          coloredCTA: "score?",
+          button: "Contact Me",
+          websiteUrl: "Website URL",
+          firstName: "Name",
+          phone: "Phone",
+          email: "Email",
+          audit: "Free Site Audit",
+          answer: "Get the answer in minutes!",
+        },
+        whyUs: {
+          creativeSolutions: "Custom Solutions",
+          resultsTitle: "Building Tools That Streamline Your Business 🚀",
+          whyUsDescription: "Transform your operations with",
+          customWebDevBold: "custom web applications",
+          advancedSeoBold: "business automation solutions",
+          creativeSolutionsSummary:
+            "Replace expensive third-party tools, automate workflows, and save thousands on subscriptions.",
+          optimizedDesignsBold: "Save $500+/month",
+          optimizedDesigns: "by replacing multiple SaaS tools",
+          leadsBold: "Custom CRMs & dashboards",
+          leads: "built specifically for your workflow",
+          conversionsBold: "Digital signatures & PDFs",
+          conversions: "integrated intake forms",
+          mobileBold: "Stripe payment integration",
+          mobile: "and customer management",
+          uptimeBold: "Modern tech stack",
+          uptime: "Vue 3, Nuxt, TypeScript, Supabase",
+          learnMoreButton: "See My Work",
+        },
+        navbar: {
+          appointment: "30 Min Consultation",
+          software: "Software Development",
+          web: "Web Development",
+          templates: "Templates",
+          marketing: "Ads & Marketing",
+          blogs: "Blogs",
+          journal: "Journal",
+          about: "About",
+          pricing: "Pricing",
+          services: "Services",
+          downloadresume: "Download Resume",
+          coreService: "Core Services",
+          frontendDev: {
+            title: "Frontend Web Development",
+            description: "Vue 3, Nuxt, TypeScript Solutions",
+          },
+          customSolutions: {
+            title: "Custom Business Solutions",
+            description: "CRMs, Intake Forms, Dashboards",
+          },
+          saasDev: {
+            title: "SaaS Development",
+            description: "Scalable Web Applications",
+          },
+          aiIntegration: {
+            title: "AI Integration",
+            description: "Chatbots, Automation, Analytics",
+          },
+
+          mobileServices: {
+            frontend_dev: {
+              title: "Frontend Development",
+              path: "/services/frontend-web-development",
+            },
+            custom_solutions: {
+              title: "Custom Solutions",
+              path: "/services/custom-business-solutions",
+            },
+            saas_dev: {
+              title: "SaaS Development",
+              path: "/services/saas-development",
+            },
+            ai_integration: {
+              title: "AI Integration",
+              path: "/services/ai-integration-for-small-businesses",
+            },
+          },
+        },
+        mystory: {
+          journey: "ABOUT ME",
+          storyheader: "MY STORY",
+          storytext:
+            "A seasoned front-end software developer with a proven track record in both the corporate sphere and the startup ecosystem. With a passion for crafting user-centric solutions, I ensure that every project not only meets but exceeds expectations.",
+          storyButton: "Read More",
+        },
+        services: {
+          subheader: "MY SERVICES",
+          header: "WHAT I DO BEST",
+          consultation: "Frontend Web Development",
+          consultation_text:
+            "Building fast, modern websites and web applications using Vue 3, Nuxt, TypeScript, and the latest technologies.",
+          softwaredev: "Custom Business Solutions",
+          softwaredev_text:
+            "Custom CRMs, intake forms with digital signatures, payment integrations, and dashboards that replace costly third-party tools.",
+          maintenance_and_support: "SaaS Development",
+          maintenance_and_support_text:
+            "Building scalable software-as-a-service applications with real-time features, user management, and cloud infrastructure.",
+          seo_marketing_ads: "AI Integration for Small Businesses",
+          seo_marketing_ads_text:
+            "Implementing AI chatbots, automation, data analysis, and intelligent features to streamline your business operations.",
+        },
+        aiIntegration: {
+          subheader: "AI INTEGRATION",
+          header: "How AI Can Transform Your Small Business",
+          description:
+            "As a tech-savvy developer, I help small businesses leverage AI to automate tasks, improve customer service, and make data-driven decisions. Here are some ways AI can help your business:",
+          use_case_1_title: "Customer Service Automation",
+          use_case_1_description:
+            "AI chatbots handle FAQs, provide after-hours support, and route complex queries to humans, improving response times and customer satisfaction.",
+          use_case_2_title: "Data & Analytics",
+          use_case_2_description:
+            "Analyze sales trends, customer behavior, and financial data with AI-powered insights to make informed business decisions.",
+          use_case_3_title: "Marketing & Content Generation",
+          use_case_3_description:
+            "Generate blog posts, social media updates, ad copy, product descriptions, and even create images to streamline your marketing efforts.",
+          use_case_4_title: "Operations Automation",
+          use_case_4_description:
+            "Automate data entry, manage inventory, forecast demand, schedule appointments, and record meeting minutes to save time and reduce errors.",
+          use_case_5_title: "HR & Recruitment",
+          use_case_5_description:
+            "Draft job descriptions, analyze resumes, automate onboarding workflows, and create training materials to streamline human resources.",
+          use_case_6_title: "Cybersecurity & Monitoring",
+          use_case_6_description:
+            "Monitor for unusual activity, detect potential threats, and protect your business against data breaches with AI-powered security.",
+          cta_text:
+            "Ready to explore how AI can work for your business? Let's discuss your needs.",
+          cta_button: "Schedule a Consultation",
+        },
+        projects: {
+          subheader: "FEATURED PROJECTS",
+          header: "Personal Projects & Experiments",
+          description:
+            "Beyond client work, I build passion projects that push the boundaries of web development and explore new technologies.",
+          historicus_title: "Historicus - Interactive History Platform",
+          historicus_description:
+            "A lesson-based history education platform with interactive timelines, quizzes, and progress tracking. Built with Vue 3, Nuxt, TypeScript, and Supabase to create an engaging learning experience.",
+          exoplanet_title: "Exoplanet Discovery Hub",
+          exoplanet_description:
+            "A 3D space exploration tool with interactive star maps, habitable-zone analysis, and NASA data integration. Features a custom-built 3D rendering engine running at 60 FPS without Three.js.",
+          view_project: "View Project",
+        },
+
         portfolio: {
           subheader: "PORTFOLIO",
           header: "Showcase of Excellence",
