@@ -160,69 +160,56 @@ export default defineI18nConfig(() => ({
         },
         frontendDev: {
           hero: {
-            title: "Modern",
-            highlight: "Frontend Development",
-            subtitle: " with Vue & Nuxt",
-            description: "Building fast, scalable, and beautiful web applications using Vue 3, Nuxt, and TypeScript",
-            button: "Schedule Consultation",
-            trustMetrics: {
-              experience: { value: "9+", label: "Years Experience" },
-              tech: { value: "Vue 3", label: "Latest Tech" },
-              typescript: { value: "TypeScript", label: "Type Safety" },
+            title: "Build Modern, Fast Websites with",
+            highlight: "Vue 3 & Nuxt",
+            description: "High-performance, SEO-optimized, and fully responsive websites and applications. Seamless user experiences with modern frontend technologies.",
+            cta: "Discuss Your Project",
+            metrics: {
+              performance: { value: "Fast", label: "Top Performance" },
+              modern: { value: "Modern", label: "Tech Stack" },
+              responsive: { value: "100%", label: "Responsive" },
             },
           },
           techStack: {
-            title: "My Tech Stack",
-            vue: {
-              title: "Vue 3 & Composition API",
-              description: "Building reactive, component-based UIs with the latest Vue 3 features and Composition API.",
+            title: "Built with Modern Tech",
+            frontend: {
+              title: "Frontend",
+              vue: { name: "Vue 3 & Nuxt", description: "Reactive UI with SSR/SSG" },
+              typescript: { name: "TypeScript", description: "Type-safe development" },
+              tailwind: { name: "Tailwind CSS", description: "Beautiful, responsive UI" },
             },
-            nuxt: {
-              title: "Nuxt 3",
-              description: "Server-side rendering, static site generation, and powerful routing for optimal performance.",
-            },
-            typescript: {
-              title: "TypeScript",
-              description: "Type-safe code with better IDE support, fewer bugs, and improved developer experience.",
-            },
-            tailwind: {
-              title: "Tailwind CSS",
-              description: "Utility-first CSS framework for rapidly building custom, responsive designs.",
-            },
-            supabase: {
-              title: "Supabase",
-              description: "PostgreSQL database, authentication, real-time subscriptions, and storage - all in one.",
-            },
-            vite: {
-              title: "Vite",
-              description: "Lightning-fast build tool with instant hot module replacement for rapid development.",
+            backend: {
+              title: "Backend & Infrastructure",
+              supabase: { name: "Supabase", description: "Database, auth, real-time" },
+              vite: { name: "Vite", description: "Lightning-fast builds" },
+              cloudflare: { name: "Cloudflare", description: "CDN & hosting" },
             },
           },
           whatIBuild: {
             title: "What I Build",
             spa: {
               title: "Single Page Applications (SPAs)",
-              description: "Fast, fluid user experiences with client-side routing and dynamic content loading.",
+              description: "Fast, interactive interfaces with Vue 3. Instant page updates without reloads.",
             },
             ssr: {
-              title: "Server-Side Rendered Apps (SSR)",
-              description: "SEO-optimized applications with faster initial page loads and better performance.",
+              title: "Server-Side Rendered Sites (SSR)",
+              description: "Nuxt for SSR that improves SEO, faster load times, and seamless search engine indexing.",
             },
             pwa: {
               title: "Progressive Web Apps (PWAs)",
-              description: "App-like experiences that work offline and can be installed on any device.",
+              description: "Installable, works offline, and feels like native apps. Best of both worlds.",
             },
             ssg: {
-              title: "Static Site Generation (SSG)",
-              description: "Lightning-fast websites pre-rendered at build time for maximum performance.",
+              title: "Static Site Generated (SSG)",
+              description: "Blazing-fast sites with pre-rendered content. Perfect for blogs, portfolios, and marketing pages.",
             },
-            dashboard: {
-              title: "Dashboard & Admin Panels",
-              description: "Data visualization, real-time updates, and complex state management made simple.",
+            dashboards: {
+              title: "Dashboards & Admin Panels",
+              description: "Custom dashboards with real-time data visualization, interactive tables, and charts.",
             },
             ecommerce: {
-              title: "E-Commerce Platforms",
-              description: "Shopping carts, product catalogs, payment integration, and order management.",
+              title: "E-Commerce Frontends",
+              description: "Fast online stores with product listings, shopping carts, and payment integration.",
             },
           },
         },
