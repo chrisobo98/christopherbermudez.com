@@ -216,10 +216,10 @@ export default defineI18nConfig(() => ({
         customSolutions: {
           hero: {
             title: "Custom Business Solutions",
-            highlight: " That Replace Expensive SaaS Tools",
+            highlight: "That Replace Expensive SaaS Tools",
             description: "Stop paying hundreds per month for generic tools. Get custom CRMs, intake forms, dashboards, and payment systems built specifically for your business.",
-            button: "Get a Custom Quote",
-            trustMetrics: {
+            cta: "Get a Custom Quote",
+            metrics: {
               savings: { value: "$500+", label: "Saved Per Month" },
               custom: { value: "100%", label: "Custom Built" },
               fees: { value: "No", label: "Monthly Fees" },
@@ -231,10 +231,10 @@ export default defineI18nConfig(() => ({
               title: "Custom CRM for Auto Shop",
               description: "Built a complete customer relationship management system with:",
               features: {
-                vinLookup: "Customer intake forms with VIN lookup",
+                intake: "Customer intake forms with VIN lookup",
                 signatures: "Digital signatures and PDF generation",
-                vehicleHistory: "Vehicle history tracking per customer",
-                printable: "Printable service records",
+                history: "Vehicle history tracking per customer",
+                records: "Printable service records",
               },
             },
             salon: {
@@ -242,9 +242,9 @@ export default defineI18nConfig(() => ({
               description: "Created a complete course management and booking system with:",
               features: {
                 stripe: "Stripe integration for course deposits",
-                intakeForms: "Digital intake forms with signatures",
+                forms: "Digital intake forms with signatures",
                 dashboard: "Dashboard to view and manage all forms",
-                customerHistory: "Customer history and return visit tracking",
+                tracking: "Customer history and return visit tracking",
               },
             },
           },
@@ -262,7 +262,7 @@ export default defineI18nConfig(() => ({
               title: "Business Dashboards",
               description: "Real-time metrics, data visualization, and insights - see everything important in one place.",
             },
-            payment: {
+            payments: {
               title: "Payment Integration",
               description: "Stripe payments, deposit collection, invoicing, and payment tracking built right into your system.",
             },
@@ -279,34 +279,34 @@ export default defineI18nConfig(() => ({
             title: "Why Custom > Generic SaaS",
             oneTime: {
               title: "One-Time Cost",
-              main: "Pay once, own forever. No monthly subscriptions eating into your profits.",
-              sub: "Most SaaS tools cost $50-200/month. That's $600-2,400/year for features you might not even need.",
+              description: "Pay once, own forever. No monthly subscriptions eating into your profits.",
+              detail: "Most SaaS tools cost $50-200/month. That's $600-2,400/year for features you might not even need.",
             },
             workflow: {
               title: "Built for YOUR Workflow",
-              main: "Every field, button, and feature designed around how you actually work.",
-              sub: "No more forcing your process into someone else's template. No unused features cluttering your interface.",
+              description: "Every field, button, and feature designed around how you actually work.",
+              detail: "No more forcing your process into someone else's template. No unused features cluttering your interface.",
             },
             data: {
               title: "Own Your Data",
-              main: "Your customer data lives in your database. Export anytime, no lock-in.",
-              sub: "With SaaS, your data is hostage. Stop paying, lose everything.",
+              description: "Your customer data lives in your database. Export anytime, no lock-in.",
+              detail: "With SaaS, your data is hostage. Stop paying, lose everything.",
             },
             features: {
               title: "No Feature Limitations",
-              main: "Need something? We add it. No \"upgrade to enterprise\" paywalls.",
-              sub: "SaaS companies nickel-and-dime you for every feature. Custom means you decide what you need.",
+              description: "Need something? We add it. No \"upgrade to enterprise\" paywalls.",
+              detail: "SaaS companies nickel-and-dime you for every feature. Custom means you decide what you need.",
             },
           },
         },
         saasDev: {
           hero: {
             title: "Build Scalable",
-            highlight: " SaaS Applications",
-            subtitle: " That Grow With You",
+            highlight: "SaaS Applications",
+            subtitle: "That Grow With You",
             description: "From MVP to enterprise-scale SaaS platforms. Real-time features, user management, subscription billing, and cloud infrastructure.",
-            button: "Discuss Your SaaS Idea",
-            trustMetrics: {
+            cta: "Discuss Your SaaS Idea",
+            metrics: {
               realtime: { value: "Real-Time", label: "Data Updates" },
               scalable: { value: "Scalable", label: "Architecture" },
               secure: { value: "Secure", label: "By Default" },
@@ -314,7 +314,7 @@ export default defineI18nConfig(() => ({
           },
           features: {
             title: "Everything Your SaaS Needs",
-            userAuth: {
+            userManagement: {
               title: "User Management & Auth",
               description: "Sign up, login, password reset, email verification, social auth, and role-based permissions.",
             },
@@ -363,24 +363,28 @@ export default defineI18nConfig(() => ({
               title: "Backend & Infrastructure",
               supabase: { name: "Supabase", description: "Database, Auth, Real-time" },
               stripe: { name: "Stripe, Square, PayPal", description: "Payment processing" },
-              hosting: { name: "Cloudflare/Netlify", description: "CDN & hosting" },
+              cloudflare: { name: "Cloudflare/Netlify", description: "CDN & hosting" },
             },
           },
           process: {
             title: "How We Build Your SaaS",
-            discovery: {
+            step1: {
+              number: "1",
               title: "Discovery & Planning",
               description: "Define features, user flows, and technical requirements. Create wireframes and architecture.",
             },
-            mvp: {
+            step2: {
+              number: "2",
               title: "MVP Development",
               description: "Build core features first. Get to market fast with a functional product you can test.",
             },
-            iterate: {
+            step3: {
+              number: "3",
               title: "Iterate & Scale",
               description: "Add features based on feedback. Optimize performance. Scale infrastructure as you grow.",
             },
-            launch: {
+            step4: {
+              number: "4",
               title: "Launch & Support",
               description: "Deploy to production. Monitor performance. Provide ongoing maintenance and updates.",
             },
@@ -389,110 +393,90 @@ export default defineI18nConfig(() => ({
         aiIntegrationService: {
           hero: {
             title: "AI Integration",
-            highlight: " for Small Businesses",
-            description: "Automate tasks, improve customer service, and make data-driven decisions with AI - without the enterprise price tag.",
-            button: "Explore AI Solutions",
-            trustMetrics: {
+            highlight: "for Small Businesses",
+            description: "Automate tasks, improve customer service, and gain data-driven insights with custom AI integrations built specifically for your business.",
+            cta: "Explore AI Solutions",
+            metrics: {
+              hours: { value: "10+", label: "Hours Saved/Week" },
               automation: { value: "24/7", label: "Automation" },
-              practical: { value: "Practical", label: "Solutions" },
-              affordable: { value: "Affordable", label: "Implementation" },
+              smart: { value: "Smarter", label: "Decisions" },
             },
           },
           useCases: {
-            title: "How AI Can Transform Your Business",
+            title: "How AI Can Help Your Business",
             customerService: {
               title: "Customer Service Automation",
-              description: "AI chatbots handle FAQs, provide after-hours support, and route complex queries to humans. Improve response times and customer satisfaction without hiring more staff.",
+              description: "AI chatbots that handle FAQs, provide after-hours support, and route complex queries to humans.",
             },
             dataAnalytics: {
-              title: "Data & Analytics",
-              description: "Analyze sales trends, customer behavior, and financial data with AI-powered insights. Make informed business decisions based on patterns you couldn't see before.",
+              title: "Data Analytics & Insights",
+              description: "Analyze sales trends, customer behavior, and financial data with AI-powered insights.",
             },
-            marketing: {
-              title: "Marketing & Content Generation",
-              description: "Generate blog posts, social media updates, ad copy, and product descriptions. Create images and videos to streamline your marketing efforts.",
+            contentGeneration: {
+              title: "Content Generation",
+              description: "Generate blog posts, social media updates, ad copy, and product descriptions.",
             },
-            operations: {
+            automation: {
               title: "Operations Automation",
-              description: "Automate data entry, manage inventory, forecast demand, schedule appointments, and record meeting minutes. Save time and reduce human errors.",
+              description: "Automate data entry, inventory management, demand forecasting, and appointment scheduling.",
             },
-            hr: {
+            hrRecruitment: {
               title: "HR & Recruitment",
-              description: "Draft job descriptions, analyze resumes, automate onboarding workflows, and create training materials. Streamline your hiring process.",
+              description: "Draft job descriptions, analyze resumes, automate onboarding workflows, and create training materials.",
             },
             security: {
               title: "Cybersecurity & Monitoring",
-              description: "Monitor for unusual activity, detect potential threats, and protect your business against data breaches with AI-powered security monitoring.",
+              description: "Monitor for unusual activity, detect potential threats, and protect against data breaches.",
             },
           },
           realExamples: {
-            title: "Real AI Solutions for Small Businesses",
+            title: "AI Examples in Action",
             restaurant: {
-              title: "Restaurant: Smart Ordering Assistant",
-              description: "AI chatbot on your website that takes orders, answers menu questions, and handles special requests 24/7.",
-              benefits: {
-                workload: "Reduces phone staff workload",
-                afterHours: "Captures after-hours orders",
-              },
+              title: "Restaurant Booking Chatbot",
+              description: "AI chatbot that handles reservations, answers menu questions, and sends confirmations, reducing phone calls by 70%.",
             },
             retail: {
-              title: "Retail: Inventory Forecasting",
-              description: "AI analyzes sales patterns to predict what products you'll need and when, reducing overstock and stockouts.",
-              benefits: {
-                optimize: "Optimize inventory levels",
-                reduce: "Reduce waste and costs",
-              },
+              title: "Retail Store Inventory Analytics",
+              description: "AI tool that analyzes sales data, predicts demand, and recommends optimal inventory levels, reducing overstock by 30%.",
             },
-            service: {
-              title: "Service Business: Appointment Scheduler",
-              description: "AI assistant that handles booking, rescheduling, and sends reminders via text or email automatically.",
-              benefits: {
-                phoneTag: "Eliminates phone tag",
-                noShows: "Reduces no-shows",
-              },
+            legal: {
+              title: "Legal Firm Document Automation",
+              description: "AI system that drafts standard contracts, fills templates, and extracts key info from documents, saving 15+ hours/week.",
+            },
+            fitness: {
+              title: "Gym AI Personal Trainer",
+              description: "Chatbot that creates personalized workout plans, tracks progress, and sends workout reminders, increasing member retention by 25%.",
+            },
+            realEstate: {
+              title: "Real Estate Listing Generator",
+              description: "AI that writes compelling property descriptions, generates social posts, and creates virtual tours from photos.",
             },
             ecommerce: {
-              title: "E-Commerce: Product Recommendations",
-              description: "AI suggests products based on browsing history and purchase patterns, increasing average order value.",
-              benefits: {
-                personalized: "Personalized shopping experience",
-                boost: "Boost sales automatically",
-              },
-            },
-            professional: {
-              title: "Professional Services: Document Processing",
-              description: "AI extracts data from forms, contracts, and invoices - no more manual data entry.",
-              benefits: {
-                saveTime: "Save hours per week",
-                eliminate: "Eliminate data entry errors",
-              },
-            },
-            agency: {
-              title: "Marketing Agency: Content Creation",
-              description: "AI generates first drafts of blog posts, social posts, and email campaigns based on your brand voice.",
-              benefits: {
-                faster: "Faster content production",
-                consistent: "Maintain consistent voice",
-              },
+              title: "E-commerce Customer Support",
+              description: "AI chatbot that answers product questions, tracks orders, and processes returns, handling 80% of customer inquiries automatically.",
             },
           },
           howItWorks: {
             title: "How I Integrate AI Into Your Business",
-            identify: {
-              title: "Identify Opportunities",
-              description: "We discuss your workflows and find tasks that AI can automate or improve.",
+            step1: {
+              number: "1",
+              title: "Discovery Consultation",
+              description: "Understand your business processes, pain points, and goals. Identify the best AI opportunities.",
             },
-            choose: {
-              title: "Choose the Right AI",
-              description: "Select AI tools and models that fit your specific use case and budget.",
+            step2: {
+              number: "2",
+              title: "Custom AI Solution",
+              description: "Design and integrate AI tools tailored to your needs. Chatbots, automation, analytics, or content generation.",
             },
-            integrate: {
-              title: "Integrate & Test",
-              description: "Build the AI features into your existing systems and test with real data.",
+            step3: {
+              number: "3",
+              title: "Testing & Refinement",
+              description: "Test the AI solution with real-world data. Refine responses, improve accuracy, and optimize performance.",
             },
-            optimize: {
-              title: "Train & Optimize",
-              description: "Fine-tune the AI based on your feedback and monitor performance over time.",
+            step4: {
+              number: "4",
+              title: "Launch & Support",
+              description: "Deploy your AI solution. Provide training, ongoing monitoring, and updates as your business evolves.",
             },
           },
         },
